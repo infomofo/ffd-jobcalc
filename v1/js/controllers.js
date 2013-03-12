@@ -40,4 +40,9 @@ function CharacterController($scope, $http, $location) {
     if ($scope.characters != null)
       $location.search({"character":$scope.characters.indexOf($scope.selected_character)});
   }
+
+  $scope.reset = function() {
+    $scope.selected_character = null;
+    $location.search();
+  }
 }

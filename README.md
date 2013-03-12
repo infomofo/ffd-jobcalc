@@ -40,5 +40,6 @@ APIs
 Sources
 -------
 
-* [FFD FAQ/Walkthrough Version 1.30 by holyknight](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107)
-* [Ability Acquisition FAQ 1.1 by Sir Phoenix](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30)
+* [FFD FAQ/Walkthrough Version 1.30 by holyknight](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107) - Source of the character level attributes
+* [Ability Acquisition FAQ 1.1 by Sir Phoenix](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30) - Source of the job level and fusion data
+* [Final Fantasy Wikia: Final Fantasy Dimensions](http://finalfantasy.wikia.com/wiki/Final_Fantasy_Dimensions)

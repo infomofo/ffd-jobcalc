@@ -39,10 +39,13 @@
       <h1>Final Fantasy Dimensions JP Calculator</h1>
       <p>Plan builds for the eight customizable characters in Final Fantasy Dimensions.</p>
       <div class="row">
-        <div class="span4">
+        <div class="span3">
           <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{updateUrl()}}">
             <option value="">select a character</option>
           </select>
+        </div>
+        <div class="span2 offset7">
+          <a ng-click="reset()" class="btn btn-danger">Reset</a>
         </div>
       </div> 
       <div class="row" ng-show="selected_character">
