@@ -1,0 +1,90 @@
+[
+  	{"name": "Warrior",
+     "description": "",
+	"side":["light","dark"],
+	"image":"img/warrior_sprite.png"
+	},
+    {"name": "Monk",
+     "description": "",
+	"hp":8520,
+	"mp":258,
+	"str":90,
+	"spd":52,
+	"vit":94,
+	"int":9,
+	"mnd":14,
+	"side":["light","dark"],
+	"image":"img/monk_sprite.png"
+	},
+	{"name": "Thief",
+     "description": "",
+	"side":["light","dark"],
+	"image":"img/thief_sprite.png"
+	},
+	{"name": "Red Mage",
+     "description": "",
+	"side":["light","dark"],
+	"image":"img/redmage_sprite.png"
+	},
+	{"name": "White Mage",
+     "description": "",
+	"side":["light","dark"],
+	"image":"img/whitemage_sprite.png"
+	},
+	{"name": "Summoner",
+     "description": "",
+	"side":["light","dark"],
+	"image":"img/summoner_sprite.png"
+	},
+	{"name": "Dragoon",
+     "description": "",
+	"side":["light"],
+	"image":"img/dragoon_sprite.png"
+	},
+	{"name": "Bard",
+     "description": "",
+	"side":["light"],
+	"image":"img/bard_sprite.png"
+	},
+
+	{"name": "Memorist",
+     "description": "",
+	"side":["light"],
+	"image":"img/memorist_sprite.png"
+	},
+	{"name": "Paladin",
+     "description": "",
+	"side":["light"],
+	"image":"img/paladin_sprite.png"
+	},
+	{"name": "Seer",
+     "description": "",
+	"side":["light"],
+	"image":"img/seer_sprite.png"
+	},
+	{"name": "Ranger",
+     "description": "",
+	"side":["dark"],
+	"image":"img/ranger_sprite.png"
+	},
+	{"name": "Dark Knight",
+     "description": "",
+	"side":["dark"],
+	"image":"img/darkknight_sprite.png"
+	},
+	{"name": "Dancer",
+     "description": "",
+	"side":["dark"],
+	"image":"img/dancer_sprite.png"
+	},
+	{"name": "Ninja",
+     "description": "",
+	"side":["dark"],
+	"image":"img/ninja_sprite.png"
+	},
+	{"name": "Magus",
+     "description": "",
+	"side":["dark"],
+	"image":"img/ninja_sprite.png"
+	}   
+]

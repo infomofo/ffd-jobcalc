@@ -1,0 +1,30 @@
+/* app css stylesheet */
+body {
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.level {
+  width="50px"
+}
+
+.level {
+  width="30px";
+
+}
+
+.profile {
+  positiion:"absolute";
+  float:"right";
+}
+
+.baseline {
+  background-color:#dff0d8;
+}
+
+.spent {
+  background-color:#dff0d8;
+}
+
+.free {
+  background-color: #fcf8e3;
+}
