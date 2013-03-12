@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="ffdJobCalc">
 <head>
   <meta charset="utf-8">
   <title>Final Fantasy Dimensions Job Calc</title>
@@ -40,7 +40,7 @@
       <p>Plan builds for the eight customizable characters in Final Fantasy Dimensions.</p>
       <div class="row">
         <div class="span4">
-          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters'>
+          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{updateUrl()}}">
             <option value="">select a character</option>
           </select>
         </div>
@@ -51,7 +51,7 @@
               <li class="span4">
                 <div class="thumbnail">
                   <span style="float:right" class="label">{{selected_character.side}}</span>
-                  <img src="{{selected_character.image}}" class="img-polaroid" alt="">
+                  <img ng-src="{{selected_character.image}}" class="img-polaroid" alt="">
                   <h3>{{selected_character.name}}</h3> 
                   <p class="visible-desktop">{{selected_character.description}}</p>
                 </div>
@@ -71,7 +71,7 @@
 	    </ul>
           </div>
           <div class="span1 well">
-            <p>JP: <span class="badge badge-success">{{spent_jp}}</span></p>
+            <p>JP: <span class="badge badge-success">{{spent_jp()}}</span></p>
             <p>AP: <span class="badge badge-info">{{spent_ap}}</span></p>
           </div>
       </div>
@@ -106,7 +106,7 @@
 	  </thead>
 	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <th><img src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr></th>
+                <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr></th>
                 <th class=""></th>
                 <th class="free"><i class="icon-plus-sign-alt spend_jp" rel="tooltip" data-original-title="Increase Job Level of {{job.name}}" data-placement="left"></i></th>
                 <th class="free"></th>
