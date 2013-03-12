@@ -12,7 +12,8 @@ function CharacterController($scope, $http) {
      $scope.jobs = data;
    });
 
-  $scope.spent_points = 0;
+  $scope.spent_ap = 0;
+  $scope.spent_jp = 0;
 
   $scope.abilities = [
   ];

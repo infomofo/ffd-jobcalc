@@ -22,11 +22,6 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="brand" href="#">Final Fantasy Dimensions JobCalc</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
@@ -46,31 +41,44 @@
       <div class="row">
         <div class="span4">
           <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters'>
-            <option></option>
+            <option value="">select a character</option>
           </select>
         </div>
       </div> 
       <div class="row" ng-show="selected_character">
-          <div class="span5">
+          <div class="span4">
             <ul class="thumbnails">
-              <li class="span5">
+              <li class="span4">
                 <div class="thumbnail">
+                  <span style="float:right" class="label">{{selected_character.side}}</span>
                   <img src="{{selected_character.image}}" class="img-polaroid" alt="">
                   <h3>{{selected_character.name}}</h3> 
-                  <p>side: {{selected_character.side}}</p>
-                  <p>{{selected_character.description}}</p>
+                  <p class="visible-desktop">{{selected_character.description}}</p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="span2 well">
-            JP spent: {{spent_points}}
+          <div class="span3 well">
+	    <p>Unlocked Abilities</p>
+	    <ul>
+	      <li>Black Magic</li>
+            </ul>
+	  </div>
+          <div class="span3 well">
+	    <p>Unlocked Fusions</p>
+	    <ul>
+	      <li>Final Heaven</li>
+	    </ul>
+          </div>
+          <div class="span1 well">
+            <p>JP: <span class="badge badge-success">{{spent_jp}}</span></p>
+            <p>AP: <span class="badge badge-info">{{spent_ap}}</span></p>
           </div>
       </div>
           
       <div ng-show="selected_character">
           <table class="table table-bordered">
-            <tbody>
+            <thead>
               <tr>
                 <th>Job</th>
                 <th class="level baseline">0</th>
@@ -95,8 +103,10 @@
                 <th class="level">19</th>
                 <th class="level">20</th>
               </tr>
+	  </thead>
+	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <th>{{job.name}}</th>
+                <th><img src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr></th>
                 <th class=""></th>
                 <th class="free"><i class="icon-plus-sign-alt spend_jp" rel="tooltip" data-original-title="Increase Job Level of {{job.name}}" data-placement="left"></i></th>
                 <th class="free"></th>
