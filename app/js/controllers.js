@@ -16,4 +16,18 @@ function CharacterController($scope, $http) {
 
   $scope.abilities = [
   ];
+
+  $scope.current_build ={
+  	"Warrior":0,
+  	"Monk":0,
+  	"Thief":0,
+  	"Red Mage":0,
+  	"White Mage":0,
+  	"Summoner":0,
+  	"Dragoon":0,
+  	"Bard":0,
+  	"Memorist":0,
+  	"Paladin":0,
+  	"Seer":0
+  };
 }
