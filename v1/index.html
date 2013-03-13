@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -109,9 +108,10 @@
 	  </thead>
 	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr></th>
-                <th class=""></th>
-                <th class="free"><i class="icon-plus-sign-alt spend_jp" rel="tooltip" data-original-title="Increase Job Level of {{job.name}}" data-placement="left"></i></th>
+                <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
+                </th>
+                <th class=""><a  rel="tooltip" data-original-title="Decrease Job Level of {{job.name}}" data-placement="right" ng-click="decrement(job.name)"><i class="icon-minus-sign return_jp"></i></a></th>
+                <th class="free"><a  rel="tooltip" data-original-title="Increase Job Level of {{job.name}}" data-placement="right" ng-click="increment(job.name)"><i class="icon-plus-sign spend_jp"></i></a></th>
                 <th class="free"></th>
                 <th class="free"></th>
                 <th></th>
@@ -135,7 +135,20 @@
             </tbody>
           </table>
           </div>
-
+    <p>
+      Pellentesque <a><span tooltip="{{dynamicTooltip}}">{{dynamicTooltipText}}</span></a>,
+      sit amet venenatis urna cursus eget nunc scelerisque viverra mauris, in
+      aliquam. Tincidunt lobortis feugiat vivamus at 
+      <a><span tooltip-placement="left" tooltip="On the Left!">left</span></a> eget
+      arcu dictum varius duis at consectetur lorem. Vitae elementum curabitur
+      <a><span tooltip-placement="right" tooltip="On the Right!">right</span></a> 
+      nunc sed velit dignissim sodales ut eu sem integer vitae. Turpis egestas 
+      <a><span tooltip-placement="bottom" tooltip="On the Bottom!">bottom</span></a> 
+      pharetra convallis posuere morbi leo urna, 
+      <a><span tooltip-animation="true" tooltip="I fade in and out!">fading</span></a> 
+      at elementum eu, facilisis sed odio morbi quis commodo odio. In cursus 
+      turpis massa tincidunt dui ut.
+    </p>
           <div id="push"></div>
       </div>
       <div id="footer">

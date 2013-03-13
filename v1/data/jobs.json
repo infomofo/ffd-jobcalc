@@ -1,106 +1,337 @@
 [
-  	{"name": "Warrior",
-"abbr":"War",
-     "description": "",
-	"side":["light","dark"],
-	"image":"img/warrior_sprite.png"
-	},
-    {"name": "Monk",
-"abbr":"Mnk",
-     "description": "",
-	"hp":8520,
-	"mp":258,
-	"str":90,
-	"spd":52,
-	"vit":94,
-	"int":9,
-	"mnd":14,
-	"side":["light","dark"],
-	"image":"img/monk_sprite.png"
-	},
-	{"name": "Thief",
-"abbr":"Thf",
-     "description": "",
-	"side":["light","dark"],
-	"image":"img/thief_sprite.png"
-	},
-	{"name": "Red Mage",
-"abbr":"Rdm",
-     "description": "",
-	"side":["light","dark"],
-	"image":"img/redmage_sprite.png"
-	},
-	{"name": "White Mage",
-"abbr":"Whm",
-     "description": "",
-	"side":["light","dark"],
-	"image":"img/whitemage_sprite.png"
-	},
-	{"name": "Summoner",
-"abbr":"Sum",
-     "description": "",
-	"side":["light","dark"],
-	"image":"img/summoner_sprite.png"
-	},
-	{"name": "Dragoon",
-"abbr":"Drg",
-     "description": "",
-	"side":["light"],
-	"image":"img/dragoon_sprite.png"
-	},
-	{"name": "Bard",
-"abbr":"Brd",
-     "description": "",
-	"side":["light"],
-	"image":"img/bard_sprite.png"
-	},
-
-	{"name": "Memorist",
-"abbr":"Mem",
-     "description": "",
-	"side":["light"],
-	"image":"img/memorist_sprite.png"
-	},
-	{"name": "Paladin",
-"abbr":"Pal",
-     "description": "",
-	"side":["light"],
-	"image":"img/paladin_sprite.png"
-	},
-	{"name": "Seer",
-"abbr":"Ser",
-     "description": "",
-	"side":["light"],
-	"image":"img/seer_sprite.png"
-	},
-	{"name": "Ranger",
-"abbr":"Ran",
-     "description": "",
-	"side":["dark"],
-	"image":"img/ranger_sprite.png"
-	},
-	{"name": "Dark Knight",
-"abbr":"Drk",
-     "description": "",
-	"side":["dark"],
-	"image":"img/darkknight_sprite.png"
-	},
-	{"name": "Dancer",
-"abbr":"Dan",
-     "description": "",
-	"side":["dark"],
-	"image":"img/dancer_sprite.png"
-	},
-	{"name": "Ninja",
-"abbr":"Nin",
-     "description": "",
-	"side":["dark"],
-	"image":"img/ninja_sprite.png"
-	},
-	{"name": "Magus",
-"abbr":"Mag",
-     "description": "",
-	"side":["dark"],
-	"image":"img/magus_sprite.png"
-	}   
+   {
+      "name":"Warrior",
+      "abbr":"War",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/warrior_sprite.png",
+      "levels":[
+         {
+            "level":1,
+            "ability":"Battle Arts Lv. 1",
+            "ap":10
+         },
+         {
+            "level":2,
+            "ap":20
+         },
+         {
+            "level":3,
+            "ap":35,
+            "ability":"Battle Arts Lv. 2"
+         },
+         {
+            "level":4,
+            "ap":55
+         },
+         {
+            "level":5,
+            "ap":70,
+            "ability":"Counter"
+         },
+         {
+            "level":6,
+            "ap":90
+         },
+         {
+            "level":7,
+            "ap":120,
+            "ability":"Battle Arts Lv. 3"
+         },
+         {
+            "level":8,
+            "ap":130
+         },
+         {
+            "level":9,
+            "ap":160
+         },
+         {
+            "level":10,
+            "ap":190,
+            "ability":"Slot +1"
+         },
+         {
+            "level":11,
+            "ap":220
+         },
+         {
+            "level":12,
+            "ap":250
+         },
+         {
+            "level":13,
+            "ap":280,
+            "ability":"STR +20%"
+         },
+         {
+            "level":14,
+            "ap":320
+         },
+         {
+            "level":15,
+            "ap":360,
+            "ability":"Battle Arts Lv. 4"
+         },
+         {
+            "level":16,
+            "ap":400
+         },
+         {
+            "level":17,
+            "ap":440
+         },
+         {
+            "level":18,
+            "ap":490
+         },
+         {
+            "level":19,
+            "ap":550,
+            "ability":"Slot +1"
+         },
+         {
+            "level":20,
+            "ap":600
+         }
+      ]
+   },
+   {
+      "name":"Monk",
+      "abbr":"Mnk",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/monk_sprite.png",
+      "levels":[
+         {
+            "level":1,
+            "ap":15,
+            "ability":"Martial Arts / Kick"
+         },
+         {
+            "level":2,
+            "ap":30
+         },
+         {
+            "level":3,
+            "ap":40,
+            "ability":"Focus"
+         },
+         {
+            "level":4,
+            "ap":50,
+            "ability":"Lotus Strike"
+         },
+         {
+            "level":5,
+            "ap":65
+         },
+         {
+            "level":6,
+            "ap":85,
+            "ability":"Aurablast"
+         },
+         {
+            "level":7,
+            "ap":100
+         },
+         {
+            "level":8,
+            "ap":125,
+            "ability":"VIT +20%"
+         },
+         {
+            "level":9,
+            "ap":150
+         },
+         {
+            "level":10,
+            "ap":180,
+            "ability":"Slot +1"
+         },
+         {
+            "level":11,
+            "ap":210,
+            "ability":"Riposte"
+         },
+         {
+            "level":12,
+            "ap":240
+         },
+         {
+            "level":13,
+            "ap":280,
+            "ability":"Chakra"
+         },
+         {
+            "level":14,
+            "ap":340
+         },
+         {
+            "level":15,
+            "ap":370,
+            "ability":"Vacuum Wave"
+         },
+         {
+            "level":16,
+            "ap":410
+         },
+         {
+            "level":17,
+            "ap":450,
+            "ability":"Dropkick"
+         },
+         {
+            "level":18,
+            "ap":500,
+            "ability":"Raging Fist"
+         },
+         {
+            "level":19,
+            "ap":540,
+            "ability":"Slot +1"
+         },
+         {
+            "level":20,
+            "ap":610,
+            "ability":"Earthshatterer"
+         }
+      ]
+   },
+   {
+      "name":"Thief",
+      "abbr":"Thf",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/thief_sprite.png"
+   },
+   {
+      "name":"Red Mage",
+      "abbr":"Rdm",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/redmage_sprite.png"
+   },
+   {
+      "name":"White Mage",
+      "abbr":"Whm",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/whitemage_sprite.png"
+   },
+   {
+      "name":"Summoner",
+      "abbr":"Sum",
+      "description":"",
+      "side":[
+         "light",
+         "dark"
+      ],
+      "image":"img/summoner_sprite.png"
+   },
+   {
+      "name":"Dragoon",
+      "abbr":"Drg",
+      "description":"",
+      "side":[
+         "light"
+      ],
+      "image":"img/dragoon_sprite.png"
+   },
+   {
+      "name":"Bard",
+      "abbr":"Brd",
+      "description":"",
+      "side":[
+         "light"
+      ],
+      "image":"img/bard_sprite.png"
+   },
+   {
+      "name":"Memorist",
+      "abbr":"Mem",
+      "description":"",
+      "side":[
+         "light"
+      ],
+      "image":"img/memorist_sprite.png"
+   },
+   {
+      "name":"Paladin",
+      "abbr":"Pal",
+      "description":"",
+      "side":[
+         "light"
+      ],
+      "image":"img/paladin_sprite.png"
+   },
+   {
+      "name":"Seer",
+      "abbr":"Ser",
+      "description":"",
+      "side":[
+         "light"
+      ],
+      "image":"img/seer_sprite.png"
+   },
+   {
+      "name":"Ranger",
+      "abbr":"Ran",
+      "description":"",
+      "side":[
+         "dark"
+      ],
+      "image":"img/ranger_sprite.png"
+   },
+   {
+      "name":"Dark Knight",
+      "abbr":"Drk",
+      "description":"",
+      "side":[
+         "dark"
+      ],
+      "image":"img/darkknight_sprite.png"
+   },
+   {
+      "name":"Dancer",
+      "abbr":"Dan",
+      "description":"",
+      "side":[
+         "dark"
+      ],
+      "image":"img/dancer_sprite.png"
+   },
+   {
+      "name":"Ninja",
+      "abbr":"Nin",
+      "description":"",
+      "side":[
+         "dark"
+      ],
+      "image":"img/ninja_sprite.png"
+   },
+   {
+      "name":"Magus",
+      "abbr":"Mag",
+      "description":"",
+      "side":[
+         "dark"
+      ],
+      "image":"img/magus_sprite.png"
+   }
 ]

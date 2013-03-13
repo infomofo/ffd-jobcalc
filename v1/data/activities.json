@@ -1,0 +1,41 @@
+[
+{"id":"Battle Arts Lv. 1",
+"display":"Battle Arts",
+"type": "Active",
+"slots": 2,
+"spells":[{"spell":"Strike",
+"mp":4
+}]},
+{"id":"Battle Arts Lv. 2",
+"display":"Battle Arts",
+"spells":[{"spell":"Bash",
+"mp":5}],
+"type": "Active",
+"slots": 2
+},
+{"id":"Battle Arts Lv. 3",
+"display":"Battle Arts",
+"spells":[{"spell":"Enrage",
+"mp":5}],
+"type": "Active",
+"slots": 2
+},
+{"id":"Battle Arts Lv. 4",
+"display":"Battle Arts",
+"spells":[{"spell":"War Cry",
+"mp":24}],
+"type": "Active",
+"slots": 2
+},
+{"id":"Counter",
+"display":"Counter",
+"type": "Passive",
+"slots": 1
+},
+{"id":"STR +20%",
+"display":"STR +20%",
+"type": "Passive",
+"slots": 1
+}
+
+]

@@ -33,6 +33,11 @@ body {
   color:green;
 }
 
+.return_jp {
+  color:red;
+}
+
+
 span.tooltip {
       position: absolute;
       width: 128px;

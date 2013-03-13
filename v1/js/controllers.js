@@ -1,6 +1,8 @@
 'use strict';
 
 /* Controllers */
+var MAX_JLV = 20;
+var MIN_JLV = 0;
 
 function CharacterController($scope, $http, $location) {
 	//source: http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65073
@@ -16,19 +18,33 @@ function CharacterController($scope, $http, $location) {
   $scope.abilities = [
   ];
 
-  $scope.current_build =[
-    {"class":"Warrior",
-    "jlv":0},
-    {"jlv":2},
-    {"jlv":4}
-  ];
+  $scope.current_build ={
+    "jp":{
+      "Warrior":0,
+      "Monk":0,
+      "Thief":0,
+      "Red Mage":0,
+      "White Mage":0,
+      "Black Mage":0,
+      "Summoner":0,
+      "Ranger":0,
+      "Dark Knight":0,
+      "Dancer":0,
+      "Ninja":0,
+      "Magus":0,
+      "Dragoon":0,
+      "Bard":0,
+      "Memorist":0,
+      "Paladin":0,
+      "Seer":0
+    }
+  };
 
   $scope.spent_jp = function() {
     var total = 0, i;
-
-    for (i = 0; i < $scope.current_build.length; i++) {  
-      if ($scope.current_build[i].jlv > 3) {
-        total += $scope.current_build[i].jlv - 3; 
+    for (i in $scope.current_build.jp) {
+      if ($scope.current_build.jp[i] > 3) {
+        total += $scope.current_build.jp[i] - 3; 
       }
     }
     return total;
@@ -44,5 +60,15 @@ function CharacterController($scope, $http, $location) {
   $scope.reset = function() {
     $scope.selected_character = null;
     $location.search();
+  }
+
+  $scope.increment = function(name) {
+    if ($scope.current_build.jp[name] < MAX_JLV)
+    $scope.current_build.jp[name]++;
+  }
+
+  $scope.decrement = function(name) {
+    if ($scope.current_build.jp[name] > MIN_JLV)
+    $scope.current_build.jp[name]--;
   }
 }
