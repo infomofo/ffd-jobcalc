@@ -18,27 +18,20 @@ function CharacterController($scope, $http, $location) {
   $scope.abilities = [
   ];
 
-  $scope.current_build ={
-    "jp":{
-      "Warrior":0,
-      "Monk":0,
-      "Thief":0,
-      "Red Mage":0,
-      "White Mage":0,
-      "Black Mage":0,
-      "Summoner":0,
-      "Ranger":0,
-      "Dark Knight":0,
-      "Dancer":0,
-      "Ninja":0,
-      "Magus":0,
-      "Dragoon":0,
-      "Bard":0,
-      "Memorist":0,
-      "Paladin":0,
-      "Seer":0
+  $scope.validateBuild = function(buildJson) {
+    var build;
+    try {
+      build = angular.fromJson(buildJson);
+      build.jp;
+    } catch (e) {
+      $http.get('data/build.json').success(function(data) {
+         build = data;
+      });
     }
-  };
+    return build;
+  }
+
+  $scope.current_build = $scope.validateBuild($location.search()['build']);
 
   $scope.spent_jp = function() {
     var total = 0, i;
@@ -52,9 +45,13 @@ function CharacterController($scope, $http, $location) {
     
   $scope.spent_ap = 0;
 
+  $scope.onCharacterSelect = function() {
+    $scope.updateUrl();
+  }
+
   $scope.updateUrl = function() {
     if ($scope.characters != null)
-      $location.search({"character":$scope.characters.indexOf($scope.selected_character)});
+      $location.search({"character":$scope.characters.indexOf($scope.selected_character),"build":angular.toJson($scope.current_build)});
   }
 
   $scope.reset = function() {
@@ -70,5 +67,14 @@ function CharacterController($scope, $http, $location) {
   $scope.decrement = function(name) {
     if ($scope.current_build.jp[name] > MIN_JLV)
     $scope.current_build.jp[name]--;
+  }
+
+  $scope.getLevelClass = function(name,level) {
+    var result = [];
+    if (level <= $scope.current_build.jp[name]) 
+      result.push('spent');
+    if (level <= 3)       
+      result.push('free');
+    return result;
   }
 }

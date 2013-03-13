@@ -21,12 +21,11 @@ body {
   background-color:#dff0d8;
 }
 
-.spent {
-  background-color:#dff0d8;
-}
-
 .free {
   background-color: #fcf8e3;
+}
+.spent {
+  background-color:#dff0d8;
 }
 
 .spend_jp {
