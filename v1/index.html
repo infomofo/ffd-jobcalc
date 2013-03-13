@@ -14,7 +14,19 @@
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
+    <!--<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39217394-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>-->
 </head>
 <body ng-controller="CharacterController">
 
@@ -73,8 +85,8 @@
 	    </ul>
           </div>
           <div class="span1 well">
-            <p>JP: <span class="badge badge-success">{{spent_jp()}}</span></p>
-            <p>AP: <span class="badge badge-info">{{spent_ap()}}</span></p>
+            <p><span class="badge badge-success">{{spent_jp()}} JP</span></p>
+            <p><span class="badge badge-info">{{spent_ap()}} AP</span></p>
           </div>
       </div>
           
@@ -110,7 +122,7 @@
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
                 <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
                 </th>
-                <th class="baseline"><i ng-click="decrement(job.name)" class="icon-minus-sign return_jp"></i><i ng-click="increment(job.name)" class="icon-plus-sign spend_jp"></i></th>
+                <th class="baseline"><i ng-click="decrement(job.name)" class="icon-minus-sign icon-2x return_jp"></i><i ng-click="increment(job.name)" class="icon-plus-sign icon-2x spend_jp"></i></th>
                 <th ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)"></th>
               </tr>
             </tbody>

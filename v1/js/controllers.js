@@ -50,25 +50,20 @@ function CharacterController($scope, $http, $location) {
   }
     
   $scope.spent_ap = function() {
-    var total = 0, i, j;
-      for (i in $scope.current_build.jp) {
-        try {
-          var job = $scope.jobs.filter(function (el) {
-            return el.name == i;
-          });
-
-          for (j=0; j<$scope.current_build.jp[i]; j++) {
-              total += job.levels[j].ap;
+    var total = 0, j;
+      for (var j in $scope.jobs) {
+          var job = $scope.jobs[j];
+          //alert (job);
+          //alert ("processing " + job.name);
+              
+          for (var i=1; i<= $scope.current_build.jp[job.name]; i++) {
+            try {   
+            //  alert ("looking up ap cost of " + job.name + " level " + j + " = " + job.levels[i].ap);
+              total += job.levels[i].ap;
+            } catch (e) {
+              // until i load all jobs
+            }
           }
-
-        } catch (e) {
-          if (e instanceof TypeError) {
-           // specific error
-          } else {
-            throw e; // let others bubble up
-          }
-        }
-        //alert(job);
       }
     return total;
   }
