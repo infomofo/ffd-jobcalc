@@ -49,8 +49,29 @@ function CharacterController($scope, $http, $location) {
     return total;
   }
     
-  $scope.spent_ap = 0;
+  $scope.spent_ap = function() {
+    var total = 0, i, j;
+      for (i in $scope.current_build.jp) {
+        try {
+          var job = $scope.jobs.filter(function (el) {
+            return el.name == i;
+          });
 
+          for (j=0; j<$scope.current_build.jp[i]; j++) {
+              total += job.levels[j].ap;
+          }
+
+        } catch (e) {
+          if (e instanceof TypeError) {
+           // specific error
+          } else {
+            throw e; // let others bubble up
+          }
+        }
+        //alert(job);
+      }
+    return total;
+  }
   $scope.onCharacterSelect = function() {
     $scope.updateUrl();
   }
