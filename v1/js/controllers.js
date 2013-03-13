@@ -21,24 +21,30 @@ function CharacterController($scope, $http, $location) {
   $scope.validateBuild = function(buildJson) {
     var build;
     try {
-      build = angular.fromJson(buildJson);
-      build.jp;
+      $scope.current_build = angular.fromJson(buildJson);
+      if ($scope.current_build.jp["Warrior"] < 0) {
+        throw exception;
+      }
     } catch (e) {
       $http.get('data/build.json').success(function(data) {
-         build = data;
+         $scope.current_build = data;
+         $scope.updateUrl 
       });
     }
-    return build;
   }
 
-  $scope.current_build = $scope.validateBuild($location.search()['build']);
+  $scope.validateBuild($location.search()['build']);
 
   $scope.spent_jp = function() {
     var total = 0, i;
-    for (i in $scope.current_build.jp) {
-      if ($scope.current_build.jp[i] > 3) {
-        total += $scope.current_build.jp[i] - 3; 
+    try {
+      for (i in $scope.current_build.jp) {
+        if ($scope.current_build.jp[i] > 3) {
+          total += $scope.current_build.jp[i] - 3; 
+        }
       }
+    } catch (e) {
+      //exception can be thrown when spent_jp is called before data model is loaded
     }
     return total;
   }

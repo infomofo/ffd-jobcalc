@@ -28,9 +28,13 @@ Features
 
 Future use cases
 ----------------
+* Show eligible abilities and fusions
+* Show what events in the game needed to reach required JP level
+* Enable tooltips for spell descriptions and other features
 
-* Support bookmarking builds
-* Support linking to builds
+Known issues
+------------
+* URL parameters are not strictly validated.  You could enter additional classes or job points in an existing class beyond 20 that would absorb JP in the calculator without doing anything, or negative jp in the json in the url to get more points.
 
 APIs
 ---------
