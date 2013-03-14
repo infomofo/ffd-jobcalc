@@ -46,7 +46,7 @@
 
 
       <section id="main_content">
-        <h1>FFD Character Planner</h1>
+        <h1>FFD Job Calculator</h1>
 
 <p>I wanted to learn <a href="http://angularjs.org/">AngularJS</a> and also just got into Final Fantasy Dimensions
 on Android, so I thought this would be a good opportunity.  I couldn't find any online Job
@@ -54,36 +54,51 @@ calculators, so I thought I'd give it a try.</p>
 
 <p>I am using Bootstrap so I also plan to make the site responsive to mobile devices.</p>
 
-<p>This should be a purely client-side implementation of a job calculator for Final Fantasy Dimensions.</p>
+<p>I am using Angular.JS and storing the build on the url, so the links can be copied and pasted to share.</p>
 
 <p>The tool is hosted at <a href="http://infomofo.github.com/ffd-jobcalc/v1/index.html">Github</a></p>
 
 <p><em>Note: Most information is sourced from <a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs">GameFAQs</a>.</em></p>
 
-<h2>How to use FFD Character Planner</h2>
+<h2>What is the Final Fantasy Dimensions Job System?</h2>
+
+<p>Final Fantasy Dimensions is a Role Playing Game published by Square Enix for various mobile platforms.  Much like its predecesors, it features a complex and flexible Job system.  Depending on the stage of the game, you have a limited amount of Job Points (JP) to spend in one of 10 jobs available to each character.  Job points spent can unlock abilities that can be used, even while you're equipping other jobs.  Additionally, certain combinations of allocated job points will enable your character to unlock powerful fusion abilities that can't be acquired any other way, and are some of the most powerful abilities in the game.</p>
+
+<h2>How to use FFD Job Calculator</h2>
 
 <ol>
-<li>Select a character to get the list of eligible jobs</li>
-<li>Add points to the rows representing different jobs by clicking on the plus sign, or remove already spent levels by clicking on the minus sign.</li>
+<li>Select a character to get the list of eligible jobs and base abilities</li>
+<li>Add points to the rows representing different jobs by clicking on the plus sign, or remove already spent levels by clicking on the minus sign</li>
 </ol><h1>Features</h1>
 
 <ul>
 <li>Selecting a character should update the url so that you can copy and paste and retrieve that character again.  Build to be added soon- i.e. /ffd-jobcalc/v1/index.html?character=2</li>
 <li>Mobile responsive template for use on smaller screens</li>
-</ul><h2>Future use cases</h2>
+</ul><h1>Future use cases</h1>
 
 <ul>
-<li>Support bookmarking builds</li>
-<li>Support linking to builds</li>
+<li>Show eligible abilities and fusions</li>
+<li>Show what events in the game needed to reach required JP level</li>
+<li>Enable tooltips for spell descriptions and other features</li>
+</ul><h1>Known issues</h1>
+
+<ul>
+<li>URL parameters are not strictly validated.  You could enter additional classes or job points in an existing class beyond 20 that would absorb JP in the calculator without doing anything, or negative jp in the json in the url to get more points.</li>
 </ul><h2>APIs</h2>
+
+<p>If there are any breaking changes to the data model or the api, I will retain old versions to maintain working links, and create new api endpoints.</p>
 
 <ul>
 <li>api v1: /v1 - Initial character builder</li>
 </ul><h2>Sources</h2>
 
 <ul>
-<li><a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107">FFD FAQ/Walkthrough Version 1.30 by holyknight</a></li>
-<li><a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30">Ability Acquisition FAQ 1.1 by Sir Phoenix</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.ffl_gp">Final Fantasy Dimensions on Google Play</a></li>
+<li>
+<a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107">FFD FAQ/Walkthrough Version 1.30 by holyknight</a> - Source of the character level attributes</li>
+<li>
+<a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30">Ability Acquisition FAQ 1.1 by Sir Phoenix</a> - Source of the job level and fusion data</li>
+<li><a href="http://finalfantasy.wikia.com/wiki/Final_Fantasy_Dimensions">Final Fantasy Wikia: Final Fantasy Dimensions</a></li>
 </ul>
       </section>
 
