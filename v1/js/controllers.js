@@ -99,4 +99,5 @@ function CharacterController($scope, $http, $location) {
       result.push('free');
     return result;
   }
+
 }
