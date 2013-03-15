@@ -51,21 +51,12 @@ function CharacterController($scope, $http, $location) {
   }
     
   $scope.spent_ap = function() {
-    var total = 0, j;
-      for (var j in $scope.jobs) {
-          var job = $scope.jobs[j];
-          //alert (job);
-          //alert ("processing " + job.name);
-              
-          for (var i=1; i<= $scope.current_build.jp[job.name]; i++) {
-            try {   
-            //  alert ("looking up ap cost of " + job.name + " level " + j + " = " + job.levels[i].ap);
-              total += job.levels[i].ap;
-            } catch (e) {
-              // until i load all jobs
-            }
-          }
+    var total = 0;
+    angular.forEach($scope.jobs, function(job) {
+      for (var i = 1; i < $scope.current_build.jp[job.name]; i++) {
+        total += job.levels[i].ap;
       }
+    });
     return total;
   }
   $scope.onCharacterSelect = function() {
@@ -82,14 +73,11 @@ function CharacterController($scope, $http, $location) {
     $location.search();
   }
 
-  $scope.increment = function(name) {
-    if ($scope.current_build.jp[name] < MAX_JLV)
-    $scope.current_build.jp[name]++;
-  }
-
-  $scope.decrement = function(name) {
-    if ($scope.current_build.jp[name] > MIN_JLV)
-    $scope.current_build.jp[name]--;
+  $scope.levelTowards = function(name,target) {
+    if ((target < $scope.current_build.jp[name]) && ($scope.current_build.jp[name] > MIN_JLV))
+      $scope.current_build.jp[name]--;
+    else if ((target > $scope.current_build.jp[name]) && ($scope.current_build.jp[name] < MAX_JLV))
+      $scope.current_build.jp[name]++;
   }
 
   $scope.getLevelClass = function(name,level) {
@@ -102,7 +90,7 @@ function CharacterController($scope, $http, $location) {
   }
 
   $scope.alerts = [
-    { type: 'info', msg: "Click on any of the numbered level cells to increase level of the corresponding job row. Click on the '0' column, or the job column to decrease levels spent." }
+    { type: 'info', msg: "Click on any cells higher than your current level to spend levels in that job's row.  Click on cells lower than your current level to decrease levels spent in that job's row." }
   ];
 
   $scope.addAlert = function() {

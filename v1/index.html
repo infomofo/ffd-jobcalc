@@ -122,10 +122,10 @@
 	  </thead>
 	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <td ng-click="decrement(job.name)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
+                <td ng-click="levelTowards(job.name,0)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
                 </td>
-                <td class="baseline" ng-click="decrement(job.name)"><!--<i ng-click="decrement(job.name)" class="icon-minus-sign icon-2x return_jp" popover="Click to decrease JP spent in {{job.name}} Job" popover-placement="left"></i><i ng-click="increment(job.name)" class="icon-plus-sign icon-2x spend_jp" popover="Click to increase JP spent in {{job.name}} Job" popover-placement="right" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i>--></td>
-                <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="increment(job.name)">
+                <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
+                <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="levelTowards(job.name, level.level)">
                   <span style="float:right" 
                     ng-repeat="ability in abilities|filter:{id:level.ability}" 
                     class="label ability-{{ability.type}}" 
