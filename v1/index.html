@@ -75,8 +75,8 @@
           <div class="span3 well">
 	    <p>Unlocked Abilities</p>
 	    <ul>
-	      <li>Black Magic</li>
-            </ul>
+	      <li >Black Magic</li>
+      </ul>
 	  </div>
           <div class="span3 well">
 	    <p>Unlocked Fusions</p>
@@ -84,7 +84,7 @@
 	      <li>Final Heaven</li>
 	    </ul>
           </div>
-          <div class="span1">
+          <div class="span1 well">
             <p><span class="badge badge-success">{{spent_jp()}} JP</span></p>
             <p><span class="badge badge-info">{{spent_ap()}} AP</span></p>
           </div>
@@ -126,7 +126,11 @@
                 </td>
                 <td class="baseline" ng-click="decrement(job.name)"><!--<i ng-click="decrement(job.name)" class="icon-minus-sign icon-2x return_jp" popover="Click to decrease JP spent in {{job.name}} Job" popover-placement="left"></i><i ng-click="increment(job.name)" class="icon-plus-sign icon-2x spend_jp" popover="Click to increase JP spent in {{job.name}} Job" popover-placement="right" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i>--></td>
                 <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="increment(job.name)">
-                  <span style="float:right" ng-repeat="ability in abilities|filter:{id:level.ability}" class="label" popover="{{ability.display}}" popover-placement="bottom" >{{ability.type[0]}}</span>
+                  <span style="float:right" 
+                    ng-repeat="ability in abilities|filter:{id:level.ability}" 
+                    class="label ability-{{ability.type}}" 
+                    popover="{{ability.display}}" 
+                    popover-placement="bottom">{{ability.type[0]}}</span>
                 </td>
               </tr>
             </tbody>

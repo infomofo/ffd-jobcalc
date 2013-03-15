@@ -1,41 +1,105 @@
 [
-{"id":"Battle Arts Lv. 1",
-"display":"Battle Arts",
-"type": "Active",
-"slots": 2,
-"spells":[{"spell":"Strike",
-"mp":4
-}]},
-{"id":"Battle Arts Lv. 2",
-"display":"Battle Arts",
-"spells":[{"spell":"Bash",
-"mp":5}],
-"type": "Active",
-"slots": 2
-},
-{"id":"Battle Arts Lv. 3",
-"display":"Battle Arts",
-"spells":[{"spell":"Enrage",
-"mp":5}],
-"type": "Active",
-"slots": 2
-},
-{"id":"Battle Arts Lv. 4",
-"display":"Battle Arts",
-"spells":[{"spell":"War Cry",
-"mp":24}],
-"type": "Active",
-"slots": 2
-},
-{"id":"Counter",
-"display":"Counter",
-"type": "Passive",
-"slots": 1
-},
-{"id":"STR +20%",
-"display":"STR +20%",
-"type": "Passive",
-"slots": 1
-}
-
+    {
+        "id": "BA: Strike",
+        "display": "Battle Arts",
+        "type": "Active",
+        "slots": 2,
+        "spells": [
+            {
+                "spell": "Strike",
+                "mp": 4,
+                "description": "Deals a critical attack to a single enemy"
+            }
+        ]
+    },
+    {
+        "id": "BA: Bash",
+        "display": "Battle Arts",
+        "spells": [
+            {
+                "spell": "Bash",
+                "mp": 5,
+                "description": "Deals damage to a single enemy and inflicts Confuse, causing it to attack randomly"
+            }
+        ],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "BA: Enrage",
+        "display": "Battle Arts",
+        "spells": [
+            {
+                "spell": "Enrage",
+                "mp": 5,
+                "description": "Lowers own DEF but raises ATK"
+            }
+        ],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "BA: War Cry",
+        "display": "Battle Arts",
+        "spells": [
+            {
+                "spell": "War Cry",
+                "mp": 24,
+                "description": "Increases ATK for all allies"
+            }
+        ],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "BA: Assault",
+        "display": "Battle Arts",
+        "spells": [
+            {
+                "spell": "Assault",
+                "mp": 28,
+                "description": "Deals damage to a single enemy based on own HP but puts self into a critical state"
+            }
+        ],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "BA: Double Attack",
+        "display": "Battle Arts",
+        "spells": [
+            {
+                "spell": "Double Attack",
+                "mp": 16,
+                "description": "Attacks a single target twice in a row"
+            }
+        ],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Counter",
+        "display": "Counter",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "STR +20%",
+        "display": "STR +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "MA: Kick",
+        "display": "Martial Arts",
+        "type": "Active",
+        "slots": 2,
+        "spells": [
+            {
+                "spell": "Kick",
+                "mp": 1,
+                "description": "Deals damage to all enemies"
+            }
+        ]
+    }
 ]

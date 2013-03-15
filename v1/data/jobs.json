@@ -11,7 +11,7 @@
         "levels": [
             {
                 "level": 1,
-                "ability": "Battle Arts Lv. 1",
+                "ability": "BA: Strike",
                 "ap": 10
             },
             {
@@ -21,7 +21,7 @@
             {
                 "level": 3,
                 "ap": 35,
-                "ability": "Battle Arts Lv. 2"
+                "ability": "BA: Bash"
             },
             {
                 "level": 4,
@@ -39,7 +39,7 @@
             {
                 "level": 7,
                 "ap": 120,
-                "ability": "Battle Arts Lv. 3"
+                "ability": "BA: Enrage"
             },
             {
                 "level": 8,
@@ -74,7 +74,7 @@
             {
                 "level": 15,
                 "ap": 360,
-                "ability": "Battle Arts Lv. 4"
+                "ability": "BA: War Cry"
             },
             {
                 "level": 16,
@@ -82,7 +82,8 @@
             },
             {
                 "level": 17,
-                "ap": 440
+                "ap": 440,
+                "ability": "BA: Assault"
             },
             {
                 "level": 18,
@@ -95,7 +96,8 @@
             },
             {
                 "level": 20,
-                "ap": 600
+                "ap": 600,
+                "ability": "BA: Double Attack"
             }
         ]
     },
@@ -112,7 +114,7 @@
             {
                 "level": 1,
                 "ap": 15,
-                "ability": "Martial Arts / Kick"
+                "ability": "MA: Kick"
             },
             {
                 "level": 2,

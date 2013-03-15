@@ -102,7 +102,7 @@ function CharacterController($scope, $http, $location) {
   }
 
   $scope.alerts = [
-    { type: 'info', msg: "Click on any of the numbered level cells to increase level of the corresponding job row.  Click on the '0' column, or the job column to decrease levels spent." }
+    { type: 'info', msg: "Click on any of the numbered level cells to increase level of the corresponding job row. Click on the '0' column, or the job column to decrease levels spent." }
   ];
 
   $scope.addAlert = function() {

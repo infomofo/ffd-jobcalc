@@ -36,6 +36,14 @@ body {
   color:red;
 }
 
+.ability-Active {
+  background-color:red;
+}
+
+.ability-Passive {
+  background-color:green;
+}
+
 
 span.tooltip {
       position: absolute;
