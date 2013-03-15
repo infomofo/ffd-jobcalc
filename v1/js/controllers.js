@@ -103,6 +103,11 @@ function CharacterController($scope, $http, $location) {
 
   $scope.isAcquired = function(ability){
     var isAcquired = false;
+    angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
+      if (ability.id == innate_ability_id) 
+        isAcquired = true;
+    });
+
     angular.forEach($scope.jobs, function(job) {
       for (var i = 1; i <= $scope.current_build.jp[job.name]; i++) {
         try {

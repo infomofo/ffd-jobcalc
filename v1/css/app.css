@@ -44,6 +44,10 @@ body {
   background-color:green;
 }
 
+th {
+  text-align:center;
+}
+
 
 span.tooltip {
       position: absolute;
@@ -120,5 +124,9 @@ span.tooltip:after {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  tbody {
+    overflow-x: auto
   }
 }

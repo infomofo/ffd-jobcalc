@@ -93,11 +93,11 @@
         <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
       </div>
       <div class="row" ng-show="selected_character">
-          <table class="span12 table table-bordered">
-            <thead>
+          <table id="flip-scroll" class="span12 table table-bordered table-condensed cf">
+            <thead class="cf">
               <tr>
                 <th>Job</th>
-                <th class="level baseline"><a popover="Click in this column to decrease points spent in any job" popover-placement="top">0</a></th>
+                <th class="level baseline"><a popover="Click in this column to decrease points spent in any job" popover-placement="right">0</a></th>
                 <th class="level free">1</th>
                 <th class="level free">2</th>
                 <th class="level free">3</th>
