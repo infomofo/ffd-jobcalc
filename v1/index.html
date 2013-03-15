@@ -84,18 +84,20 @@
 	      <li>Final Heaven</li>
 	    </ul>
           </div>
-          <div class="span1 well">
+          <div class="span1">
             <p><span class="badge badge-success">{{spent_jp()}} JP</span></p>
             <p><span class="badge badge-info">{{spent_ap()}} AP</span></p>
           </div>
       </div>
-          
       <div ng-show="selected_character">
-          <table class="table table-bordered">
+        <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+      </div>
+      <div class="row" ng-show="selected_character">
+          <table class="span12 table table-bordered">
             <thead>
               <tr>
                 <th>Job</th>
-                <th class="level baseline">0</th>
+                <th class="level baseline"><a popover="Click in this column to decrease points spent in any job" popover-placement="top">0</a></th>
                 <th class="level free">1</th>
                 <th class="level free">2</th>
                 <th class="level free">3</th>
@@ -120,10 +122,12 @@
 	  </thead>
 	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
-                </th>
-                <th class="baseline"><i ng-click="decrement(job.name)" class="bootstrap-popover icon-minus-sign icon-2x return_jp" popover="Click to decrease JP spent in {{job.name}} Job" popover-placement="left" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i><i ng-click="increment(job.name)" class="bootstrap-popover icon-plus-sign icon-2x spend_jp" popover="Click to increase JP spent in {{job.name}} Job" popover-placement="right" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i></th>
-                <th ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)"></th>
+                <td ng-click="decrement(job.name)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
+                </td>
+                <td class="baseline" ng-click="decrement(job.name)"><!--<i ng-click="decrement(job.name)" class="icon-minus-sign icon-2x return_jp" popover="Click to decrease JP spent in {{job.name}} Job" popover-placement="left"></i><i ng-click="increment(job.name)" class="icon-plus-sign icon-2x spend_jp" popover="Click to increase JP spent in {{job.name}} Job" popover-placement="right" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i>--></td>
+                <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="increment(job.name)">
+                  <span style="float:right" ng-repeat="ability in abilities|filter:{id:level.ability}" class="label" popover="{{ability.display}}" popover-placement="bottom" >{{ability.type[0]}}</span>
+                </td>
               </tr>
             </tbody>
           </table>
