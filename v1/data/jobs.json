@@ -1,337 +1,1741 @@
 [
-   {
-      "name":"Warrior",
-      "abbr":"War",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/warrior_sprite.png",
-      "levels":[
-         {
-            "level":1,
-            "ability":"Battle Arts Lv. 1",
-            "ap":10
-         },
-         {
-            "level":2,
-            "ap":20
-         },
-         {
-            "level":3,
-            "ap":35,
-            "ability":"Battle Arts Lv. 2"
-         },
-         {
-            "level":4,
-            "ap":55
-         },
-         {
-            "level":5,
-            "ap":70,
-            "ability":"Counter"
-         },
-         {
-            "level":6,
-            "ap":90
-         },
-         {
-            "level":7,
-            "ap":120,
-            "ability":"Battle Arts Lv. 3"
-         },
-         {
-            "level":8,
-            "ap":130
-         },
-         {
-            "level":9,
-            "ap":160
-         },
-         {
-            "level":10,
-            "ap":190,
-            "ability":"Slot +1"
-         },
-         {
-            "level":11,
-            "ap":220
-         },
-         {
-            "level":12,
-            "ap":250
-         },
-         {
-            "level":13,
-            "ap":280,
-            "ability":"STR +20%"
-         },
-         {
-            "level":14,
-            "ap":320
-         },
-         {
-            "level":15,
-            "ap":360,
-            "ability":"Battle Arts Lv. 4"
-         },
-         {
-            "level":16,
-            "ap":400
-         },
-         {
-            "level":17,
-            "ap":440
-         },
-         {
-            "level":18,
-            "ap":490
-         },
-         {
-            "level":19,
-            "ap":550,
-            "ability":"Slot +1"
-         },
-         {
-            "level":20,
-            "ap":600
-         }
-      ]
-   },
-   {
-      "name":"Monk",
-      "abbr":"Mnk",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/monk_sprite.png",
-      "levels":[
-         {
-            "level":1,
-            "ap":15,
-            "ability":"Martial Arts / Kick"
-         },
-         {
-            "level":2,
-            "ap":30
-         },
-         {
-            "level":3,
-            "ap":40,
-            "ability":"Focus"
-         },
-         {
-            "level":4,
-            "ap":50,
-            "ability":"Lotus Strike"
-         },
-         {
-            "level":5,
-            "ap":65
-         },
-         {
-            "level":6,
-            "ap":85,
-            "ability":"Aurablast"
-         },
-         {
-            "level":7,
-            "ap":100
-         },
-         {
-            "level":8,
-            "ap":125,
-            "ability":"VIT +20%"
-         },
-         {
-            "level":9,
-            "ap":150
-         },
-         {
-            "level":10,
-            "ap":180,
-            "ability":"Slot +1"
-         },
-         {
-            "level":11,
-            "ap":210,
-            "ability":"Riposte"
-         },
-         {
-            "level":12,
-            "ap":240
-         },
-         {
-            "level":13,
-            "ap":280,
-            "ability":"Chakra"
-         },
-         {
-            "level":14,
-            "ap":340
-         },
-         {
-            "level":15,
-            "ap":370,
-            "ability":"Vacuum Wave"
-         },
-         {
-            "level":16,
-            "ap":410
-         },
-         {
-            "level":17,
-            "ap":450,
-            "ability":"Dropkick"
-         },
-         {
-            "level":18,
-            "ap":500,
-            "ability":"Raging Fist"
-         },
-         {
-            "level":19,
-            "ap":540,
-            "ability":"Slot +1"
-         },
-         {
-            "level":20,
-            "ap":610,
-            "ability":"Earthshatterer"
-         }
-      ]
-   },
-   {
-      "name":"Thief",
-      "abbr":"Thf",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/thief_sprite.png"
-   },
-   {
-      "name":"Red Mage",
-      "abbr":"Rdm",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/redmage_sprite.png"
-   },
-   {
-      "name":"White Mage",
-      "abbr":"Whm",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/whitemage_sprite.png"
-   },
-   {
-      "name":"Summoner",
-      "abbr":"Sum",
-      "description":"",
-      "side":[
-         "light",
-         "dark"
-      ],
-      "image":"img/summoner_sprite.png"
-   },
-   {
-      "name":"Dragoon",
-      "abbr":"Drg",
-      "description":"",
-      "side":[
-         "light"
-      ],
-      "image":"img/dragoon_sprite.png"
-   },
-   {
-      "name":"Bard",
-      "abbr":"Brd",
-      "description":"",
-      "side":[
-         "light"
-      ],
-      "image":"img/bard_sprite.png"
-   },
-   {
-      "name":"Memorist",
-      "abbr":"Mem",
-      "description":"",
-      "side":[
-         "light"
-      ],
-      "image":"img/memorist_sprite.png"
-   },
-   {
-      "name":"Paladin",
-      "abbr":"Pal",
-      "description":"",
-      "side":[
-         "light"
-      ],
-      "image":"img/paladin_sprite.png"
-   },
-   {
-      "name":"Seer",
-      "abbr":"Ser",
-      "description":"",
-      "side":[
-         "light"
-      ],
-      "image":"img/seer_sprite.png"
-   },
-   {
-      "name":"Ranger",
-      "abbr":"Ran",
-      "description":"",
-      "side":[
-         "dark"
-      ],
-      "image":"img/ranger_sprite.png"
-   },
-   {
-      "name":"Dark Knight",
-      "abbr":"Drk",
-      "description":"",
-      "side":[
-         "dark"
-      ],
-      "image":"img/darkknight_sprite.png"
-   },
-   {
-      "name":"Dancer",
-      "abbr":"Dan",
-      "description":"",
-      "side":[
-         "dark"
-      ],
-      "image":"img/dancer_sprite.png"
-   },
-   {
-      "name":"Ninja",
-      "abbr":"Nin",
-      "description":"",
-      "side":[
-         "dark"
-      ],
-      "image":"img/ninja_sprite.png"
-   },
-   {
-      "name":"Magus",
-      "abbr":"Mag",
-      "description":"",
-      "side":[
-         "dark"
-      ],
-      "image":"img/magus_sprite.png"
-   }
+    {
+        "name": "Warrior",
+        "abbr": "War",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/warrior_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ability": "Battle Arts Lv. 1",
+                "ap": 10
+            },
+            {
+                "level": 2,
+                "ap": 20
+            },
+            {
+                "level": 3,
+                "ap": 35,
+                "ability": "Battle Arts Lv. 2"
+            },
+            {
+                "level": 4,
+                "ap": 55
+            },
+            {
+                "level": 5,
+                "ap": 70,
+                "ability": "Counter"
+            },
+            {
+                "level": 6,
+                "ap": 90
+            },
+            {
+                "level": 7,
+                "ap": 120,
+                "ability": "Battle Arts Lv. 3"
+            },
+            {
+                "level": 8,
+                "ap": 130
+            },
+            {
+                "level": 9,
+                "ap": 160
+            },
+            {
+                "level": 10,
+                "ap": 190,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 220
+            },
+            {
+                "level": 12,
+                "ap": 250
+            },
+            {
+                "level": 13,
+                "ap": 280,
+                "ability": "STR +20%"
+            },
+            {
+                "level": 14,
+                "ap": 320
+            },
+            {
+                "level": 15,
+                "ap": 360,
+                "ability": "Battle Arts Lv. 4"
+            },
+            {
+                "level": 16,
+                "ap": 400
+            },
+            {
+                "level": 17,
+                "ap": 440
+            },
+            {
+                "level": 18,
+                "ap": 490
+            },
+            {
+                "level": 19,
+                "ap": 550,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 600
+            }
+        ]
+    },
+    {
+        "name": "Monk",
+        "abbr": "Mnk",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/monk_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 15,
+                "ability": "Martial Arts / Kick"
+            },
+            {
+                "level": 2,
+                "ap": 30
+            },
+            {
+                "level": 3,
+                "ap": 40,
+                "ability": "Focus"
+            },
+            {
+                "level": 4,
+                "ap": 50,
+                "ability": "Lotus Strike"
+            },
+            {
+                "level": 5,
+                "ap": 65
+            },
+            {
+                "level": 6,
+                "ap": 85,
+                "ability": "Aurablast"
+            },
+            {
+                "level": 7,
+                "ap": 100
+            },
+            {
+                "level": 8,
+                "ap": 125,
+                "ability": "VIT +20%"
+            },
+            {
+                "level": 9,
+                "ap": 150
+            },
+            {
+                "level": 10,
+                "ap": 180,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 210,
+                "ability": "Riposte"
+            },
+            {
+                "level": 12,
+                "ap": 240
+            },
+            {
+                "level": 13,
+                "ap": 280,
+                "ability": "Chakra"
+            },
+            {
+                "level": 14,
+                "ap": 340
+            },
+            {
+                "level": 15,
+                "ap": 370,
+                "ability": "Vacuum Wave"
+            },
+            {
+                "level": 16,
+                "ap": 410
+            },
+            {
+                "level": 17,
+                "ap": 450,
+                "ability": "Dropkick"
+            },
+            {
+                "level": 18,
+                "ap": 500,
+                "ability": "Raging Fist"
+            },
+            {
+                "level": 19,
+                "ap": 540,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 610,
+                "ability": "Earthshatterer"
+            }
+        ]
+    },
+    {
+        "name": "Thief",
+        "abbr": "Thf",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/thief_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 30,
+                "ability": "Pickpocket"
+            },
+            {
+                "level": 2,
+                "ap": 40
+            },
+            {
+                "level": 3,
+                "ap": 50,
+                "ability": "Flee"
+            },
+            {
+                "level": 4,
+                "ap": 65
+            },
+            {
+                "level": 5,
+                "ap": 80,
+                "ability": "Item Finder"
+            },
+            {
+                "level": 6,
+                "ap": 95
+            },
+            {
+                "level": 7,
+                "ap": 110
+            },
+            {
+                "level": 8,
+                "ap": 130,
+                "ability": "Steal"
+            },
+            {
+                "level": 9,
+                "ap": 150
+            },
+            {
+                "level": 10,
+                "ap": 170,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 200
+            },
+            {
+                "level": 12,
+                "ap": 230,
+                "ability": "Vigilance"
+            },
+            {
+                "level": 13,
+                "ap": 270
+            },
+            {
+                "level": 14,
+                "ap": 310,
+                "ability": "SPD +10%"
+            },
+            {
+                "level": 15,
+                "ap": 350
+            },
+            {
+                "level": 16,
+                "ap": 380,
+                "ability": "Mug"
+            },
+            {
+                "level": 17,
+                "ap": 410
+            },
+            {
+                "level": 18,
+                "ap": 440
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 500,
+                "ability": "Treasure Hunter"
+            }
+        ]
+    },
+    {
+        "name": "Red Mage",
+        "abbr": "Rdm",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/redmage_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 35,
+                "ability": "Red Magic Lv. 1"
+            },
+            {
+                "level": 2,
+                "ap": 55
+            },
+            {
+                "level": 3,
+                "ap": 80,
+                "ability": "HP +20%"
+            },
+            {
+                "level": 4,
+                "ap": 100
+            },
+            {
+                "level": 5,
+                "ap": 130,
+                "ability": "Red Magic Lv. 2"
+            },
+            {
+                "level": 6,
+                "ap": 160
+            },
+            {
+                "level": 7,
+                "ap": 190
+            },
+            {
+                "level": 8,
+                "ap": 220,
+                "ability": "Attune Blade"
+            },
+            {
+                "level": 9,
+                "ap": 250
+            },
+            {
+                "level": 10,
+                "ap": 280,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 300,
+                "ability": "Red Magic Lv. 3"
+            },
+            {
+                "level": 12,
+                "ap": 330
+            },
+            {
+                "level": 13,
+                "ap": 360,
+                "ability": "Red Magic Lv. 4"
+            },
+            {
+                "level": 14,
+                "ap": 380
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 420,
+                "ability": "Magic Blade"
+            },
+            {
+                "level": 17,
+                "ap": 440
+            },
+            {
+                "level": 18,
+                "ap": 450
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 490,
+                "ability": "Doublecast"
+            }
+        ]
+    },
+    {
+        "name": "White Mage",
+        "abbr": "Whm",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/whitemage_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "White Magic Lv. 1"
+            },
+            {
+                "level": 2,
+                "ap": 40
+            },
+            {
+                "level": 3,
+                "ap": 60,
+                "ability": "White Magic Lv. 2"
+            },
+            {
+                "level": 4,
+                "ap": 80
+            },
+            {
+                "level": 5,
+                "ap": 100,
+                "ability": "MND +20%"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 140,
+                "ability": "White Magic Lv. 3"
+            },
+            {
+                "level": 8,
+                "ap": 160
+            },
+            {
+                "level": 9,
+                "ap": 180,
+                "ability": "White Magic Lv. 4"
+            },
+            {
+                "level": 10,
+                "ap": 200,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 220
+            },
+            {
+                "level": 12,
+                "ap": 240,
+                "ability": "White Magic Lv. 5"
+            },
+            {
+                "level": 13,
+                "ap": 260
+            },
+            {
+                "level": 14,
+                "ap": 280
+            },
+            {
+                "level": 15,
+                "ap": 300,
+                "ability": "White Magic Lv. 6"
+            },
+            {
+                "level": 16,
+                "ap": 330
+            },
+            {
+                "level": 17,
+                "ap": 360
+            },
+            {
+                "level": 18,
+                "ap": 390,
+                "ability": "White Magic Lv. 7"
+            },
+            {
+                "level": 19,
+                "ap": 420,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 450,
+                "ability": "Mental Discipline"
+            }
+        ]
+    },
+    {
+        "name": "Black Mage",
+        "abbr": "Bkm",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/blackmage_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Black Magic Lv. 1"
+            },
+            {
+                "level": 2,
+                "ap": 40
+            },
+            {
+                "level": 3,
+                "ap": 60,
+                "ability": "Black Magic Lv. 2"
+            },
+            {
+                "level": 4,
+                "ap": 80
+            },
+            {
+                "level": 5,
+                "ap": 100,
+                "ability": "INT +20%"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 140,
+                "ability": "Black Magic Lv. 3"
+            },
+            {
+                "level": 8,
+                "ap": 160
+            },
+            {
+                "level": 9,
+                "ap": 180,
+                "ability": "Black Magic Lv. 4"
+            },
+            {
+                "level": 10,
+                "ap": 200,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 220
+            },
+            {
+                "level": 12,
+                "ap": 240,
+                "ability": "Black Magic Lv. 5"
+            },
+            {
+                "level": 13,
+                "ap": 260
+            },
+            {
+                "level": 14,
+                "ap": 280
+            },
+            {
+                "level": 15,
+                "ap": 300,
+                "ability": "Black Magic Lv. 6"
+            },
+            {
+                "level": 16,
+                "ap": 330
+            },
+            {
+                "level": 17,
+                "ap": 360
+            },
+            {
+                "level": 18,
+                "ap": 390,
+                "ability": "Black Magic Lv. 7"
+            },
+            {
+                "level": 19,
+                "ap": 420,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 450,
+                "ability": "Magic Font"
+            }
+        ]
+    },
+    {
+        "name": "Summoner",
+        "abbr": "Sum",
+        "description": "",
+        "side": [
+            "light",
+            "dark"
+        ],
+        "image": "img/summoner_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 30,
+                "ability": "Summon Lv. 1"
+            },
+            {
+                "level": 2,
+                "ap": 50
+            },
+            {
+                "level": 3,
+                "ap": 70
+            },
+            {
+                "level": 4,
+                "ap": 90
+            },
+            {
+                "level": 5,
+                "ap": 110,
+                "ability": "MP +20%"
+            },
+            {
+                "level": 6,
+                "ap": 130
+            },
+            {
+                "level": 7,
+                "ap": 160,
+                "ability": "Summon Lv. 2"
+            },
+            {
+                "level": 8,
+                "ap": 180
+            },
+            {
+                "level": 9,
+                "ap": 200,
+                "ability": "Summon Lv. 3"
+            },
+            {
+                "level": 10,
+                "ap": 220,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 250
+            },
+            {
+                "level": 12,
+                "ap": 270,
+                "ability": "Summon Lv. 4"
+            },
+            {
+                "level": 13,
+                "ap": 300
+            },
+            {
+                "level": 14,
+                "ap": 320
+            },
+            {
+                "level": 15,
+                "ap": 350,
+                "ability": "Summon Lv. 5"
+            },
+            {
+                "level": 16,
+                "ap": 380
+            },
+            {
+                "level": 17,
+                "ap": 410,
+                "ability": "Summon Lv. 6"
+            },
+            {
+                "level": 18,
+                "ap": 440,
+                "ability": "Call"
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 500,
+                "ability": "Summon Lv. 7"
+            }
+        ]
+    },
+    {
+        "name": "Dragoon",
+        "abbr": "Drg",
+        "description": "",
+        "side": [
+            "light"
+        ],
+        "image": "img/dragoon_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 30,
+                "ability": "Dragon Arts / Fire Breath"
+            },
+            {
+                "level": 2,
+                "ap": 50,
+                "ability": "Blizzard Breath"
+            },
+            {
+                "level": 3,
+                "ap": 70
+            },
+            {
+                "level": 4,
+                "ap": 90,
+                "ability": "Thunder Breath"
+            },
+            {
+                "level": 5,
+                "ap": 110
+            },
+            {
+                "level": 6,
+                "ap": 130,
+                "ability": "Healing Breath"
+            },
+            {
+                "level": 7,
+                "ap": 150
+            },
+            {
+                "level": 8,
+                "ap": 180,
+                "ability": "Jump"
+            },
+            {
+                "level": 9,
+                "ap": 210
+            },
+            {
+                "level": 10,
+                "ap": 240,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 270
+            },
+            {
+                "level": 12,
+                "ap": 300
+            },
+            {
+                "level": 13,
+                "ap": 330,
+                "ability": "Lancet"
+            },
+            {
+                "level": 14,
+                "ap": 360
+            },
+            {
+                "level": 15,
+                "ap": 390
+            },
+            {
+                "level": 16,
+                "ap": 420,
+                "ability": "Roar"
+            },
+            {
+                "level": 17,
+                "ap": 470
+            },
+            {
+                "level": 18,
+                "ap": 510,
+                "ability": "Holy Breath"
+            },
+            {
+                "level": 19,
+                "ap": 550,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 590,
+                "ability": "Dragon Soul"
+            }
+        ]
+    },
+    {
+        "name": "Bard",
+        "abbr": "Brd",
+        "description": "",
+        "side": [
+            "light"
+        ],
+        "image": "img/bard_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Aiding Anthem"
+            },
+            {
+                "level": 2,
+                "ap": 35
+            },
+            {
+                "level": 3,
+                "ap": 50,
+                "ability": "Magic Madrigal"
+            },
+            {
+                "level": 4,
+                "ap": 70
+            },
+            {
+                "level": 5,
+                "ap": 90,
+                "ability": "Brave Ballad"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 150,
+                "ability": "Bardsong / Lovely Lullaby"
+            },
+            {
+                "level": 8,
+                "ap": 180
+            },
+            {
+                "level": 9,
+                "ap": 220,
+                "ability": "Restful Refrain"
+            },
+            {
+                "level": 10,
+                "ap": 260,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 300
+            },
+            {
+                "level": 12,
+                "ap": 340,
+                "ability": "Runic Requiem"
+            },
+            {
+                "level": 13,
+                "ap": 370
+            },
+            {
+                "level": 14,
+                "ap": 400,
+                "ability": "Swift Shanty"
+            },
+            {
+                "level": 15,
+                "ap": 420
+            },
+            {
+                "level": 16,
+                "ap": 440
+            },
+            {
+                "level": 17,
+                "ap": 450,
+                "ability": "Angelic Aria"
+            },
+            {
+                "level": 18,
+                "ap": 460
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 490,
+                "ability": "Dire Dirge"
+            }
+        ]
+    },
+    {
+        "name": "Memorist",
+        "abbr": "Mem",
+        "description": "",
+        "side": [
+            "light"
+        ],
+        "image": "img/memorist_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 35
+            },
+            {
+                "level": 2,
+                "ap": 55
+            },
+            {
+                "level": 3,
+                "ap": 75
+            },
+            {
+                "level": 4,
+                "ap": 95
+            },
+            {
+                "level": 5,
+                "ap": 115
+            },
+            {
+                "level": 6,
+                "ap": 135
+            },
+            {
+                "level": 7,
+                "ap": 155
+            },
+            {
+                "level": 8,
+                "ap": 175
+            },
+            {
+                "level": 9,
+                "ap": 205
+            },
+            {
+                "level": 10,
+                "ap": 235,
+                "ability": "Memorandum"
+            },
+            {
+                "level": 11,
+                "ap": 265
+            },
+            {
+                "level": 12,
+                "ap": 295
+            },
+            {
+                "level": 13,
+                "ap": 325
+            },
+            {
+                "level": 14,
+                "ap": 355
+            },
+            {
+                "level": 15,
+                "ap": 395
+            },
+            {
+                "level": 16,
+                "ap": 435
+            },
+            {
+                "level": 17,
+                "ap": 475
+            },
+            {
+                "level": 18,
+                "ap": 525
+            },
+            {
+                "level": 19,
+                "ap": 575
+            },
+            {
+                "level": 20,
+                "ap": 625,
+                "ability": "Recollect"
+            }
+        ]
+    },
+    {
+        "name": "Paladin",
+        "abbr": "Pal",
+        "description": "",
+        "side": [
+            "light"
+        ],
+        "image": "img/paladin_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 30,
+                "ability": "Holy Blade / Charge"
+            },
+            {
+                "level": 2,
+                "ap": 55
+            },
+            {
+                "level": 3,
+                "ap": 80,
+                "ability": "Pommel"
+            },
+            {
+                "level": 4,
+                "ap": 100
+            },
+            {
+                "level": 5,
+                "ap": 130,
+                "ability": "Cover"
+            },
+            {
+                "level": 6,
+                "ap": 160
+            },
+            {
+                "level": 7,
+                "ap": 190,
+                "ability": "Mighty Guard"
+            },
+            {
+                "level": 8,
+                "ap": 220
+            },
+            {
+                "level": 9,
+                "ap": 250,
+                "ability": "Guard"
+            },
+            {
+                "level": 10,
+                "ap": 280,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 300,
+                "ability": "Damage > HP"
+            },
+            {
+                "level": 12,
+                "ap": 330
+            },
+            {
+                "level": 13,
+                "ap": 360
+            },
+            {
+                "level": 14,
+                "ap": 380,
+                "ability": "Doublehand"
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 420
+            },
+            {
+                "level": 17,
+                "ap": 440,
+                "ability": "Wide Slash"
+            },
+            {
+                "level": 18,
+                "ap": 450
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 490,
+                "ability": "Ivory Slash"
+            }
+        ]
+    },
+    {
+        "name": "Seer",
+        "abbr": "Ser",
+        "description": "",
+        "side": [
+            "light"
+        ],
+        "image": "img/seer_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Dispel"
+            },
+            {
+                "level": 2,
+                "ap": 40,
+                "ability": "Res. Element / Barlight"
+            },
+            {
+                "level": 3,
+                "ap": 60,
+                "ability": "Barfire"
+            },
+            {
+                "level": 4,
+                "ap": 80,
+                "ability": "Barblizzard"
+            },
+            {
+                "level": 5,
+                "ap": 100,
+                "ability": "Barthunder"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 140,
+                "ability": "Baraero"
+            },
+            {
+                "level": 8,
+                "ap": 160
+            },
+            {
+                "level": 9,
+                "ap": 180,
+                "ability": "Benediction"
+            },
+            {
+                "level": 10,
+                "ap": 200,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 220
+            },
+            {
+                "level": 12,
+                "ap": 250,
+                "ability": "Barstone"
+            },
+            {
+                "level": 13,
+                "ap": 290
+            },
+            {
+                "level": 14,
+                "ap": 340,
+                "ability": "Barwater"
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 470,
+                "ability": "Bardark"
+            },
+            {
+                "level": 17,
+                "ap": 550
+            },
+            {
+                "level": 18,
+                "ap": 640,
+                "ability": "White Magic Lv. 8"
+            },
+            {
+                "level": 19,
+                "ap": 720,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 800,
+                "ability": "Araise"
+            }
+        ]
+    },
+    {
+        "name": "Ranger",
+        "abbr": "Ran",
+        "description": "",
+        "side": [
+            "dark"
+        ],
+        "image": "img/ranger_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Aim / Precise Shot"
+            },
+            {
+                "level": 2,
+                "ap": 40,
+                "ability": "Aim: Mouth"
+            },
+            {
+                "level": 3,
+                "ap": 60
+            },
+            {
+                "level": 4,
+                "ap": 80,
+                "ability": "Aim: Legs"
+            },
+            {
+                "level": 5,
+                "ap": 100
+            },
+            {
+                "level": 6,
+                "ap": 120,
+                "ability": "Recover"
+            },
+            {
+                "level": 7,
+                "ap": 140
+            },
+            {
+                "level": 8,
+                "ap": 160,
+                "ability": "Aim: Heart"
+            },
+            {
+                "level": 9,
+                "ap": 180
+            },
+            {
+                "level": 10,
+                "ap": 200,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 240
+            },
+            {
+                "level": 12,
+                "ap": 280,
+                "ability": "Quick Shot"
+            },
+            {
+                "level": 13,
+                "ap": 320
+            },
+            {
+                "level": 14,
+                "ap": 360,
+                "ability": "Backup"
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 450,
+                "ability": "Attack: Vitals"
+            },
+            {
+                "level": 17,
+                "ap": 500
+            },
+            {
+                "level": 18,
+                "ap": 550,
+                "ability": "Alchemy"
+            },
+            {
+                "level": 19,
+                "ap": 600,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 650,
+                "ability": "Spreadshot"
+            }
+        ]
+    },
+    {
+        "name": "Dark Knight",
+        "abbr": "Drk",
+        "description": "",
+        "side": [
+            "dark"
+        ],
+        "image": "img/darkknight_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 30,
+                "ability": "Dark Blade / Darkness"
+            },
+            {
+                "level": 2,
+                "ap": 55
+            },
+            {
+                "level": 3,
+                "ap": 80,
+                "ability": "Curse"
+            },
+            {
+                "level": 4,
+                "ap": 100
+            },
+            {
+                "level": 5,
+                "ap": 130,
+                "ability": "Onyx Wave"
+            },
+            {
+                "level": 6,
+                "ap": 160
+            },
+            {
+                "level": 7,
+                "ap": 190,
+                "ability": "Backliner"
+            },
+            {
+                "level": 8,
+                "ap": 220
+            },
+            {
+                "level": 9,
+                "ap": 250,
+                "ability": "Draw Attacks"
+            },
+            {
+                "level": 10,
+                "ap": 280,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 300,
+                "ability": "Absorb HP"
+            },
+            {
+                "level": 12,
+                "ap": 330
+            },
+            {
+                "level": 13,
+                "ap": 360
+            },
+            {
+                "level": 14,
+                "ap": 380,
+                "ability": "Last Resort"
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 420
+            },
+            {
+                "level": 17,
+                "ap": 440,
+                "ability": "Final Assault"
+            },
+            {
+                "level": 18,
+                "ap": 450
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 490,
+                "ability": "Ebony Slash"
+            }
+        ]
+    },
+    {
+        "name": "Dancer",
+        "abbr": "Dan",
+        "description": "",
+        "side": [
+            "dark"
+        ],
+        "image": "img/dancer_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Drain Samba"
+            },
+            {
+                "level": 2,
+                "ap": 35
+            },
+            {
+                "level": 3,
+                "ap": 50,
+                "ability": "Osmose Dance"
+            },
+            {
+                "level": 4,
+                "ap": 70
+            },
+            {
+                "level": 5,
+                "ap": 90,
+                "ability": "Fraility Polka"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 150,
+                "ability": "Dance (Cure Waltz)"
+            },
+            {
+                "level": 8,
+                "ap": 180
+            },
+            {
+                "level": 9,
+                "ap": 220,
+                "ability": "Heal Waltz"
+            },
+            {
+                "level": 10,
+                "ap": 260,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 300
+            },
+            {
+                "level": 12,
+                "ap": 340
+            },
+            {
+                "level": 13,
+                "ap": 370,
+                "ability": "Slow Minuet"
+            },
+            {
+                "level": 14,
+                "ap": 400
+            },
+            {
+                "level": 15,
+                "ap": 420
+            },
+            {
+                "level": 16,
+                "ap": 440,
+                "ability": "Wonder Step"
+            },
+            {
+                "level": 17,
+                "ap": 450
+            },
+            {
+                "level": 18,
+                "ap": 460
+            },
+            {
+                "level": 19,
+                "ap": 470,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 490,
+                "ability": "Trance"
+            }
+        ]
+    },
+    {
+        "name": "Ninja",
+        "abbr": "Nin",
+        "description": "",
+        "side": [
+            "dark"
+        ],
+        "image": "img/ninja_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 35,
+                "ability": "Ninjutsu / Flame, Flood, Blitz"
+            },
+            {
+                "level": 2,
+                "ap": 55,
+                "ability": "Healing Pill"
+            },
+            {
+                "level": 3,
+                "ap": 75
+            },
+            {
+                "level": 4,
+                "ap": 95,
+                "ability": "Noxious Gas"
+            },
+            {
+                "level": 5,
+                "ap": 115,
+                "ability": "Flash"
+            },
+            {
+                "level": 6,
+                "ap": 135
+            },
+            {
+                "level": 7,
+                "ap": 155,
+                "ability": "Tremor"
+            },
+            {
+                "level": 8,
+                "ap": 175,
+                "ability": "Gale"
+            },
+            {
+                "level": 9,
+                "ap": 205
+            },
+            {
+                "level": 10,
+                "ap": 235,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 265,
+                "ability": "Throw"
+            },
+            {
+                "level": 12,
+                "ap": 295
+            },
+            {
+                "level": 13,
+                "ap": 325,
+                "ability": "Smoke Bomb"
+            },
+            {
+                "level": 14,
+                "ap": 355,
+                "ability": "Stunner"
+            },
+            {
+                "level": 15,
+                "ap": 395
+            },
+            {
+                "level": 16,
+                "ap": 435,
+                "ability": "Restorative Pill"
+            },
+            {
+                "level": 17,
+                "ap": 475,
+                "ability": "Image"
+            },
+            {
+                "level": 18,
+                "ap": 525,
+                "ability": "Assassinate"
+            },
+            {
+                "level": 19,
+                "ap": 575,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 625,
+                "ability": "Dual Wield"
+            }
+        ]
+    },
+    {
+        "name": "Magus",
+        "abbr": "Mag",
+        "description": "",
+        "side": [
+            "dark"
+        ],
+        "image": "img/magus_sprite.png",
+        "levels": [
+            {
+                "level": 1,
+                "ap": 20,
+                "ability": "Flare"
+            },
+            {
+                "level": 2,
+                "ap": 40,
+                "ability": "Boost Element"
+            },
+            {
+                "level": 3,
+                "ap": 60,
+                "ability": "Enfire"
+            },
+            {
+                "level": 4,
+                "ap": 80,
+                "ability": "Enblizzard"
+            },
+            {
+                "level": 5,
+                "ap": 100,
+                "ability": "Enthunder"
+            },
+            {
+                "level": 6,
+                "ap": 120
+            },
+            {
+                "level": 7,
+                "ap": 140,
+                "ability": "Enaero"
+            },
+            {
+                "level": 8,
+                "ap": 160
+            },
+            {
+                "level": 9,
+                "ap": 180,
+                "ability": "Clarity"
+            },
+            {
+                "level": 10,
+                "ap": 200,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 11,
+                "ap": 220
+            },
+            {
+                "level": 12,
+                "ap": 250,
+                "ability": "Enstone"
+            },
+            {
+                "level": 13,
+                "ap": 290
+            },
+            {
+                "level": 14,
+                "ap": 340,
+                "ability": "Enwater"
+            },
+            {
+                "level": 15,
+                "ap": 400
+            },
+            {
+                "level": 16,
+                "ap": 470,
+                "ability": "Enlight"
+            },
+            {
+                "level": 17,
+                "ap": 550
+            },
+            {
+                "level": 18,
+                "ap": 640,
+                "ability": "Black Magic Lv. 8"
+            },
+            {
+                "level": 19,
+                "ap": 720,
+                "ability": "Slot +1"
+            },
+            {
+                "level": 20,
+                "ap": 800,
+                "ability": "Ultima"
+            }
+        ]
+    }
 ]
