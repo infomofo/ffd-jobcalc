@@ -56,7 +56,7 @@
           </select>
         </div>
         <div class="span2 offset7">
-          <a ng-click="reset()" class="btn btn-danger bootstrap-popover" data-title="Reset" data-content="Click to reset character selection and all spent JP" data-placement="left">Reset</a>
+          <a ng-click="reset()" class="btn btn-danger bootstrap-popover" popover-title="Reset" popover-placement="left" popover="Click to reset character selection and all spent JP" >Reset</a>
         </div>
       </div> 
       <div class="row" ng-show="selected_character">
@@ -122,7 +122,7 @@
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
                 <th><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
                 </th>
-                <th class="baseline"><i ng-click="decrement(job.name)" class="bootstrap-popover icon-minus-sign icon-2x return_jp" data-content="Click to decrease JP spent in {{job.name}}" data-placement="left"></i><i ng-click="increment(job.name)" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i></th>
+                <th class="baseline"><i ng-click="decrement(job.name)" class="bootstrap-popover icon-minus-sign icon-2x return_jp" popover="Click to decrease JP spent in {{job.name}}" popover-placement="left" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i><i ng-click="increment(job.name)" class="bootstrap-popover icon-plus-sign icon-2x spend_jp" popover="Click to increase JP spent in {{job.name}} Job" popover-placement="right" class="bootstrap-popover icon-plus-sign icon-2x spend_jp"></i></th>
                 <th ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)"></th>
               </tr>
             </tbody>
@@ -151,7 +151,8 @@
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
-  <script src="js/jquery-1.9.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ui-bootstrap-tpls-0.2.0.js"></script>
+<!--  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>-->
 </body>
 </html>
