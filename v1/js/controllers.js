@@ -101,4 +101,20 @@ function CharacterController($scope, $http, $location) {
     $scope.alerts.splice(index, 1);
   };
 
+  $scope.isAcquired = function(ability){
+    var isAcquired = false;
+    angular.forEach($scope.jobs, function(job) {
+      for (var i = 1; i <= $scope.current_build.jp[job.name]; i++) {
+        try {
+          var bool = (job.levels[i-1].ability == ability.id);
+        if (bool) 
+          isAcquired = true;
+        } catch (e) {
+          //temporary until I have all skills populated
+        }
+      }
+    });
+    return isAcquired;
+  };
+
 }

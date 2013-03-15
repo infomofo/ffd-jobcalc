@@ -7,4 +7,4 @@ angular.module('ffdJobCalc', [], function($locationProvider) {
  // $(".bootstrap-popover").popover({trigger:'hover'}); 
 //});
 
-angular.module('ffdJobCalc', ['ui.bootstrap']);
+angular.module('ffdJobCalc', ['ui','ui.bootstrap']);
