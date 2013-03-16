@@ -128,7 +128,7 @@
             {
                 "level": 4,
                 "ap": 50,
-                "ability": "Lotus Strike"
+                "ability": "MA: Lotus Strike"
             },
             {
                 "level": 5,
@@ -137,7 +137,7 @@
             {
                 "level": 6,
                 "ap": 85,
-                "ability": "Aurablast"
+                "ability": "MA: Aurablast"
             },
             {
                 "level": 7,
@@ -160,7 +160,7 @@
             {
                 "level": 11,
                 "ap": 210,
-                "ability": "Riposte"
+                "ability": "MA: Riposte"
             },
             {
                 "level": 12,
@@ -169,7 +169,7 @@
             {
                 "level": 13,
                 "ap": 280,
-                "ability": "Chakra"
+                "ability": "MA: Chakra"
             },
             {
                 "level": 14,
@@ -178,7 +178,7 @@
             {
                 "level": 15,
                 "ap": 370,
-                "ability": "Vacuum Wave"
+                "ability": "MA: Vacuum Wave"
             },
             {
                 "level": 16,
@@ -187,12 +187,12 @@
             {
                 "level": 17,
                 "ap": 450,
-                "ability": "Dropkick"
+                "ability": "MA: Dropkick"
             },
             {
                 "level": 18,
                 "ap": 500,
-                "ability": "Raging Fist"
+                "ability": "MA: Raging Fist"
             },
             {
                 "level": 19,
@@ -202,7 +202,7 @@
             {
                 "level": 20,
                 "ap": 610,
-                "ability": "Earthshatterer"
+                "ability": "MA: Earthshatterer"
             }
         ]
     },

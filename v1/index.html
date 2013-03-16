@@ -75,7 +75,7 @@
           <div class="span3 well">
 	    <p>Unlocked Abilities</p>
 	    <ul>
-        <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"'>{{ability.display}}</li>
+        <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"' popover-title="{{ability.display}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{display:ability.display} }}">{{ability.display}}</li>
       </ul>
 	  </div>
           <div class="span3 well">

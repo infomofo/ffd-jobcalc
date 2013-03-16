@@ -101,5 +101,51 @@
                 "description": "Deals damage to all enemies"
             }
         ]
+    },
+    {
+        "id": "White Magic Lv. 1",
+        "display": "White Magic Lv. 1",
+        "type": "Active",
+        "slots": 2,
+        "spells": [
+            {
+                "spell": "Cure",
+                "mp": 4,
+                "description": "Restores HP to a single/all target(s)"
+            },
+            {
+                "spell": "Libra",
+                "mp": 1,
+                "description": "Reveals target's HP and weaknesses"
+            },
+            {
+                "spell": "Poisona",
+                "mp": 3,
+                "description": "Removes Poison and Toxify from a single target"
+            }
+        ]
+    },
+    {
+        "id": "White Magic Lv. 2",
+        "display": "White Magic Lv. 2",
+        "type": "Active",
+        "slots": 2,
+        "spells": [
+            {
+                "spell": "Slow",
+                "mp": 7,
+                "description": "Slows the passing of time for a single target"
+            },
+            {
+                "spell": "Silence",
+                "mp": 5,
+                "description": "Inflicts silence on a single target, preventing spell casting"
+            },
+            {
+                "spell": "Mini",
+                "mp": 6,
+                "description": "Makes target small, decreasing physical attack power, or restores state"
+            }
+        ]
     }
 ]

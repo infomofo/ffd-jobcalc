@@ -52,13 +52,18 @@ function CharacterController($scope, $http, $location) {
     
   $scope.spent_ap = function() {
     var total = 0;
+    try {
     angular.forEach($scope.jobs, function(job) {
       for (var i = 1; i < $scope.current_build.jp[job.name]; i++) {
         total += job.levels[i].ap;
       }
     });
+    } catch (e) {
+      //catch error if jobs aren't loaded yet
+    }
     return total;
   }
+
   $scope.onCharacterSelect = function() {
     $scope.updateUrl();
   }
@@ -103,11 +108,14 @@ function CharacterController($scope, $http, $location) {
 
   $scope.isAcquired = function(ability){
     var isAcquired = false;
+    try {
     angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
       if (ability.id == innate_ability_id) 
         isAcquired = true;
     });
-
+    } catch (e) {
+      // handle case when no character is selected
+    }
     angular.forEach($scope.jobs, function(job) {
       for (var i = 1; i <= $scope.current_build.jp[job.name]; i++) {
         try {
