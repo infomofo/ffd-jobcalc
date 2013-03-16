@@ -95,7 +95,7 @@ function CharacterController($scope, $http, $location) {
   }
 
   $scope.alerts = [
-    { type: 'info', msg: "Click on any cells higher than your current level to spend levels in that job's row.  Click on cells lower than your current level to decrease levels spent in that job's row." }
+    { type: 'info', msg: "Click on cells in the table to spend or refund job points." }
   ];
 
   $scope.addAlert = function() {
@@ -129,5 +129,18 @@ function CharacterController($scope, $http, $location) {
     });
     return isAcquired;
   };
+
+  $scope.isInLevel = function(spell, level) {
+    alert (spell);
+    if (level.spells == undefined) {
+      return false;
+    } else 
+    if (level.spells.indexOf(spell.name) != -1) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 
 }

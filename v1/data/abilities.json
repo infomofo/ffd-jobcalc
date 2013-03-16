@@ -1,151 +1,391 @@
 [
     {
-        "id": "BA: Strike",
-        "display": "Battle Arts",
-        "type": "Active",
-        "slots": 2,
-        "spells": [
-            {
-                "spell": "Strike",
-                "mp": 4,
-                "description": "Deals a critical attack to a single enemy"
-            }
-        ]
-    },
-    {
-        "id": "BA: Bash",
-        "display": "Battle Arts",
-        "spells": [
-            {
-                "spell": "Bash",
-                "mp": 5,
-                "description": "Deals damage to a single enemy and inflicts Confuse, causing it to attack randomly"
-            }
-        ],
-        "type": "Active",
-        "slots": 2
-    },
-    {
-        "id": "BA: Enrage",
-        "display": "Battle Arts",
-        "spells": [
-            {
-                "spell": "Enrage",
-                "mp": 5,
-                "description": "Lowers own DEF but raises ATK"
-            }
-        ],
-        "type": "Active",
-        "slots": 2
-    },
-    {
-        "id": "BA: War Cry",
-        "display": "Battle Arts",
-        "spells": [
-            {
-                "spell": "War Cry",
-                "mp": 24,
-                "description": "Increases ATK for all allies"
-            }
-        ],
-        "type": "Active",
-        "slots": 2
-    },
-    {
-        "id": "BA: Assault",
-        "display": "Battle Arts",
-        "spells": [
-            {
-                "spell": "Assault",
-                "mp": 28,
-                "description": "Deals damage to a single enemy based on own HP but puts self into a critical state"
-            }
-        ],
-        "type": "Active",
-        "slots": 2
-    },
-    {
-        "id": "BA: Double Attack",
-        "display": "Battle Arts",
-        "spells": [
-            {
-                "spell": "Double Attack",
-                "mp": 16,
-                "description": "Attacks a single target twice in a row"
-            }
-        ],
+        "id": "Battle Arts",
+        "spells": "Battle Arts",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Counter",
-        "display": "Counter",
         "type": "Passive",
         "slots": 1
     },
     {
         "id": "STR +20%",
-        "display": "STR +20%",
         "type": "Passive",
         "slots": 1
     },
     {
-        "id": "MA: Kick",
-        "display": "Martial Arts",
+        "id": "VIT +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "SPD +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "HP +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "MND +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "INT +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "MP +20%",
+        "type": "Passive",
+        "slots": 1
+    },
+    {
+        "id": "Martial Arts",
         "type": "Active",
-        "slots": 2,
-        "spells": [
-            {
-                "spell": "Kick",
-                "mp": 1,
-                "description": "Deals damage to all enemies"
-            }
-        ]
+        "slots": 2
     },
     {
         "id": "White Magic Lv. 1",
-        "display": "White Magic Lv. 1",
+        "spells": "White Magic Lv. 1",
         "type": "Active",
-        "slots": 2,
-        "spells": [
-            {
-                "spell": "Cure",
-                "mp": 4,
-                "description": "Restores HP to a single/all target(s)"
-            },
-            {
-                "spell": "Libra",
-                "mp": 1,
-                "description": "Reveals target's HP and weaknesses"
-            },
-            {
-                "spell": "Poisona",
-                "mp": 3,
-                "description": "Removes Poison and Toxify from a single target"
-            }
-        ]
+        "slots": 2
     },
     {
         "id": "White Magic Lv. 2",
-        "display": "White Magic Lv. 2",
+        "spells": "White Magic Lv. 2",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 3",
+        "spells": "White Magic Lv. 3",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 4",
+        "spells": "White Magic Lv. 4",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 5",
+        "spells": "White Magic Lv. 5",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 6",
+        "spells": "White Magic Lv. 6",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 7",
+        "spells": "White Magic Lv. 7",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "White Magic Lv. 8",
+        "spells": "White Magic Lv. 8",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 1",
+        "spells": "Black Magic Lv. 1",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 2",
+        "spells": "Black Magic Lv. 2",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 3",
+        "spells": "Black Magic Lv. 3",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 4",
+        "spells": "Black Magic Lv. 4",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 5",
+        "spells": "Black Magic Lv. 5",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 6",
+        "spells": "Black Magic Lv. 6",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 7",
+        "spells": "Black Magic Lv. 7",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Black Magic Lv. 8",
+        "spells": "Black Magic Lv. 8",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Red Magic Lv. 1",
+        "spells": ["Black Magic Lv. 1","White Magic Lv. 1"],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Red Magic Lv. 2",
+        "spells": ["Black Magic Lv. 2","White Magic Lv. 2"],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Red Magic Lv. 3",
+        "spells": ["Black Magic Lv. 3","White Magic Lv. 3"],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Red Magic Lv. 4",
+        "spells": ["Black Magic Lv. 4","White Magic Lv. 4"],
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 1",
+        "spells": "Summon Lv. 1",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 2",
+        "spells": "Summon Lv. 2",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 3",
+        "spells": "Summon Lv. 3",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 4",
+        "spells": "Summon Lv. 4",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 5",
+        "spells": "Summon Lv. 5",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 6",
+        "spells": "Summon Lv. 6",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Summon Lv. 7",
+        "spells": "Summon Lv. 7",
+        "type": "Active",
+        "slots": 2
+    },
+    {
+        "id": "Attune Blade",
+        "spells": "Attune Blade",
+        "type": "Active",
+        "slots": 1,
+        "description": "Until next turn, stops the next spell used and converts it to MP."
+    },
+    {
+        "id": "Magic Blade",
+        "spells": "Magic Blade",
         "type": "Active",
         "slots": 2,
-        "spells": [
-            {
-                "spell": "Slow",
-                "mp": 7,
-                "description": "Slows the passing of time for a single target"
-            },
-            {
-                "spell": "Silence",
-                "mp": 5,
-                "description": "Inflicts silence on a single target, preventing spell casting"
-            },
-            {
-                "spell": "Mini",
-                "mp": 6,
-                "description": "Makes target small, decreasing physical attack power, or restores state"
-            }
-        ]
+        "description": "Grants the ability to use Magic Blade Abilities"
+    },
+    {
+        "id": "Doublecast",
+        "spells": "Doublecast",
+        "type": "Active",
+        "slots": 2,
+        "description": "Casts equipped magic twice in succession"
+    },
+    {
+        "id": "Mental Discipline",
+        "spells": "Mental Discipline",
+        "type": "Passive",
+        "slots": 2,
+        "description": "Halves MP usage in battle"
+    },
+    {
+        "id": "Magic Font",
+        "spells": "Magic Font",
+        "type": "Passive",
+        "slots": 2,
+        "description": "Increases strength of magic by 50% while in battle"
+    },
+    {
+        "id": "Call",
+        "spells": "Call",
+        "type": "Active",
+        "slots": 2,
+        "description": "Calls forth a random Eidolon without using MP"
+    },
+    {
+        "id": "Focus",
+        "spells": "Focus",
+        "type": "Active",
+        "slots": 1,
+        "description": "Stores power to increase strength of next ability. Can store 3 times"
+    },
+    {
+        "id": "Riposte",
+        "spells": "Riposte",
+        "type": "Active",
+        "slots": 1,
+        "description": "Until next turn, a chance to nullify and counter a normal attack"
+    },
+    {
+        "id": "Pickpocket",
+        "spells": "Pickpocket",
+        "type": "Active",
+        "slots": 1,
+        "description": "Steals gil from an enemy"
+    },
+    {
+        "id": "Flee",
+        "spells": "Flee",
+        "type": "Active",
+        "slots": 1,
+        "description": "Flees from battle"
+    },
+    {
+        "id": "Steal",
+        "spells": "Steal",
+        "type": "Active",
+        "slots": 2,
+        "description": "Steals an item from an enemy"
+    },
+    {
+        "id": "Mug",
+        "spells": "Mug",
+        "type": "Active",
+        "slots": 2,
+        "description": "Attacks and steals an item from an enemy"
+    },
+    {
+        "id": "Item Finder",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Enemies are more likely to drop items"
+    },
+    {
+        "id": "Vigilance",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Prevents sneak attacks and back attacks"
+    },
+    {
+        "id": "Treasure Hunter",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Enemies are more likely to drop rare items"
+    },
+    {
+        "id": "Dragon Arts",
+        "spells": "Dragon Arts",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Dragon Arts abilities"
+    },
+    {
+        "id": "Jump",
+        "spells": "Jump",
+        "type": "Active",
+        "slots": 1,
+        "description": "Attacks from above for damage. Not attackable while jumping"
+    },
+    {
+        "id": "Bardsong",
+        "spells": "Bardsong",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Bardsong abilities"
+    },
+    {
+        "id": "Memorandum",
+        "spells": "Memorandum",
+        "type": "Active",
+        "slots": 3,
+        "description": "Grants the ability to use a randomly chosen equipped ability"
+    },
+    {
+        "id": "Recollect",
+        "spells": "Recollect",
+        "type": "Active",
+        "slots": 3,
+        "description": "Determines all non-HP/MP stats based on collected memories"
+    },
+    {
+        "id": "Holy Blade",
+        "spells": "Holy Blade",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Holy Blade abilities"
+    },
+    {
+        "id": "Cover",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Takes damage in place of critically injured allies"
+    },
+    {
+        "id": "Damage > MP",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Recovers MP proportional to damage suffered"
+    },
+    {
+        "id": "Doublehand",
+        "type": "Passive",
+        "slots": 2,
+        "description": "Able to equip a weapon in both hands to increase damage"
+    },
+    {
+        "id": "Res. Element",
+        "spells": "Res. Element",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants ability to use magic that bolsters elemental resistance"
+    },
+    {
+        "id": "Benediction",
+        "spells": "Benediction",
+        "type": "Active",
+        "slots": 1,
+        "description": "Restores HP to all allies"
     }
 ]

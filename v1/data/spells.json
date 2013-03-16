@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Kick",
+        "type": "Martial Arts",
+        "MP": 1,
+        "description": "Deals damage to all enemies"
+    },
+    {
+        "name": "Lotus Strike",
+        "type": "Martial Arts",
+        "mp": 8,
+        "description": "Randomly inflicts Sleep, Paralysis, Slow, or Instant Death on a single enemy"
+    },
+    {
+        "name": "Aurablast",
+        "type": "Martial Arts",
+        "mp": 14,
+        "description": "Deals light damage to a single target"
+    },
+    {
+        "name": "Chakra",
+        "type": "Martial Arts",
+        "mp": 24,
+        "description": "Restores HP and removes Sleep, Confuse, Paralyze, Berserk and Curse on a single"
+    },
+    {
+        "name": "Vacuum Wave",
+        "type": "Martial Arts",
+        "mp": 18,
+        "description": "Halves an enemy's HP"
+    },
+    {
+        "name": "Dropkick",
+        "type": "Martial Arts",
+        "mp": 29,
+        "description": "Damages a single enemy and inflicts Confuse, causing it to attack randomly"
+    },
+    {
+        "name": "Raging Fist",
+        "type": "Martial Arts",
+        "mp": 30,
+        "description": "Attacks a single enemy multiple times"
+    },
+    {
+        "name": "Earthshatterer",
+        "type": "Martial Arts",
+        "mp": 28,
+        "description": "Deals earth damage to all enemies"
+    },
+    {
+        "name": "Double Attack",
+        "mp": 16,
+        "description": "Attacks a single target twice in a row",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "Assault",
+        "mp": 28,
+        "description": "Deals damage to a single enemy based on own HP but puts self into a critical state",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "War Cry",
+        "mp": 24,
+        "description": "Increases ATK for all allies",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "Enrage",
+        "mp": 5,
+        "description": "Lowers own DEF but raises ATK",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "Bash",
+        "mp": 5,
+        "description": "Deals damage to a single enemy and inflicts Confuse, causing it to attack randomly",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "Strike",
+        "mp": 4,
+        "description": "Deals a critical attack to a single enemy",
+        "type": "Battle Arts"
+    },
+    {
+        "name": "Cure",
+        "mp": 4,
+        "description": "Restores HP to a single/all target(s)",
+        "type": "White Magic"
+    },
+    {
+        "name": "Libra",
+        "mp": 1,
+        "description": "Reveals target's HP and weaknesses",
+        "type": "White Magic"
+    },
+    {
+        "name": "Poisona",
+        "mp": 3,
+        "description": "Removes Poison and Toxify from a single target",
+        "type": "White Magic"
+    },
+    {
+        "name": "Slow",
+        "mp": 7,
+        "description": "Slows the passing of time for a single target",
+        "type": "White Magic"
+    },
+    {
+        "name": "Silence",
+        "mp": 5,
+        "description": "Inflicts silence on a single target, preventing name casting",
+        "type": "White Magic"
+    },
+    {
+        "name": "Mini",
+        "mp": 6,
+        "description": "Makes target small, decreasing physical attack power, or restores state",
+        "type": "White Magic"
+    },
+    {
+        "name": "Fire Breath",
+        "type": "Dragon Arts",
+        "mp": 10,
+        "description": "Deals fire damage to all enemies"
+    },
+    {
+        "name": "Blizzard Breath",
+        "type": "Dragon Arts",
+        "mp": 10,
+        "description": "Deals ice damage to all enemies"
+    },
+    {
+        "name": "Thunder Breath",
+        "type": "Dragon Arts",
+        "mp": 10,
+        "description": "Deals lightning damage to all enemies"
+    },
+    {
+        "name": "Healing Breath",
+        "type": "Dragon Arts",
+        "mp": 18,
+        "description": "Restores HP for all allies"
+    },
+    {
+        "name": "Lancet",
+        "type": "Dragon Arts",
+        "mp": 8,
+        "description": "Absorbs a single enemy's HP and MP"
+    },
+    {
+        "name": "Roar",
+        "type": "Dragon Arts",
+        "mp": 19,
+        "description": "Inflicts Stun on all enemies, resetting their wait time"
+    },
+    {
+        "name": "Holy Breath",
+        "type": "Dragon Arts",
+        "mp": 48,
+        "description": "Deals holy damage to all enemies"
+    },
+    {
+        "name": "Dragon Soul",
+        "type": "Dragon Arts",
+        "mp": 64,
+        "description": "Consumes all HP and MP to completely revive and restore all allies"
+    }
+]

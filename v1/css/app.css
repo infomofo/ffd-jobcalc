@@ -32,16 +32,20 @@ body {
   background-color:#C0392B;
 }
 
+.spell-label {
+  background-color:#9B59B6;
+}
+
 .ability-Passive {
   background-color:#16A085;
 }
 
-.badge-success {
-  background-color:#27AE60;
+.badge-jp {
+  background-color:#34495E;
 }
 
-.badge-info {
-  background-color:#8E44AD;
+.badge-ap {
+  background-color:#F39C12;
 }
 
 th {

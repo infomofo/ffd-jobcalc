@@ -76,7 +76,7 @@
           <div class="span3 well spellbook">
       	    <p>Abilities </p>
       	    <ul>
-              <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"' popover-title="{{ability.display}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{display:ability.display} }}">{{ability.display}}</li>
+              <li ng-repeat='ability in abilities|filter:isAcquired' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{id:ability.id} }}">{{ability.id}}</li>
             </ul>
       	  </div>
           <div class="span3 well">
@@ -86,8 +86,8 @@
 	    </ul>
           </div>
           <div class="span1 well">
-            <p><span class="badge badge-success">{{spent_jp()}} JP</span></p>
-            <p><span class="badge badge-info">{{spent_ap()}} AP</span></p>
+            <p><span class="badge badge-jp">{{spent_jp()}} JP</span></p>
+            <p><span class="badge badge-ap">{{spent_ap()}} AP</span></p>
           </div>
       </div>
       <div ng-show="selected_character">
@@ -127,11 +127,17 @@
                 </td>
                 <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
                 <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="levelTowards(job.name, level.level)">
-                  <span style="float:right" 
+                  <span style="float:left" 
                     ng-repeat="ability in abilities|filter:{id:level.ability}" 
                     class="label ability-{{ability.type}}" 
-                    popover="{{ability.display}}" 
-                    popover-placement="bottom">{{ability.type[0]}}</span>
+                    popover="{{ability.id}}" 
+                    popover-title="{{ability.type}} ability"
+                    popover-placement="bottom"> <i class="icon-bolt"></i> </span>
+                  <span ng-show="level.spells != undefined" style="float:right" 
+                      class="label spell-label" 
+                      popover="{{level.spells}}" 
+                      popover-title="Spells"
+                      popover-placement="bottom"><i class="icon-magic"></i></span>
                 </td>
               </tr>
             </tbody>
