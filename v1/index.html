@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
   <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/flat-ui.css"/>
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -33,7 +34,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">Final Fantasy Dimensions JobCalc</a>
+          <a class="brand">Final Fantasy Dimensions JobCalc</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -56,15 +57,15 @@
           </select>
         </div>
         <div class="span2 offset7">
-          <a ng-click="reset()" class="btn btn-danger bootstrap-popover" popover-title="Reset" popover-placement="left" popover="Click to reset character selection and all spent JP" >Reset</a>
+          <a ng-click="reset()" class="btn btn-danger" popover-title="Reset" popover-placement="left" popover="Click to reset character selection and all spent JP" >Reset</a>
         </div>
       </div> 
       <div class="row" ng-show="selected_character">
           <div class="span4">
-            <ul class="thumbnails">
+            <ul class="thumbnails ">
               <li class="span4">
-                <div class="thumbnail">
-                  <span style="float:right" class="label">{{selected_character.side}}</span>
+                <div class="thumbnail character_profile">
+                  <span style="float:right" class="label {{selected_character.side}}_label">{{selected_character.side}}</span>
                   <img ng-src="{{selected_character.image}}" class="img-polaroid" alt="">
                   <h3>{{selected_character.name}}</h3> 
                   <p class="visible-desktop">{{selected_character.description}}</p>
@@ -72,12 +73,12 @@
               </li>
             </ul>
           </div>
-          <div class="span3 well">
-	    <p>Unlocked Abilities</p>
-	    <ul>
-        <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"' popover-title="{{ability.display}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{display:ability.display} }}">{{ability.display}}</li>
-      </ul>
-	  </div>
+          <div class="span3 well spellbook">
+      	    <p>Unlocked Abilities</p>
+      	    <ul>
+              <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"' popover-title="{{ability.display}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{display:ability.display} }}">{{ability.display}}</li>
+            </ul>
+      	  </div>
           <div class="span3 well">
 	    <p>Unlocked Fusions</p>
 	    <ul>

@@ -48,6 +48,25 @@ th {
   text-align:center;
 }
 
+/*.well {
+  background-color: #2980B9;
+  color: #ECF0F1;
+}
+
+.character_profile {
+  color: #ECF0F1;
+  background-color: #2980B9;
+}*/
+
+.light_label {
+  background-color: #ECF0F1;
+  color: #F1C40F;
+}
+
+.dark_label {
+  background-color: #2C3E50;
+  color: #C0392B;
+}
 
 span.tooltip {
       position: absolute;
