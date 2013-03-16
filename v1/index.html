@@ -74,7 +74,7 @@
             </ul>
           </div>
           <div class="span3 well spellbook">
-      	    <p>Unlocked Abilities</p>
+      	    <p>Abilities </p>
       	    <ul>
               <li ng-repeat='ability in abilities|filter:isAcquired|unique:"display"' popover-title="{{ability.display}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{display:ability.display} }}">{{ability.display}}</li>
             </ul>
@@ -98,7 +98,7 @@
             <thead class="cf">
               <tr>
                 <th>Job</th>
-                <th class="level baseline"><a popover="Click in this column to decrease points spent in any job" popover-placement="right">0</a></th>
+                <th class="level baseline"><span popover="Click in this column to decrease points spent in any job" popover-placement="right">0</span></th>
                 <th class="level free">1</th>
                 <th class="level free">2</th>
                 <th class="level free">3</th>
