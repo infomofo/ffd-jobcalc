@@ -54,7 +54,7 @@ function CharacterController($scope, $http, $location) {
     var total = 0;
     try {
     angular.forEach($scope.jobs, function(job) {
-      for (var i = 1; i < $scope.current_build.jp[job.name]; i++) {
+      for (var i = 0; i < $scope.current_build.jp[job.name]; i++) {
         total += job.levels[i].ap;
       }
     });
@@ -75,14 +75,18 @@ function CharacterController($scope, $http, $location) {
 
   $scope.reset = function() {
     $scope.selected_character = null;
-    $location.search();
+    $http.get('data/build.json').success(function(data) {
+       $scope.current_build = data;
+    });
+    $scope.updateUrl
   }
 
   $scope.levelTowards = function(name,target) {
-    if ((target < $scope.current_build.jp[name]) && ($scope.current_build.jp[name] > MIN_JLV))
-      $scope.current_build.jp[name]--;
-    else if ((target > $scope.current_build.jp[name]) && ($scope.current_build.jp[name] < MAX_JLV))
-      $scope.current_build.jp[name]++;
+      // if ((target < $scope.current_build.jp[name]) && ($scope.current_build.jp[name] > MIN_JLV))
+      //   $scope.current_build.jp[name]--;
+      // else if ((target > $scope.current_build.jp[name]) && ($scope.current_build.jp[name] < MAX_JLV))
+      //   $scope.current_build.jp[name]++;
+      $scope.current_build.jp[name] = target
   }
 
   $scope.getLevelClass = function(name,level) {
@@ -131,7 +135,6 @@ function CharacterController($scope, $http, $location) {
   };
 
   $scope.isInLevel = function(spell, level) {
-    alert (spell);
     if (level.spells == undefined) {
       return false;
     } else 
@@ -141,6 +144,19 @@ function CharacterController($scope, $http, $location) {
     else {
       return false;
     }
+  }
+
+  $scope.abilitiesForJobLevel = function(level) {
+    //abilities|filter:{id:level.ability}
+    var result = [];
+    angular.foreach(level.abilities, function(abilityId) {
+      angular.foreach($scope.abilities, function(ability) {
+        if (ability.id == abilityId) {
+          result.push(ability);
+        }
+      });
+    });
+    return result;
   }
 
 }

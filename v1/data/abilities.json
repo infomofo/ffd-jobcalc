@@ -148,25 +148,37 @@
     },
     {
         "id": "Red Magic Lv. 1",
-        "spells": ["Black Magic Lv. 1","White Magic Lv. 1"],
+        "spells": [
+            "Black Magic Lv. 1",
+            "White Magic Lv. 1"
+        ],
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Red Magic Lv. 2",
-        "spells": ["Black Magic Lv. 2","White Magic Lv. 2"],
+        "spells": [
+            "Black Magic Lv. 2",
+            "White Magic Lv. 2"
+        ],
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Red Magic Lv. 3",
-        "spells": ["Black Magic Lv. 3","White Magic Lv. 3"],
+        "spells": [
+            "Black Magic Lv. 3",
+            "White Magic Lv. 3"
+        ],
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Red Magic Lv. 4",
-        "spells": ["Black Magic Lv. 4","White Magic Lv. 4"],
+        "spells": [
+            "Black Magic Lv. 4",
+            "White Magic Lv. 4"
+        ],
         "type": "Active",
         "slots": 2
     },
@@ -357,7 +369,7 @@
         "description": "Grants the ability to use Holy Blade abilities"
     },
     {
-        "id": "Cover",
+        "id": "Cover ",
         "type": "Passive",
         "slots": 1,
         "description": "Takes damage in place of critically injured allies"
@@ -387,5 +399,97 @@
         "type": "Active",
         "slots": 1,
         "description": "Restores HP to all allies"
+    },
+    {
+        "id": "Aim",
+        "spells": "Aim",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Aim abilities"
+    },
+    {
+        "id": "Backup",
+        "spells": "Backup",
+        "type": "Active",
+        "slots": 1,
+        "description": "Until next turn, automatically follows up on an ally’s attack"
+    },
+    {
+        "id": "Recover",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Recovers a small amount of allies’ HP and MP after battle"
+    },
+    {
+        "id": "Alchemy",
+        "spells": "Alchemy",
+        "type": "Active",
+        "slots": 1,
+        "description": "Uses two items in succession"
+    },
+    {
+        "id": "Dark Blade",
+        "spells": "Dark Blade",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Dark Blade abilities"
+    },
+    {
+        "id": "Backliner",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Can attack from the back row without a loss in damage"
+    },
+    {
+        "id": "Draw Attacks",
+        "spells": "Draw Attacks",
+        "type": "Active",
+        "slots": 1,
+        "description": "Draws enemy attacks onto oneself"
+    },
+    {
+        "id": "Absorb HP",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Recovers HP proportional to physical damage dealt"
+    },
+    {
+        "id": "Dance",
+        "spells": "Dance",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Dance abilities"
+    },
+    {
+        "id": "Ninjitsu",
+        "spells": "Ninjitsu",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use Ninjitsu abilities"
+    },
+    {
+        "id": "Throw",
+        "type": "Active",
+        "slots": 2,
+        "description": "Throws a weapon at an enemy. Thrown weapons disappear"
+    },
+    {
+        "id": "Dual Wield",
+        "type": "Passive",
+        "slots": 2,
+        "description": "Grants the ability to equip a weapon in each hand"
+    },
+    {
+        "id": "Boost Element",
+        "spells": "Boost Element",
+        "type": "Active",
+        "slots": 2,
+        "description": "Grants the ability to use magic that bolsters elemental attacks"
+    },
+    {
+        "id": "Clarity",
+        "type": "Passive",
+        "slots": 1,
+        "description": "Restores MP to all allies"
     }
 ]

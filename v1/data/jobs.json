@@ -1,7 +1,7 @@
 [
     {
         "name": "Warrior",
-        "abbr": "War",
+        "abbr": "Wr",
         "description": "",
         "side": [
             "light",
@@ -80,7 +80,9 @@
             {
                 "level": 15,
                 "ap": 360,
-                "spells": ["War Cry"]
+                "spells": [
+                    "War Cry"
+                ]
             },
             {
                 "level": 16,
@@ -89,7 +91,9 @@
             {
                 "level": 17,
                 "ap": 440,
-                "spells": ["Assault"]
+                "spells": [
+                    "Assault"
+                ]
             },
             {
                 "level": 18,
@@ -110,7 +114,7 @@
     },
     {
         "name": "Monk",
-        "abbr": "Mnk",
+        "abbr": "Mk",
         "description": "",
         "side": [
             "light",
@@ -230,7 +234,7 @@
     },
     {
         "name": "Thief",
-        "abbr": "Thf",
+        "abbr": "Th",
         "description": "",
         "side": [
             "light",
@@ -332,7 +336,7 @@
     },
     {
         "name": "Red Mage",
-        "abbr": "Rdm",
+        "abbr": "Rm",
         "description": "",
         "side": [
             "light",
@@ -347,7 +351,10 @@
                 "spells": [
                     "Cure",
                     "Libra",
-                    "Poisona","Fire","Blizzard","Thunder"
+                    "Poisona",
+                    "Fire",
+                    "Blizzard",
+                    "Thunder"
                 ]
             },
             {
@@ -370,7 +377,10 @@
                 "spells": [
                     "Slow",
                     "Silence",
-                    "Mini","Poison","Sleep","Toad"
+                    "Mini",
+                    "Poison",
+                    "Sleep",
+                    "Toad"
                 ]
             },
             {
@@ -399,7 +409,14 @@
                 "level": 11,
                 "ap": 300,
                 "ability": "Red Magic Lv. 3",
-                                "spells": ["Cura","Protect","Raise","Cura","Protect","Raise"]
+                "spells": [
+                    "Cura",
+                    "Protect",
+                    "Raise",
+                    "Cura",
+                    "Protect",
+                    "Raise"
+                ]
             },
             {
                 "level": 12,
@@ -409,7 +426,14 @@
                 "level": 13,
                 "ap": 360,
                 "ability": "Red Magic Lv. 4",
-                "spells": ["Basuna","Confuse","Teleport","Drain","Break","Bio"]
+                "spells": [
+                    "Basuna",
+                    "Confuse",
+                    "Teleport",
+                    "Drain",
+                    "Break",
+                    "Bio"
+                ]
             },
             {
                 "level": 14,
@@ -446,7 +470,7 @@
     },
     {
         "name": "White Mage",
-        "abbr": "Whm",
+        "abbr": "Wm",
         "description": "",
         "side": [
             "light",
@@ -495,7 +519,11 @@
                 "level": 7,
                 "ap": 140,
                 "ability": "White Magic Lv. 3",
-                "spells": ["Cura","Protect","Raise"]
+                "spells": [
+                    "Cura",
+                    "Protect",
+                    "Raise"
+                ]
             },
             {
                 "level": 8,
@@ -505,7 +533,11 @@
                 "level": 9,
                 "ap": 180,
                 "ability": "White Magic Lv. 4",
-                "spells": ["Basuna","Confuse","Teleport"]
+                "spells": [
+                    "Basuna",
+                    "Confuse",
+                    "Teleport"
+                ]
             },
             {
                 "level": 10,
@@ -520,7 +552,11 @@
                 "level": 12,
                 "ap": 240,
                 "ability": "White Magic Lv. 5",
-                "spells": ["Curaja","Blink","Shell"]
+                "spells": [
+                    "Curaja",
+                    "Blink",
+                    "Shell"
+                ]
             },
             {
                 "level": 13,
@@ -534,7 +570,11 @@
                 "level": 15,
                 "ap": 300,
                 "ability": "White Magic Lv. 6",
-                "spells": ["Berserk","Regen","Haste"]
+                "spells": [
+                    "Berserk",
+                    "Regen",
+                    "Haste"
+                ]
             },
             {
                 "level": 16,
@@ -548,7 +588,11 @@
                 "level": 18,
                 "ap": 390,
                 "ability": "White Magic Lv. 7",
-                "spells": ["Curaga","Esuna","Reflect"]
+                "spells": [
+                    "Curaga",
+                    "Esuna",
+                    "Reflect"
+                ]
             },
             {
                 "level": 19,
@@ -564,7 +608,7 @@
     },
     {
         "name": "Black Mage",
-        "abbr": "Bkm",
+        "abbr": "Bm",
         "description": "",
         "side": [
             "light",
@@ -576,7 +620,11 @@
                 "level": 1,
                 "ap": 20,
                 "ability": "Black Magic Lv. 1",
-                "spells": ["Fire","Blizzard","Thunder"]
+                "spells": [
+                    "Fire",
+                    "Blizzard",
+                    "Thunder"
+                ]
             },
             {
                 "level": 2,
@@ -586,7 +634,11 @@
                 "level": 3,
                 "ap": 60,
                 "ability": "Black Magic Lv. 2",
-                "spells": ["Poison","Sleep","Toad"]
+                "spells": [
+                    "Poison",
+                    "Sleep",
+                    "Toad"
+                ]
             },
             {
                 "level": 4,
@@ -605,7 +657,11 @@
                 "level": 7,
                 "ap": 140,
                 "ability": "Black Magic Lv. 3",
-                "spells": ["Fira","Blizzara","Thundara"]
+                "spells": [
+                    "Fira",
+                    "Blizzara",
+                    "Thundara"
+                ]
             },
             {
                 "level": 8,
@@ -615,7 +671,11 @@
                 "level": 9,
                 "ap": 180,
                 "ability": "Black Magic Lv. 4",
-                "spells": ["Drain","Break","Bio"]
+                "spells": [
+                    "Drain",
+                    "Break",
+                    "Bio"
+                ]
             },
             {
                 "level": 10,
@@ -629,7 +689,11 @@
                 "level": 12,
                 "ap": 240,
                 "ability": "Black Magic Lv. 5",
-                "spells": ["Osmose","Stop","Tornado"]
+                "spells": [
+                    "Osmose",
+                    "Stop",
+                    "Tornado"
+                ]
             },
             {
                 "level": 13,
@@ -643,7 +707,11 @@
                 "level": 15,
                 "ap": 300,
                 "ability": "Black Magic Lv. 6",
-                "spells": ["Firaga","Blizzaga","Thundaga"]
+                "spells": [
+                    "Firaga",
+                    "Blizzaga",
+                    "Thundaga"
+                ]
             },
             {
                 "level": 16,
@@ -657,7 +725,11 @@
                 "level": 18,
                 "ap": 390,
                 "ability": "Black Magic Lv. 7",
-                "spells": ["Quake","Death","Comet"]
+                "spells": [
+                    "Quake",
+                    "Death",
+                    "Comet"
+                ]
             },
             {
                 "level": 19,
@@ -672,7 +744,7 @@
     },
     {
         "name": "Summoner",
-        "abbr": "Sum",
+        "abbr": "Su",
         "description": "",
         "side": [
             "light",
@@ -775,7 +847,7 @@
     },
     {
         "name": "Dragoon",
-        "abbr": "Drg",
+        "abbr": "Dr",
         "description": "",
         "side": [
             "light"
@@ -893,7 +965,7 @@
     },
     {
         "name": "Bard",
-        "abbr": "Brd",
+        "abbr": "Ba",
         "description": "",
         "side": [
             "light"
@@ -1013,7 +1085,7 @@
     },
     {
         "name": "Memorist",
-        "abbr": "Mem",
+        "abbr": "Me",
         "description": "",
         "side": [
             "light"
@@ -1106,7 +1178,7 @@
     },
     {
         "name": "Paladin",
-        "abbr": "Pal",
+        "abbr": "Pa",
         "description": "",
         "side": [
             "light"
@@ -1139,7 +1211,7 @@
             {
                 "level": 5,
                 "ap": 130,
-                "ability": "Cover"
+                "ability": "Cover "
             },
             {
                 "level": 6,
@@ -1219,7 +1291,7 @@
     },
     {
         "name": "Seer",
-        "abbr": "Ser",
+        "abbr": "Sr",
         "description": "",
         "side": [
             "light"
@@ -1230,7 +1302,8 @@
                 "level": 1,
                 "ap": 20,
                 "spells": [
-                    "Dispel","Holy"
+                    "Dispel",
+                    "Holy"
                 ]
             },
             {
@@ -1343,7 +1416,7 @@
     },
     {
         "name": "Ranger",
-        "abbr": "Ran",
+        "abbr": "Ra",
         "description": "",
         "side": [
             "dark"
@@ -1353,12 +1426,17 @@
             {
                 "level": 1,
                 "ap": 20,
-                "ability": "Aim / Precise Shot"
+                "ability": "Aim",
+                "spells": [
+                    "Precise Shot"
+                ]
             },
             {
                 "level": 2,
                 "ap": 40,
-                "ability": "Aim: Mouth"
+                "spells": [
+                    "Aim: Mouth"
+                ]
             },
             {
                 "level": 3,
@@ -1367,7 +1445,9 @@
             {
                 "level": 4,
                 "ap": 80,
-                "ability": "Aim: Legs"
+                "spells": [
+                    "Aim: Legs"
+                ]
             },
             {
                 "level": 5,
@@ -1385,7 +1465,9 @@
             {
                 "level": 8,
                 "ap": 160,
-                "ability": "Aim: Heart"
+                "spells": [
+                    "Aim: Heart"
+                ]
             },
             {
                 "level": 9,
@@ -1403,7 +1485,9 @@
             {
                 "level": 12,
                 "ap": 280,
-                "ability": "Quick Shot"
+                "spells": [
+                    "Quick Shot"
+                ]
             },
             {
                 "level": 13,
@@ -1421,7 +1505,9 @@
             {
                 "level": 16,
                 "ap": 450,
-                "ability": "Attack: Vitals"
+                "spells": [
+                    "Attack: Vitals"
+                ]
             },
             {
                 "level": 17,
@@ -1440,13 +1526,15 @@
             {
                 "level": 20,
                 "ap": 650,
-                "ability": "Spreadshot"
+                "spells": [
+                    "Spreadshot"
+                ]
             }
         ]
     },
     {
         "name": "Dark Knight",
-        "abbr": "Drk",
+        "abbr": "Dk",
         "description": "",
         "side": [
             "dark"
@@ -1456,7 +1544,10 @@
             {
                 "level": 1,
                 "ap": 30,
-                "ability": "Dark Blade / Darkness"
+                "ability": "Dark Blade",
+                "spells": [
+                    "Darkness"
+                ]
             },
             {
                 "level": 2,
@@ -1465,7 +1556,9 @@
             {
                 "level": 3,
                 "ap": 80,
-                "ability": "Curse"
+                "spells": [
+                    "Curse"
+                ]
             },
             {
                 "level": 4,
@@ -1474,7 +1567,9 @@
             {
                 "level": 5,
                 "ap": 130,
-                "ability": "Onyx Wave"
+                "spells": [
+                    "Onyx Wave"
+                ]
             },
             {
                 "level": 6,
@@ -1496,8 +1591,7 @@
             },
             {
                 "level": 10,
-                "ap": 280,
-                "ability": "Slot +1"
+                "ap": 280
             },
             {
                 "level": 11,
@@ -1515,7 +1609,9 @@
             {
                 "level": 14,
                 "ap": 380,
-                "ability": "Last Resort"
+                "spells": [
+                    "Last Resort"
+                ]
             },
             {
                 "level": 15,
@@ -1528,7 +1624,9 @@
             {
                 "level": 17,
                 "ap": 440,
-                "ability": "Final Assault"
+                "spells": [
+                    "Final Assault"
+                ]
             },
             {
                 "level": 18,
@@ -1536,19 +1634,20 @@
             },
             {
                 "level": 19,
-                "ap": 470,
-                "ability": "Slot +1"
+                "ap": 470
             },
             {
                 "level": 20,
                 "ap": 490,
-                "ability": "Ebony Slash"
+                "spells": [
+                    "Ebony Slash"
+                ]
             }
         ]
     },
     {
         "name": "Dancer",
-        "abbr": "Dan",
+        "abbr": "Da",
         "description": "",
         "side": [
             "dark"
@@ -1558,7 +1657,10 @@
             {
                 "level": 1,
                 "ap": 20,
-                "ability": "Drain Samba"
+                "spells": [
+                    "Cure Waltz",
+                    "Drain Samba"
+                ]
             },
             {
                 "level": 2,
@@ -1567,7 +1669,9 @@
             {
                 "level": 3,
                 "ap": 50,
-                "ability": "Osmose Dance"
+                "spells": [
+                    "Osmose Dance"
+                ]
             },
             {
                 "level": 4,
@@ -1576,7 +1680,9 @@
             {
                 "level": 5,
                 "ap": 90,
-                "ability": "Fraility Polka"
+                "spells": [
+                    "Fraility Polka"
+                ]
             },
             {
                 "level": 6,
@@ -1585,7 +1691,7 @@
             {
                 "level": 7,
                 "ap": 150,
-                "ability": "Dance (Cure Waltz)"
+                "ability": "Dance"
             },
             {
                 "level": 8,
@@ -1594,12 +1700,13 @@
             {
                 "level": 9,
                 "ap": 220,
-                "ability": "Heal Waltz"
+                "spells": [
+                    "Heal Waltz"
+                ]
             },
             {
                 "level": 10,
-                "ap": 260,
-                "ability": "Slot +1"
+                "ap": 260
             },
             {
                 "level": 11,
@@ -1612,7 +1719,9 @@
             {
                 "level": 13,
                 "ap": 370,
-                "ability": "Slow Minuet"
+                "spells": [
+                    "Slow Minuet"
+                ]
             },
             {
                 "level": 14,
@@ -1625,7 +1734,9 @@
             {
                 "level": 16,
                 "ap": 440,
-                "ability": "Wonder Step"
+                "spells": [
+                    "Wonder Step"
+                ]
             },
             {
                 "level": 17,
@@ -1637,19 +1748,20 @@
             },
             {
                 "level": 19,
-                "ap": 470,
-                "ability": "Slot +1"
+                "ap": 470
             },
             {
                 "level": 20,
                 "ap": 490,
-                "ability": "Trance"
+                "spells": [
+                    "Trance"
+                ]
             }
         ]
     },
     {
         "name": "Ninja",
-        "abbr": "Nin",
+        "abbr": "Ni",
         "description": "",
         "side": [
             "dark"
@@ -1659,12 +1771,19 @@
             {
                 "level": 1,
                 "ap": 35,
-                "ability": "Ninjutsu / Flame, Flood, Blitz"
+                "ability": "Ninjutsu",
+                "spells": [
+                    "Flame",
+                    "Flood",
+                    "Blitz"
+                ]
             },
             {
                 "level": 2,
                 "ap": 55,
-                "ability": "Healing Pill"
+                "spells": [
+                    "Healing Pill"
+                ]
             },
             {
                 "level": 3,
@@ -1673,12 +1792,16 @@
             {
                 "level": 4,
                 "ap": 95,
-                "ability": "Noxious Gas"
+                "spells": [
+                    "Noxious Gas"
+                ]
             },
             {
                 "level": 5,
                 "ap": 115,
-                "ability": "Flash"
+                "spells": [
+                    "Flash"
+                ]
             },
             {
                 "level": 6,
@@ -1687,12 +1810,16 @@
             {
                 "level": 7,
                 "ap": 155,
-                "ability": "Tremor"
+                "spells": [
+                    "Tremor"
+                ]
             },
             {
                 "level": 8,
                 "ap": 175,
-                "ability": "Gale"
+                "spells": [
+                    "Gale"
+                ]
             },
             {
                 "level": 9,
@@ -1700,8 +1827,7 @@
             },
             {
                 "level": 10,
-                "ap": 235,
-                "ability": "Slot +1"
+                "ap": 235
             },
             {
                 "level": 11,
@@ -1715,12 +1841,16 @@
             {
                 "level": 13,
                 "ap": 325,
-                "ability": "Smoke Bomb"
+                "spells": [
+                    "Smoke Bomb"
+                ]
             },
             {
                 "level": 14,
                 "ap": 355,
-                "ability": "Stunner"
+                "spells": [
+                    "Stunner"
+                ]
             },
             {
                 "level": 15,
@@ -1729,22 +1859,27 @@
             {
                 "level": 16,
                 "ap": 435,
-                "ability": "Restorative Pill"
+                "spells": [
+                    "Restorative Pill"
+                ]
             },
             {
                 "level": 17,
                 "ap": 475,
-                "ability": "Image"
+                "spells": [
+                    "Image"
+                ]
             },
             {
                 "level": 18,
                 "ap": 525,
-                "ability": "Assassinate"
+                "spells": [
+                    "Assassinate"
+                ]
             },
             {
                 "level": 19,
-                "ap": 575,
-                "ability": "Slot +1"
+                "ap": 575
             },
             {
                 "level": 20,
@@ -1755,7 +1890,7 @@
     },
     {
         "name": "Magus",
-        "abbr": "Mag",
+        "abbr": "Ma",
         "description": "",
         "side": [
             "dark"
@@ -1765,7 +1900,7 @@
             {
                 "level": 1,
                 "ap": 20,
-                "ability": "Flare"
+                "spells": ["Flare"]
             },
             {
                 "level": 2,
@@ -1775,17 +1910,17 @@
             {
                 "level": 3,
                 "ap": 60,
-                "ability": "Enfire"
+                "spells": ["Enfire"]
             },
             {
                 "level": 4,
                 "ap": 80,
-                "ability": "Enblizzard"
+                "spells": [ "Enblizzard"]
             },
             {
                 "level": 5,
                 "ap": 100,
-                "ability": "Enthunder"
+                "spells": [ "Enthunder"]
             },
             {
                 "level": 6,
@@ -1794,7 +1929,7 @@
             {
                 "level": 7,
                 "ap": 140,
-                "ability": "Enaero"
+                "spells": ["Enaero"]
             },
             {
                 "level": 8,
@@ -1807,8 +1942,7 @@
             },
             {
                 "level": 10,
-                "ap": 200,
-                "ability": "Slot +1"
+                "ap": 200
             },
             {
                 "level": 11,
@@ -1817,7 +1951,7 @@
             {
                 "level": 12,
                 "ap": 250,
-                "ability": "Enstone"
+                "spells": [ "Enstone"]
             },
             {
                 "level": 13,
@@ -1826,7 +1960,7 @@
             {
                 "level": 14,
                 "ap": 340,
-                "ability": "Enwater"
+                "spells": ["Enwater"]
             },
             {
                 "level": 15,
@@ -1835,7 +1969,7 @@
             {
                 "level": 16,
                 "ap": 470,
-                "ability": "Enlight"
+                "spells": ["Enlight"]
             },
             {
                 "level": 17,
@@ -1848,13 +1982,12 @@
             },
             {
                 "level": 19,
-                "ap": 720,
-                "ability": "Slot +1"
+                "ap": 720
             },
             {
                 "level": 20,
                 "ap": 800,
-                "ability": "Ultima"
+                "spells": [ "Ultima"]
             }
         ]
     }

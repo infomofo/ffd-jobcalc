@@ -47,4 +47,5 @@ Sources
 * [Final Fantasy Dimensions on Google Play](https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.ffl_gp)
 * [FFD FAQ/Walkthrough Version 1.30 by holyknight](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107) - Source of the character level attributes
 * [Ability Acquisition FAQ 1.1 by Sir Phoenix](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30) - Source of the job level and fusion data
+* [Delta Attack Final Fantasy Dimensions Job Skills Guide](http://www.deltaattack.com/2013/01/16/final-fantasy-dimensions-job-abilities-faq-help/)
 * [Final Fantasy Wikia: Final Fantasy Dimensions](http://finalfantasy.wikia.com/wiki/Final_Fantasy_Dimensions)
