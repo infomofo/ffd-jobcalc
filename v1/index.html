@@ -52,7 +52,7 @@
       <p>Plan builds for the eight customizable characters in Final Fantasy Dimensions.</p>
       <div class="row">
         <div class="span3">
-          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{onCharacterSelect()}}">
+          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{onCharacterSelect()}}" popover-title="Character Selection" popover-placement="bottom" popover="Each character comes with a different set of innate abilities available to them, additionally, each character is associated with either the light or dark set of Job options." >
             <option value="">select a character</option>
           </select>
         </div>
@@ -73,22 +73,24 @@
               </li>
             </ul>
           </div>
-          <div class="span3 well spellbook">
+          <div class="">
+            <div class="well span1">
+              <p><span class="badge badge-jp" popover-title="Job Points" popover-placement="bottom" popover="Any job level over 3 requires the use of Job Points.  There is a cap of 69 Job Points during the storyline of Final Fantasy Dimensions.  After defeating the final boss you have the option of completing additional dungeons for additional JP." >{{spent_jp()}} JP</span></p>
+              <p><span class="badge badge-ap" popover-title="Ability Points" popover-placement="bottom" popover="Ability Points are earned by defeating enemies in battle." >{{spent_ap()}} AP</span></p>
+            </div>
+            <div class="well span2">
+            <p>Unlocked Fusions</p>
+            <ul>
+              <li ng-repeat='fusion in unlockedFusions()' popover-title="{{fusion.name}}" popover-placement="left" popover="{{fusion|json}}">{{fusion.name}}</li> 
+            </ul>
+            </div>
+          </div>
+          <div class="span2 well spellbook">
       	    <p>Abilities </p>
       	    <ul>
               <li ng-repeat='ability in abilities|filter:isAcquired' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{id:ability.id} }}">{{ability.id}}</li>
             </ul>
       	  </div>
-          <div class="span3 well">
-	    <p>Unlocked Fusions</p>
-	    <ul>
-	      <li ng-repeat='fusion in unlockedFusions()' popover-title="{{fusion.name}}" popover-placement="left" popover="{{fusion|json}}">{{fusion.name}}</li> 
-	    </ul>
-          </div>
-          <div class="span1 well">
-            <p><span class="badge badge-jp">{{spent_jp()}} JP</span></p>
-            <p><span class="badge badge-ap">{{spent_ap()}} AP</span></p>
-          </div>
       </div>
       <div ng-show="selected_character">
         <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
@@ -123,7 +125,7 @@
 	  </thead>
 	  </tbody>
               <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
-                <td ng-click="levelTowards(job.name,0)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" /><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
+                <td ng-click="levelTowards(job.name,0)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" popover-placement="right" popover-title="{{job.name}}" popover="{{job.description}}"/><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
                 </td>
                 <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
                 <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="levelTowards(job.name, level.level)">
@@ -136,7 +138,7 @@
                   <span ng-show="level.spells != undefined" style="float:right" 
                       class="label spell-label" 
                       popover="{{level.spells}}" 
-                      popover-title="Spells"
+                      popover-title="Spells/Abilities"
                       popover-placement="bottom"><i class="icon-magic"></i></span>
                 </td>
               </tr>

@@ -2,7 +2,7 @@
     {
         "name": "Warrior",
         "abbr": "Wr",
-        "description": "",
+        "description": "Specializes in weapon attacks. Uses Battle Arts to attack",
         "side": [
             "light",
             "dark"
@@ -115,7 +115,7 @@
     {
         "name": "Monk",
         "abbr": "Mk",
-        "description": "",
+        "description": "Uses the body as a weapon. Uses Martial arts to attack",
         "side": [
             "light",
             "dark"
@@ -235,7 +235,7 @@
     {
         "name": "Thief",
         "abbr": "Th",
-        "description": "",
+        "description": "Takes advantage of speed. Abilities have high utility",
         "side": [
             "light",
             "dark"
@@ -337,7 +337,7 @@
     {
         "name": "Red Mage",
         "abbr": "Rm",
-        "description": "",
+        "description": "Utilizes White/Black magic. A jack of all trades",
         "side": [
             "light",
             "dark"
@@ -471,7 +471,7 @@
     {
         "name": "White Mage",
         "abbr": "Wm",
-        "description": "",
+        "description": "Specializes in White Magic. Heals and Supports",
         "side": [
             "light",
             "dark"
@@ -609,7 +609,7 @@
     {
         "name": "Black Mage",
         "abbr": "Bm",
-        "description": "",
+        "description": "Specializes in Black Magic. Has various offensive spells",
         "side": [
             "light",
             "dark"
@@ -745,7 +745,7 @@
     {
         "name": "Summoner",
         "abbr": "Su",
-        "description": "",
+        "description": "Specializes in summoning Eidolons for various effects",
         "side": [
             "light",
             "dark"
@@ -755,7 +755,8 @@
             {
                 "level": 1,
                 "ap": 30,
-                "ability": "Summon Lv. 1"
+                "ability": "Summon Lv. 1",
+                "spells": ["Sylph","Chocobo"]
             },
             {
                 "level": 2,
@@ -781,7 +782,8 @@
             {
                 "level": 7,
                 "ap": 160,
-                "ability": "Summon Lv. 2"
+                "ability": "Summon Lv. 2",
+                "spells": ["Sylph","Chocobo"]
             },
             {
                 "level": 8,
@@ -790,12 +792,12 @@
             {
                 "level": 9,
                 "ap": 200,
-                "ability": "Summon Lv. 3"
+                "ability": "Summon Lv. 3",
+                "spells": ["Shiva","Ifrit"]
             },
             {
                 "level": 10,
-                "ap": 220,
-                "ability": "Slot +1"
+                "ap": 220
             },
             {
                 "level": 11,
@@ -804,7 +806,8 @@
             {
                 "level": 12,
                 "ap": 270,
-                "ability": "Summon Lv. 4"
+                "ability": "Summon Lv. 4",
+                "spells": ["Phoenix","Odin"]
             },
             {
                 "level": 13,
@@ -817,7 +820,8 @@
             {
                 "level": 15,
                 "ap": 350,
-                "ability": "Summon Lv. 5"
+                "ability": "Summon Lv. 5",
+                "spells": ["Unicorn","Leviathan"]
             },
             {
                 "level": 16,
@@ -826,7 +830,8 @@
             {
                 "level": 17,
                 "ap": 410,
-                "ability": "Summon Lv. 6"
+                "ability": "Summon Lv. 6",
+                "spells": ["Alexander","Diabolos"]
             },
             {
                 "level": 18,
@@ -835,20 +840,20 @@
             },
             {
                 "level": 19,
-                "ap": 470,
-                "ability": "Slot +1"
+                "ap": 470
             },
             {
                 "level": 20,
                 "ap": 500,
-                "ability": "Summon Lv. 7"
+                "ability": "Summon Lv. 7",
+                "spells": ["Argy","Bahamut"]
             }
         ]
     },
     {
         "name": "Dragoon",
         "abbr": "Dr",
-        "description": "",
+        "description": "Specializes in jumping attacks. Uses versatile Dragon Arts",
         "side": [
             "light"
         ],
@@ -1417,7 +1422,7 @@
     {
         "name": "Ranger",
         "abbr": "Ra",
-        "description": "",
+        "description": "Master of long range combat. Attacks inflict various status",
         "side": [
             "dark"
         ],

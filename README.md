@@ -42,6 +42,7 @@ Future use cases
 Known issues
 ============
 * URL parameters are not strictly validated.  You could enter additional classes or job points in an existing class beyond 20 that would absorb JP in the calculator without doing anything, or negative jp in the json in the url to get more points.
+* It is possible to unlock some fusions with spells that are accessible without actually spending any ap in a job.  For example, "Thunder Slash" is accessible for any character with EITHER Black Mage Lv 1 or Warrior Lv. 1, as you can level one job to get the equippable ability, and then just equip that on the level 0 job to unlock the F-Ability.  I haven't yet modeled for that.
 
 APIs
 ---------
