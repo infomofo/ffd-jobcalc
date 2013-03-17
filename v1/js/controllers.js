@@ -200,10 +200,10 @@ function CharacterController($scope, $http, $location) {
               hasRequirement = true;
             }
             if (typeof(job.levels[i].spells) != 'undefined') {
-              console.log(JSON.stringify(job.levels[i]) + " has spells " + job.levels[i].spells);
+              // console.log(JSON.stringify(job.levels[i]) + " has spells " + job.levels[i].spells + " of which " + requirement + " is  " + job.levels[i].spells.indexOf(requirement));
                 
-              if (job.levels[i].spells.indexOf(requirement) > 0) {
-                 console.log(JSON.stringify(job.levels[i]) + " has  " + requirement + " as a spell");
+              if (job.levels[i].spells.indexOf(requirement) >= 0) {
+                 // console.log(JSON.stringify(job.levels[i]) + " has  " + requirement + " as a spell");
                 // console.log(job.levels[i].spells.indexOf(requirement));
                 hasRequirement = true;
               }
@@ -212,7 +212,7 @@ function CharacterController($scope, $http, $location) {
         });
 
         if (!hasRequirement) {
-          console.log("does not have " + requirement);
+          // console.log("does not have " + requirement);
           unlocked = false;
         }
       });
