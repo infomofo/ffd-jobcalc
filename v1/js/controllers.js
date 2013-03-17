@@ -155,12 +155,10 @@ function CharacterController($scope, $http, $location) {
     //abilities|filter:{id:level.ability}
     console.log(level)
     var result = [];
-    angular.forEach(level.abilities, function(abilityId) {
-      angular.forEach($scope.abilities, function(ability) {
-        if (ability.id == abilityId) {
-          result.push(ability);
-        }
-      });
+    angular.forEach($scope.abilities, function(ability) {
+      if (ability.id == level.ability) {
+        result.push(ability);
+      }
     });
     return result;
   }
@@ -193,11 +191,28 @@ function CharacterController($scope, $http, $location) {
 
         //check if requirement is a spell that can be used by a level 0 job
 
-        //check if requirement is an ability that can be used by a level 0 job
-
-        //check if requirement is a spell that can be used by a level 0 job
+        //check if requirement is an ability or spell in the current build
+        if (!hasRequirement)
+        angular.forEach($scope.jobs, function(job) {
+          for (var i = 0; i < $scope.current_build.jp[job.name]; i++) {
+            // console.log("checking if " + requirement + " is in " + JSON.stringify(job.levels[i]));
+            if (requirement == job.levels[i].ability) {
+              hasRequirement = true;
+            }
+            if (typeof(job.levels[i].spells) != 'undefined') {
+              console.log(JSON.stringify(job.levels[i]) + " has spells " + job.levels[i].spells);
+                
+              if (job.levels[i].spells.indexOf(requirement) > 0) {
+                 console.log(JSON.stringify(job.levels[i]) + " has  " + requirement + " as a spell");
+                // console.log(job.levels[i].spells.indexOf(requirement));
+                hasRequirement = true;
+              }
+            }
+          }
+        });
 
         if (!hasRequirement) {
+          console.log("does not have " + requirement);
           unlocked = false;
         }
       });
