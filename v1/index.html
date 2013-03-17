@@ -52,7 +52,7 @@
       <p>Plan builds for the eight customizable characters in Final Fantasy Dimensions.</p>
       <div class="row">
         <div class="span3">
-          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{onCharacterSelect()}}" popover-title="Character Selection" popover-placement="bottom" popover="Each character comes with a different set of innate abilities available to them, additionally, each character is associated with either the light or dark set of Job options." >
+          <select name="selected_character" ng-model="selected_character" ng-options=' c.name + " (" + c.side + ")" for c in characters' onChange="{{onCharacterSelect()}}">
             <option value="">select a character</option>
           </select>
         </div>
