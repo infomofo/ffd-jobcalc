@@ -289,4 +289,30 @@ function CharacterController($scope, $http, $location) {
     return tooltip;
   }
 
+  $scope.otherRequirement = function(requirements,requirement) {
+
+  }
+
+  $scope.spellsTooltip = function(spells) {
+    var tooltipBuild = [];
+    angular.forEach(spells, function(spell) {
+      var spellTooltip = spell;
+
+      var spellFusionsBuild = [];
+
+      angular.forEach($scope.fusions, function(fusion) {
+        if (fusion.requirements.indexOf(spell) >= 0) {
+          spellFusionsBuild.push(fusion.name);
+        }
+      });
+
+      if (spellFusionsBuild.length > 0)
+        spellTooltip += " (fusion " + spellFusionsBuild.join(", ") + ")";
+
+      tooltipBuild.push(spellTooltip);
+    });
+
+    return tooltipBuild.join(", ");
+  }
+
 }

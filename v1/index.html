@@ -132,12 +132,12 @@
                   <span style="float:left" 
                     ng-repeat="ability in abilities|filter:{id:level.ability}" 
                     class="label ability-{{ability.type}}" 
-                    popover="{{ability.id}}" 
-                    popover-title="{{ability.type}} ability"
+                    popover="{{abilityTooltip(ability)}}" 
+                    popover-title="{{ability.type}} Ability - {{ability.id}}"
                     popover-placement="bottom"> <i class="icon-bolt"></i> </span>
                   <span ng-show="level.spells != undefined" style="float:right" 
                       class="label spell-label" 
-                      popover="{{level.spells}}" 
+                      popover="{{spellsTooltip(level.spells)}}" 
                       popover-title="Spells/Abilities"
                       popover-placement="bottom"><i class="icon-magic"></i></span>
                 </td>
