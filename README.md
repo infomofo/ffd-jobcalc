@@ -19,7 +19,10 @@ Final Fantasy Dimensions is a Role Playing Game published by Square Enix for var
 How to use FFD Job Calculator
 -----------------------------
 1. Select a character to get the list of eligible jobs and base abilities
-2. Add points to the rows representing different jobs by clicking on the plus sign, or remove already spent levels by clicking on the minus sign
+2. Click on cells in the table to allocate job points for a given job row
+3. All eligible abilities for the selected build will appear under "Abilities"
+4. All unlocked fusions associated with those abilities will appear under "Unlocked Fusions"
+5. A running counter of the required JP and AP to reach that build will display
 
 Features
 ========
@@ -28,9 +31,13 @@ Features
 
 Future use cases
 ================
-* Show eligible abilities and fusions
 * Show what events in the game needed to reach required JP level
 * Enable tooltips for spell descriptions and other features
+* Plan a complete equip build for different base classes
+* Teach you how to acquire different fusions
+* Limit JP selection according to what is possible in game in different stages
+* Dedupe different levels of the same magic skill (i.e. White Magic Lv. 1 and 2)
+* Show contribution of character selection and attributes to possible stats at different levels
 
 Known issues
 ============
@@ -40,7 +47,7 @@ APIs
 ---------
 If there are any breaking changes to the data model or the api, I will retain old versions to maintain working links, and create new api endpoints.
 
-* api v1: /v1 - Initial character builder
+* api v1: [/v1]((./v1)) - Initial character builder
 
 Sources
 -------

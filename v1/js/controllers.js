@@ -124,6 +124,7 @@ function CharacterController($scope, $http, $location) {
     } catch (e) {
       // handle case when no character is selected
     }
+    if (!isAcquired)
     angular.forEach($scope.jobs, function(job) {
       for (var i = 1; i <= $scope.current_build.jp[job.name]; i++) {
         try {
@@ -172,16 +173,29 @@ function CharacterController($scope, $http, $location) {
 
       angular.forEach(fusion.requirements, function(requirement) {
         var hasRequirement = false;
+
+        //check if requirement is an ability innate to the selected character
         angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
           if (requirement == innate_ability_id) {
             hasRequirement = true;
           }
         });
+
+        //check if requirement is a spell innate to the selected character
+        if (!hasRequirement)
         angular.forEach($scope.selected_character.innate_spells, function (innate_spell_id) {
           if (requirement == innate_spell_id) {
             hasRequirement = true;
           }
         });
+
+        //check if requirement is an ability that can be used by a level 0 job
+
+        //check if requirement is a spell that can be used by a level 0 job
+
+        //check if requirement is an ability that can be used by a level 0 job
+
+        //check if requirement is a spell that can be used by a level 0 job
 
         if (!hasRequirement) {
           unlocked = false;
