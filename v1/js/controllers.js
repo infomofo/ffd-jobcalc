@@ -271,8 +271,40 @@ function CharacterController($scope, $http, $location) {
     return hasRequirement;
   }
 
+  $scope.isAvailableToSide = function(requirement) {
+    var isAvailable = false;
+
+    //check if requirement is an ability innate to the selected character
+    //console.log("checking if " + requirement + " is available to side: " + $scope.selected_character.side);
+    angular.forEach($scope.jobs, function(job) {
+      if ((!isAvailable) && (job.side.indexOf($scope.selected_character.side) >= 0)) {
+        //console.log("checking if " + requirement + " is in " + JSON.stringify(job.name));
+        angular.forEach(job.levels, function(level) {
+          if (requirement == level.ability) {
+            //console.log("found " + requirement + " in " + job.name + " level " + level.level);
+            isAvailable = true;
+          }
+          if ((!isAvailable) && (typeof(level.spells) != 'undefined')) {
+            //console.log(JSON.stringify(level) + " has spells " + level.spells + " of which " + requirement + " is  " + level.spells.indexOf(requirement));
+              
+            if ((level.spells == requirement) && (level.spells.indexOf(requirement) >= 0)) {
+
+              //console.log("found " + requirement + " in " + job.name + " level " + level.level);
+               // console.log(JSON.stringify(job.levels[i]) + " has  " + requirement + " as a spell");
+              // console.log(job.levels[i].spells.indexOf(requirement));
+              isAvailable = true;
+            }
+          }
+        });
+      }
+    });
+     //console.log("checking if " + requirement + " is available to side: " + $scope.selected_character.side +": " + isAvailable);
+
+    return isAvailable;
+  }
+
   $scope.abilityTooltip = function(ability) {
-    var tooltip = ability.description;
+    var tooltip = ability.id;
 
     // if (typeof(ability.spells) != 'undefined') {
     //   var abilityspells = [];
@@ -285,12 +317,28 @@ function CharacterController($scope, $http, $location) {
     //     tooltip = tooltip + " (" + abilityspells +")";
     //   }
     // }
+    var spellFusionsBuild = [];
+
+    angular.forEach($scope.fusions, function(fusion) {
+      if (fusion.requirements.indexOf(ability.id) >= 0) {
+        var otherRequirement = $scope.otherRequirement(fusion.requirements,ability.id);
+        // Also need to check if other spell is achievable with build
+        //if ($scope.isAvailableToSide(otherRequirement)) {
+          spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
+        //}
+      }
+    });
+
+    if (spellFusionsBuild.length > 0)
+      tooltip += " [fusion " + spellFusionsBuild.join(", ") + "]";
 
     return tooltip;
   }
 
   $scope.otherRequirement = function(requirements,requirement) {
-
+    var requirementsCopy = requirements.slice(); //copies requirements array
+    requirementsCopy.splice(requirementsCopy.indexOf(requirement),1);
+    return requirementsCopy;
   }
 
   $scope.spellsTooltip = function(spells) {
@@ -302,12 +350,16 @@ function CharacterController($scope, $http, $location) {
 
       angular.forEach($scope.fusions, function(fusion) {
         if (fusion.requirements.indexOf(spell) >= 0) {
-          spellFusionsBuild.push(fusion.name);
+          var otherRequirement = $scope.otherRequirement(fusion.requirements,spell);
+          // Also need to check if other spell is achievable with build
+          //if ($scope.isAvailableToSide(otherRequirement)) {
+            spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
+          //}
         }
       });
 
       if (spellFusionsBuild.length > 0)
-        spellTooltip += " (fusion " + spellFusionsBuild.join(", ") + ")";
+        spellTooltip += " [fusion " + spellFusionsBuild.join(", ") + "]";
 
       tooltipBuild.push(spellTooltip);
     });
