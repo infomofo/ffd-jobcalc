@@ -48,7 +48,7 @@ APIs
 ---------
 If there are any breaking changes to the data model or the api, I will retain old versions to maintain working links, and create new api endpoints.
 
-* api v1: [/v1]((./v1)) - Initial character builder
+* api v1: [/v1](./v1) - Initial character builder
 
 Sources
 -------
