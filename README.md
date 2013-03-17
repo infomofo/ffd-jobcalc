@@ -1,10 +1,10 @@
 FFD Job Calculator
 ==================
-I wanted to learn [AngularJS](http://angularjs.org/) and also just got into Final Fantasy Dimensions
-on Android, so I thought this would be a good opportunity.  I couldn't find any online Job
-calculators, so I thought I'd give it a try.
+I couldn't find any online Job calculators for Final Fantasy Dimensions, so I thought I'd give it a try.
 
-I am using Bootstrap so I also plan to make the site responsive to mobile devices.
+I wanted to learn [AngularJS](http://angularjs.org/), so I thought this would be a good opportunity.  
+
+I am using Bootstrap and plan to make the site responsive to mobile devices.
 
 I am using Angular.JS and storing the build on the url, so the links can be copied and pasted to share.
 
@@ -21,8 +21,9 @@ How to use FFD Job Calculator
 1. Select a character to get the list of eligible jobs and base abilities
 2. Click on cells in the table to allocate job points for a given job row
 3. All eligible abilities for the selected build will appear under "Abilities"
-4. All unlocked fusions associated with those abilities will appear under "Unlocked Fusions"
+4. All unlocked fusions associated with those abilities will appear under "Unlocked Fusions".  If you hover over the fusions it will give you a description and the requirements for those abilities.
 5. A running counter of the required JP and AP to reach that build will display
+6. You can copy and paste the build links and they should retain all the selected job points
 
 Features
 ========
@@ -34,9 +35,7 @@ Future use cases
 * Show what events in the game needed to reach required JP level
 * Enable tooltips for spell descriptions and other features
 * Plan a complete equip build for different base classes
-* Teach you how to acquire different fusions
 * Limit JP selection according to what is possible in game in different stages
-* Dedupe different levels of the same magic skill (i.e. White Magic Lv. 1 and 2)
 * Show contribution of character selection and attributes to possible stats at different levels
 
 Known issues
