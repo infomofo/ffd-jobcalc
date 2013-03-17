@@ -17,7 +17,7 @@
         $('#main_content').headsmart()
       })
     </script>
-    <title>Ffd-jobcalc by infomofo</title>
+    <title>Final Fantasy Dimensions JobCalc by infomofo</title>
   </head>
 
   <body>
@@ -27,7 +27,7 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>Ffd-jobcalc</h1>
+            <h1>Final Fantasy Dimensions JobCalc</h1>
             <h2>A Job Calculator for Final Fantasy Dimensions</h2>
           </span>
           <span class="left-tail"></span>
@@ -48,11 +48,11 @@
       <section id="main_content">
         <h1>FFD Job Calculator</h1>
 
-<p>I wanted to learn <a href="http://angularjs.org/">AngularJS</a> and also just got into Final Fantasy Dimensions
-on Android, so I thought this would be a good opportunity.  I couldn't find any online Job
-calculators, so I thought I'd give it a try.</p>
+<p>I couldn't find any online Job calculators for Final Fantasy Dimensions, so I thought I'd give it a try.</p>
 
-<p>I am using Bootstrap so I also plan to make the site responsive to mobile devices.</p>
+<p>I wanted to learn <a href="http://angularjs.org/">AngularJS</a>, so I thought this would be a good opportunity.  </p>
+
+<p>I am using Bootstrap and plan to make the site responsive to mobile devices.</p>
 
 <p>I am using Angular.JS and storing the build on the url, so the links can be copied and pasted to share.</p>
 
@@ -68,7 +68,11 @@ calculators, so I thought I'd give it a try.</p>
 
 <ol>
 <li>Select a character to get the list of eligible jobs and base abilities</li>
-<li>Add points to the rows representing different jobs by clicking on the plus sign, or remove already spent levels by clicking on the minus sign</li>
+<li>Click on cells in the table to allocate job points for a given job row</li>
+<li>All eligible abilities for the selected build will appear under "Abilities"</li>
+<li>All unlocked fusions associated with those abilities will appear under "Unlocked Fusions".  If you hover over the fusions it will give you a description and the requirements for those abilities.</li>
+<li>A running counter of the required JP and AP to reach that build will display</li>
+<li>You can copy and paste the build links and they should retain all the selected job points</li>
 </ol><h1>Features</h1>
 
 <ul>
@@ -77,19 +81,22 @@ calculators, so I thought I'd give it a try.</p>
 </ul><h1>Future use cases</h1>
 
 <ul>
-<li>Show eligible abilities and fusions</li>
 <li>Show what events in the game needed to reach required JP level</li>
 <li>Enable tooltips for spell descriptions and other features</li>
+<li>Plan a complete equip build for different base classes</li>
+<li>Limit JP selection according to what is possible in game in different stages</li>
+<li>Show contribution of character selection and attributes to possible stats at different levels</li>
 </ul><h1>Known issues</h1>
 
 <ul>
 <li>URL parameters are not strictly validated.  You could enter additional classes or job points in an existing class beyond 20 that would absorb JP in the calculator without doing anything, or negative jp in the json in the url to get more points.</li>
+<li>It is possible to unlock some fusions with spells that are accessible without actually spending any ap in a job.  For example, "Thunder Slash" is accessible for any character with EITHER Black Mage Lv 1 or Warrior Lv. 1, as you can level one job to get the equippable ability, and then just equip that on the level 0 job to unlock the F-Ability.  I haven't yet modeled for that.</li>
 </ul><h2>APIs</h2>
 
 <p>If there are any breaking changes to the data model or the api, I will retain old versions to maintain working links, and create new api endpoints.</p>
 
 <ul>
-<li>api v1: /v1 - Initial character builder</li>
+<li>api v1: <a href="./v1">/v1</a> - Initial character builder</li>
 </ul><h2>Sources</h2>
 
 <ul>
@@ -98,6 +105,7 @@ calculators, so I thought I'd give it a try.</p>
 <a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/65107">FFD FAQ/Walkthrough Version 1.30 by holyknight</a> - Source of the character level attributes</li>
 <li>
 <a href="http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs/66204#section30">Ability Acquisition FAQ 1.1 by Sir Phoenix</a> - Source of the job level and fusion data</li>
+<li><a href="http://www.deltaattack.com/2013/01/16/final-fantasy-dimensions-job-abilities-faq-help/">Delta Attack Final Fantasy Dimensions Job Skills Guide</a></li>
 <li><a href="http://finalfantasy.wikia.com/wiki/Final_Fantasy_Dimensions">Final Fantasy Wikia: Final Fantasy Dimensions</a></li>
 </ul>
       </section>
