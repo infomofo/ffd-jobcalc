@@ -118,6 +118,16 @@ function CharacterController($scope, $http, $location) {
     $scope.alerts.splice(index, 1);
   };
 
+  $scope.filteredUnlockedAbilities = function() {
+    var result = [];
+    var unlockedAbilities = $scope.unlockedAbilities();
+    angular.forEach(unlockedAbilities, function(unlockedAbility) {
+      if ($scope.isNotImplied(unlockedAbility, unlockedAbilities))
+        result.push(unlockedAbility);
+    });
+  return result;
+  }
+
   $scope.isAcquired = function(ability){
     var isAcquired = false;
     try {
@@ -143,6 +153,21 @@ function CharacterController($scope, $http, $location) {
     return isAcquired;
   };
 
+  $scope.isImplied = function(ability, unlockedAbilities) {
+    var implied = false;
+    // an ability is implied if another unlocked ability replaces it
+    angular.forEach(unlockedAbilities, function(unlockedAbility) {
+      //console.log(ability.id + " compared to " + JSON.stringify(unlockedAbility) + " replaces " + unlockedAbility.replaces)
+      if (unlockedAbility.replaces == ability.id) 
+        implied = true;
+    });
+    return implied;
+  }
+
+  $scope.isNotImplied = function(ability, unlockedAbilities) {
+    return !$scope.isImplied(ability, unlockedAbilities);
+  }
+
   $scope.isInLevel = function(spell, level) {
     if (level.spells == undefined) {
       return false;
@@ -155,9 +180,19 @@ function CharacterController($scope, $http, $location) {
     }
   }
 
+  $scope.unlockedAbilities = function() {
+    var result = [];
+    angular.forEach($scope.abilities, function(ability) {
+      if ($scope.canCast(ability.id)) {
+        result.push(ability);
+      }
+    });
+    //console.log(result);
+    return result;
+  }
+
   $scope.abilitiesForJobLevel = function(level) {
     //abilities|filter:{id:level.ability}
-    console.log(level)
     var result = [];
     angular.forEach($scope.abilities, function(ability) {
       if (ability.id == level.ability) {
@@ -192,6 +227,7 @@ function CharacterController($scope, $http, $location) {
     var hasRequirement = false;
 
     //check if requirement is an ability innate to the selected character
+    try {
         angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
           if (requirement == innate_ability_id) {
             hasRequirement = true;
@@ -229,24 +265,26 @@ function CharacterController($scope, $http, $location) {
             }
           }
         });
-
+    } catch (e) {
+      //
+    }
     return hasRequirement;
   }
 
   $scope.abilityTooltip = function(ability) {
     var tooltip = ability.description;
 
-    if (typeof(ability.spells) != 'undefined') {
-      var abilityspells = [];
-      angular.forEach($scope.spells, function(spell) {
-        if ((ability.spells.indexOf(spell.type)>=0) &&($scope.canCast(spell.name)) ) {
-          abilityspells.push(spell.name);
-        }
-      });
-      if (abilityspells.length > 0) {
-        tooltip = tooltip + " (" + abilityspells +")";
-      }
-    }
+    // if (typeof(ability.spells) != 'undefined') {
+    //   var abilityspells = [];
+    //   angular.forEach($scope.spells, function(spell) {
+    //     if ((ability.spells.indexOf(spell.type)>=0) &&($scope.canCast(spell.name)) ) {
+    //       abilityspells.push(spell.name);
+    //     }
+    //   });
+    //   if (abilityspells.length > 0) {
+    //     tooltip = tooltip + " (" + abilityspells +")";
+    //   }
+    // }
 
     return tooltip;
   }

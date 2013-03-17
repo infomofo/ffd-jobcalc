@@ -70,6 +70,7 @@
     {
         "id": "White Magic Lv. 2",
         "spells": "White Magic Lv. 2",
+        "replaces": "White Magic Lv. 1",
         "description": "Grants the ability to use White Magic Lv. 2 abilities",
         "type": "Active",
         "slots": 2
@@ -77,6 +78,7 @@
     {
         "id": "White Magic Lv. 3",
         "spells": "White Magic Lv. 3",
+        "replaces": "White Magic Lv. 2",
         "description": "Grants the ability to use White Magic Lv. 3 abilities",
         "type": "Active",
         "slots": 2
@@ -84,6 +86,7 @@
     {
         "id": "White Magic Lv. 4",
         "spells": "White Magic Lv. 4",
+        "replaces": "White Magic Lv. 3",
         "description": "Grants the ability to use White Magic Lv. 4 abilities",
         "type": "Active",
         "slots": 2
@@ -91,6 +94,7 @@
     {
         "id": "White Magic Lv. 5",
         "spells": "White Magic Lv. 5",
+        "replaces": "White Magic Lv. 4",
         "description": "Grants the ability to use White Magic Lv. 5 abilities",
         "type": "Active",
         "slots": 2
@@ -98,6 +102,7 @@
     {
         "id": "White Magic Lv. 6",
         "spells": "White Magic Lv. 6",
+        "replaces": "White Magic Lv. 5",
         "description": "Grants the ability to use White Magic Lv. 6 abilities",
         "type": "Active",
         "slots": 2
@@ -105,6 +110,7 @@
     {
         "id": "White Magic Lv. 7",
         "spells": "White Magic Lv. 7",
+        "replaces": "White Magic Lv. 6",
         "description": "Grants the ability to use White Magic Lv. 7 abilities",
         "type": "Active",
         "slots": 2
@@ -112,6 +118,7 @@
     {
         "id": "White Magic Lv. 8",
         "spells": "White Magic Lv. 8",
+        "replaces": "White Magic Lv. 7",
         "description": "Grants the ability to use White Magic Lv. 8 abilities",
         "type": "Active",
         "slots": 2
@@ -119,53 +126,69 @@
     {
         "id": "Black Magic Lv. 1",
         "spells": "Black Magic Lv. 1",
+        "description": "Grants the ability to use Black Magic Lv. 1 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 2",
         "spells": "Black Magic Lv. 2",
+        "replaces": "Black Magic Lv. 1",
+        "description": "Grants the ability to use Black Magic Lv. 2 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 3",
         "spells": "Black Magic Lv. 3",
+        "replaces": "Black Magic Lv. 2",
+        "description": "Grants the ability to use Black Magic Lv. 3 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 4",
         "spells": "Black Magic Lv. 4",
+        "replaces": "Black Magic Lv. 3",
+        "description": "Grants the ability to use Black Magic Lv. 4 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 5",
         "spells": "Black Magic Lv. 5",
+        "replaces": "Black Magic Lv. 4",
+        "description": "Grants the ability to use Black Magic Lv. 5 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 6",
         "spells": "Black Magic Lv. 6",
+        "replaces": "Black Magic Lv. 5",
+        "description": "Grants the ability to use Black Magic Lv. 6 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 7",
         "spells": "Black Magic Lv. 7",
+        "replaces": "Black Magic Lv. 6",
+        "description": "Grants the ability to use Black Magic Lv. 7 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Black Magic Lv. 8",
         "spells": "Black Magic Lv. 8",
+        "replaces": "Black Magic Lv. 7",
+        "description": "Grants the ability to use Black Magic Lv. 8 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Red Magic Lv. 1",
+        "description": "Grants the ability to use White and Black Magic Lv. 1 abilities",
         "spells": [
             "Black Magic Lv. 1",
             "White Magic Lv. 1"
@@ -179,6 +202,8 @@
             "Black Magic Lv. 2",
             "White Magic Lv. 2"
         ],
+        "replaces": "Red Magic Lv. 1",
+        "description": "Grants the ability to use White and Black Magic Lv. 2 abilities",
         "type": "Active",
         "slots": 2
     },
@@ -188,6 +213,8 @@
             "Black Magic Lv. 3",
             "White Magic Lv. 3"
         ],
+        "replaces": "Red Magic Lv. 2",
+        "description": "Grants the ability to use White and Black Magic Lv. 3 abilities",
         "type": "Active",
         "slots": 2
     },
@@ -197,48 +224,63 @@
             "Black Magic Lv. 4",
             "White Magic Lv. 4"
         ],
+        "replaces": "Red Magic Lv. 3",
+        "description": "Grants the ability to use White and Black Magic Lv. 4 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 1",
         "spells": "Summon Lv. 1",
+        "description": "Grants the ability to use Summon Lv. 1 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 2",
         "spells": "Summon Lv. 2",
+        "replaces": "Summon Lv. 1",
+        "description": "Grants the ability to use Summon Lv. 2 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 3",
         "spells": "Summon Lv. 3",
+        "replaces": "Summon Lv. 2",
+        "description": "Grants the ability to use Summon Lv. 3 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 4",
         "spells": "Summon Lv. 4",
+        "replaces": "Summon Lv. 3",
+        "description": "Grants the ability to use Summon Lv. 4 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 5",
         "spells": "Summon Lv. 5",
+        "replaces": "Summon Lv. 4",
+        "description": "Grants the ability to use Summon Lv. 5 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 6",
         "spells": "Summon Lv. 6",
+        "replaces": "Summon Lv. 5",
+        "description": "Grants the ability to use Summon Lv. 6 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "Summon Lv. 7",
         "spells": "Summon Lv. 7",
+        "replaces": "Summon Lv. 6",
+        "description": "Grants the ability to use Summon Lv. 7 abilities",
         "type": "Active",
         "slots": 2
     },

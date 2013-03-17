@@ -88,7 +88,7 @@
           <div class="span2 well spellbook">
       	    <p>Abilities </p>
       	    <ul>
-              <li ng-repeat='ability in abilities|filter:isAcquired' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilityTooltip(ability)}}">{{ability.id}}</li>
+              <li ng-repeat='ability in filteredUnlockedAbilities()' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilityTooltip(ability)}}">{{ability.id}}</li>
             </ul>
       	  </div>
       </div>
