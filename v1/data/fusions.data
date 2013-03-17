@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Magic Missile",
+        "mp": 8,
+        "components": [
+            "Poison",
+            "Poisona"
+        ],
+        "description": "Deals magic damage to a single target"
+    },
+    {
+        "name": "Magic Bomb",
+        "mp": 10,
+        "components": [
+            "Cure",
+            "Fire"
+        ],
+        "description": "Deals magic damage to a single target"
+    },
+    {
+        "name": "Nab Gil",
+        "mp": 6,
+        "components": [
+            "Bash",
+            "Pickpocket"
+        ],
+        "description": "Attacks an enemy and steals gil"
+    }
+]

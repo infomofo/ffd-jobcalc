@@ -82,7 +82,7 @@
           <div class="span3 well">
 	    <p>Unlocked Fusions</p>
 	    <ul>
-	      <li>Final Heaven</li>
+	      <li ng-repeat='fusion in unlockedFusions()' popover-title="{{fusion.name}}" popover-placement="left" popover="{{fusion|json}}">{{fusion.name}}</li> 
 	    </ul>
           </div>
           <div class="span1 well">
@@ -128,7 +128,7 @@
                 <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
                 <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="levelTowards(job.name, level.level)">
                   <span style="float:left" 
-                    ng-repeat="ability in abilities|filter:{id:level.ability}" 
+                    ng-repeat="ability in abilitiesForJobLevel(level)" 
                     class="label ability-{{ability.type}}" 
                     popover="{{ability.id}}" 
                     popover-title="{{ability.type}} ability"

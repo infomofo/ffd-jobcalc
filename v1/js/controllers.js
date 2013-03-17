@@ -19,6 +19,10 @@ function CharacterController($scope, $http, $location) {
      $scope.abilities = data;
    });
 
+  $http.get('data/fusions.json').success(function(data) {
+     $scope.fusions = data;
+   });
+
   $scope.validateBuild = function(buildJson) {
     var build;
     try {
@@ -149,12 +153,46 @@ function CharacterController($scope, $http, $location) {
   $scope.abilitiesForJobLevel = function(level) {
     //abilities|filter:{id:level.ability}
     var result = [];
-    angular.foreach(level.abilities, function(abilityId) {
+    try{
+    angular.forEach(level.abilities, function(abilityId) {
       angular.foreach($scope.abilities, function(ability) {
         if (ability.id == abilityId) {
           result.push(ability);
         }
       });
+    });
+    } catch (e) {
+      //
+    }
+    return result;
+  }
+
+  $scope.unlockedFusions = function() {
+    
+    var result = [];
+    angular.forEach($scope.fusions, function(fusion) {
+      var unlocked = true;
+
+      angular.forEach(fusion.requirements, function(requirement) {
+        var hasRequirement = false;
+        angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
+          if (requirement == innate_ability_id) {
+            hasRequirement = true;
+          }
+        });
+        angular.forEach($scope.selected_character.innate_spells, function (innate_spell_id) {
+          if (requirement == innate_spell_id) {
+            hasRequirement = true;
+          }
+        });
+
+        if (!hasRequirement) {
+          unlocked = false;
+        }
+      });
+      if (unlocked) {
+        result.push(fusion);
+      }
     });
     return result;
   }
