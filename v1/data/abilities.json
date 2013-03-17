@@ -3,98 +3,116 @@
         "id": "Battle Arts",
         "spells": "Battle Arts",
         "type": "Active",
+        "description": "Grants the ability to use Battle Arts abilities",
         "slots": 2
     },
     {
         "id": "Counter",
         "type": "Passive",
-        "slots": 1
+        "slots": 1,
+        "description": "Sometimes counterattacks when hit by a physical attack"
     },
     {
         "id": "STR +20%",
         "type": "Passive",
+        "description": "Increases STR by 20%",
         "slots": 1
     },
     {
         "id": "VIT +20%",
         "type": "Passive",
+        "description": "Increases VIT by 20%",
         "slots": 1
     },
     {
         "id": "SPD +20%",
         "type": "Passive",
+        "description": "Increases SPD by 20%",
         "slots": 1
     },
     {
         "id": "HP +20%",
         "type": "Passive",
+        "description": "Increases HP by 20%",
         "slots": 1
     },
     {
         "id": "MND +20%",
         "type": "Passive",
+        "description": "Increases MND by 20%",
         "slots": 1
     },
     {
         "id": "INT +20%",
         "type": "Passive",
+        "description": "Increases INT by 20%",
         "slots": 1
     },
     {
         "id": "MP +20%",
         "type": "Passive",
+        "description": "Increases MP by 20%",
         "slots": 1
     },
     {
         "id": "Martial Arts",
         "type": "Active",
+        "description": "Grants the ability to use Martial Arts abilities",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 1",
         "spells": "White Magic Lv. 1",
         "type": "Active",
+        "description": "Grants the ability to use White Magic Lv. 1 abilities",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 2",
         "spells": "White Magic Lv. 2",
+        "description": "Grants the ability to use White Magic Lv. 2 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 3",
         "spells": "White Magic Lv. 3",
+        "description": "Grants the ability to use White Magic Lv. 3 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 4",
         "spells": "White Magic Lv. 4",
+        "description": "Grants the ability to use White Magic Lv. 4 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 5",
         "spells": "White Magic Lv. 5",
+        "description": "Grants the ability to use White Magic Lv. 5 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 6",
         "spells": "White Magic Lv. 6",
+        "description": "Grants the ability to use White Magic Lv. 6 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 7",
         "spells": "White Magic Lv. 7",
+        "description": "Grants the ability to use White Magic Lv. 7 abilities",
         "type": "Active",
         "slots": 2
     },
     {
         "id": "White Magic Lv. 8",
         "spells": "White Magic Lv. 8",
+        "description": "Grants the ability to use White Magic Lv. 8 abilities",
         "type": "Active",
         "slots": 2
     },

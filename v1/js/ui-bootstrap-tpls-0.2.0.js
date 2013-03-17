@@ -1033,7 +1033,7 @@ angular.module( 'ui.bootstrap.popover', [] )
   return {
     restrict: 'EA',
     replace: true,
-    scope: { popoverTitle: '@', popoverContent: '@', placement: '@', animation: '&', isOpen: '&' },
+    scope: { popoverTitle: '@', popoverContent: '@', popoverHtml: '@', placement: '@', animation: '&', isOpen: '&' },
     templateUrl: 'template/popover/popover.html'
   };
 })
@@ -1043,6 +1043,7 @@ angular.module( 'ui.bootstrap.popover', [] )
     '<popover-popup '+
       'popover-title="{{tt_title}}" '+
       'popover-content="{{tt_popover}}" '+
+      'popover-html="{{tt_popover_html}}" '+
       'placement="{{tt_placement}}" '+
       'animation="tt_animation()" '+
       'is-open="tt_isOpen"'+
@@ -1057,6 +1058,10 @@ angular.module( 'ui.bootstrap.popover', [] )
 
       attr.$observe( 'popover', function ( val ) {
         scope.tt_popover = val;
+      });
+
+      attr.$observe( 'popover-html', function ( val ) {
+        scope.tt_popover_html = val;
       });
 
       attr.$observe( 'popoverTitle', function ( val ) {
@@ -1772,6 +1777,7 @@ angular.module("template/popover/popover.html", []).run(["$templateCache", funct
     "  <div class=\"popover-inner\">" +
     "      <h3 class=\"popover-title\" ng-bind=\"popoverTitle\" ng-show=\"popoverTitle\"></h3>" +
     "      <div class=\"popover-content\" ng-bind=\"popoverContent\"></div>" +
+    "      <div class=\"popover-html\" ng-bind=\"popoverHtml\"></div>" +
     "  </div>" +
     "</div>" +
     "");

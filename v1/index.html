@@ -81,14 +81,14 @@
             <div class="well span2">
             <p>Unlocked Fusions</p>
             <ul>
-              <li ng-repeat='fusion in unlockedFusions()' popover-title="{{fusion.name}}" popover-placement="left" popover="{{fusion|json}}">{{fusion.name}}</li> 
+              <li ng-repeat='fusion in unlockedFusions()' popover-title="{{fusion.name}}" popover-placement="left" popover="{{fusion.description}} ({{fusion.mp}} MP).  Requires: {{fusion.requirements[0]}} and {{fusion.requirements[1]}}">{{fusion.name}}</li> 
             </ul>
             </div>
           </div>
           <div class="span2 well spellbook">
       	    <p>Abilities </p>
       	    <ul>
-              <li ng-repeat='ability in abilities|filter:isAcquired' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilities|filter:isAcquired|filter:{id:ability.id} }}">{{ability.id}}</li>
+              <li ng-repeat='ability in abilities|filter:isAcquired' popover-title="{{ability.id}}" popover-placement="left" popover="{{abilityTooltip(ability)}}">{{ability.id}}</li>
             </ul>
       	  </div>
       </div>

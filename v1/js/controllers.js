@@ -23,6 +23,10 @@ function CharacterController($scope, $http, $location) {
      $scope.fusions = data;
    });
 
+  $http.get('data/spells.json').success(function(data) {
+     $scope.spells = data;
+   });
+
   $scope.validateBuild = function(buildJson) {
     var build;
     try {
@@ -170,9 +174,24 @@ function CharacterController($scope, $http, $location) {
       var unlocked = true;
 
       angular.forEach(fusion.requirements, function(requirement) {
-        var hasRequirement = false;
+        var hasRequirement = $scope.canCast(requirement);
 
-        //check if requirement is an ability innate to the selected character
+        if (!hasRequirement) {
+          // console.log("does not have " + requirement);
+          unlocked = false;
+        }
+      });
+      if (unlocked) {
+        result.push(fusion);
+      }
+    });
+    return result;
+  }
+
+  $scope.canCast = function(requirement) {
+    var hasRequirement = false;
+
+    //check if requirement is an ability innate to the selected character
         angular.forEach($scope.selected_character.innate_abilities, function (innate_ability_id) {
           if (requirement == innate_ability_id) {
             hasRequirement = true;
@@ -211,16 +230,25 @@ function CharacterController($scope, $http, $location) {
           }
         });
 
-        if (!hasRequirement) {
-          // console.log("does not have " + requirement);
-          unlocked = false;
+    return hasRequirement;
+  }
+
+  $scope.abilityTooltip = function(ability) {
+    var tooltip = ability.description;
+
+    if (typeof(ability.spells) != 'undefined') {
+      var abilityspells = [];
+      angular.forEach($scope.spells, function(spell) {
+        if ((ability.spells.indexOf(spell.type)>=0) &&($scope.canCast(spell.name)) ) {
+          abilityspells.push(spell.name);
         }
       });
-      if (unlocked) {
-        result.push(fusion);
+      if (abilityspells.length > 0) {
+        tooltip = tooltip + " (" + abilityspells +")";
       }
-    });
-    return result;
+    }
+
+    return tooltip;
   }
 
 }
