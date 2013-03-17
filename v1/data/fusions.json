@@ -1,29 +1,443 @@
 [
     {
-        "name": "Magic Missile",
-        "mp": 8,
+        "name": "Alabaster Veil",
+        "mp": 55,
+        "description": "Places Protect, Shell, Haste, and Regen on a single ally.",
         "requirements": [
-            "Poison",
-            "Poisona"
-        ],
-        "description": "Deals magic damage to a single target"
+            "Guard",
+            "Benediction"
+        ]
+    },
+    {
+        "name": "Aqua Breath",
+        "mp": 22,
+        "description": "Deals water damage to all enemies.",
+        "requirements": [
+            "Blizzara",
+            "Blizzard Breath"
+        ]
+    },
+    {
+        "name": "Aura",
+        "mp": 16,
+        "description": "Reduces physical damage received and increases ATK for a single ally.",
+        "requirements": [
+            "Protect",
+            "Brave Ballad"
+        ]
+    },
+    {
+        "name": "Battle Orders",
+        "mp": 6,
+        "description": "Switches rows for all allies.",
+        "requirements": [
+            "Flee",
+            "Aiding Anthem"
+        ]
+    },
+    {
+        "name": "Boost Jump",
+        "mp": 10,
+        "description": "Attacks from the air to deal heavy damage. Cannot be attacked while jumping.",
+        "requirements": [
+            "Enrage",
+            "Jump"
+        ]
+    },
+    {
+        "name": "Bonecrusher",
+        "mp": 1,
+        "description": "Either makes self impervious to normal attacks or take heavy damage and fiercely counter attacks until next turn.",
+        "requirements": [
+            "Riposte",
+            "Darkness"
+        ]
+    },
+    {
+        "name": "Capoeira",
+        "mp": 18,
+        "description": "Attacks with a random ability.",
+        "requirements": [
+            "Kick",
+            "Drain Samba"
+        ]
+    },
+    {
+        "name": "Dark",
+        "mp": 32,
+        "description": "Deals dark damage to a single/all enemy(ies).",
+        "requirements": [
+            "Cura",
+            "Curse"
+        ]
+    },
+    {
+        "name": "Dark Judgement",
+        "mp": 38,
+        "description": "Deals damage to all enemies equal to one-quarter of current HP.",
+        "requirements": [
+            "Vacuum Wave",
+            "Diabolos"
+        ]
+    },
+    {
+        "name": "Dark Star",
+        "mp": 86,
+        "description": "Deals dark damage to all enemies.",
+        "requirements": [
+            "Meteor",
+            "Ebony Slash"
+        ]
+    },
+    {
+        "name": "Deep Freeze",
+        "mp": 38,
+        "description": "Deals ice damage to a single target and causes time to stop, preventing action.",
+        "requirements": [
+            "Stop",
+            "Shiva"
+        ]
+    },
+    {
+        "name": "Dispelga",
+        "mp": 57,
+        "description": "Removes magic effects from all enemies.",
+        "requirements": [
+            "Dispel",
+            "Alexander"
+        ]
+    },
+    {
+        "name": "Esunaga",
+        "mp": 82,
+        "description": "Removes all status effects from all allies.",
+        "requirements": [
+            "Esuna",
+            "Angelic Aria"
+        ]
+    },
+    {
+        "name": "Final Heaven",
+        "mp": 35,
+        "description": "Deals holy damage to a single enemy.",
+        "requirements": [
+            "Earthshatterer",
+            "Holy"
+        ]
+    },
+    {
+        "name": "Full Cure",
+        "mp": 150,
+        "description": "Restores all HP and removes all status effects for all allies.",
+        "requirements": [
+            "Curaga",
+            "Dragon Soul"
+        ]
+    },
+    {
+        "name": "Gale Crescent",
+        "mp": 7,
+        "description": "Deals wind damage to all enemies.",
+        "requirements": [
+            "Kick",
+            "Sylph"
+        ]
+    },
+    {
+        "name": "Gigaflare",
+        "mp": 99,
+        "description": "Deals magic damage to all enemies.",
+        "requirements": [
+            "Flare",
+            "Bahamut"
+        ]
+    },
+    {
+        "name": "Grand Delta",
+        "mp": 54,
+        "description": "Deals lightning damage to all enemies and inflicts Paralysis, halting actions.",
+        "requirements": [
+            "Thundaga",
+            "Ramuh"
+        ]
+    },
+    {
+        "name": "Hastega",
+        "mp": 64,
+        "description": "Speeds up the passing of time for all allies.",
+        "requirements": [
+            "Haste",
+            "Swift Shanty"
+        ]
+    },
+    {
+        "name": "Lai",
+        "mp": 12,
+        "description": "Deals damage and instantly kills a single enemy.",
+        "requirements": [
+            "Odin",
+            "Final Thrust"
+        ]
+    },
+    {
+        "name": "ID Break",
+        "mp": 20,
+        "description": "Attacks a single target and inflicts Silence, preventing spell casting.",
+        "requirements": [
+            "Strike",
+            "Quick Shot"
+        ]
+    },
+    {
+        "name": "Life Divider",
+        "mp": 32,
+        "description": "Damages a single enemy then restores that enemy’s HP.",
+        "requirements": [
+            "Mug",
+            "Pommel"
+        ]
+    },
+    {
+        "name": "Lively Lied",
+        "mp": 23,
+        "description": "Restores HP for all allies and enemies.",
+        "requirements": [
+            "Healing Breath",
+            "Restful Refrain"
+        ]
     },
     {
         "name": "Magic Bomb",
         "mp": 10,
+        "description": "Deals magic damage to a single target.",
         "requirements": [
             "Cure",
             "Fire"
-        ],
-        "description": "Deals magic damage to a single target"
+        ]
+    },
+    {
+        "name": "Magic Bomb 2",
+        "mp": 16,
+        "description": "Deals magic damage to a single enemy. Stronger than Magic Bomb.",
+        "requirements": [
+            "Cura",
+            "Fira"
+        ]
+    },
+    {
+        "name": "Magic Bomb 3",
+        "mp": 48,
+        "description": "Deals magic damage to a single enemy. Stronger than Magic Bomb 2.",
+        "requirements": [
+            "Curaga",
+            "Firaga"
+        ]
+    },
+    {
+        "name": "Magic Missile",
+        "mp": 8,
+        "description": "Deals magic damage to a single target.",
+        "requirements": [
+            "Poison",
+            "Poisona"
+        ]
+    },
+    {
+        "name": "Malediction",
+        "mp": 18,
+        "description": "Inflicts all statuses afflicted on self to a single enemy.",
+        "requirements": [
+            "Wonder Step",
+            "Stunner"
+        ]
+    },
+    {
+        "name": "Mega Raise",
+        "mp": 99,
+        "description": "Revives all allies and restores half of their maximum HP.",
+        "requirements": [
+            "Araise",
+            "Bahamut"
+        ]
+    },
+    {
+        "name": "Meltdown",
+        "mp": 54,
+        "description": "Deals fire damage to all allies and enemies.",
+        "requirements": [
+            "Berserk",
+            "Ifrit"
+        ]
+    },
+    {
+        "name": "Midareyuki",
+        "mp": 36,
+        "description": "Attacks a single enemy three times.",
+        "requirements": [
+            "Spreadshot",
+            "Assassinate"
+        ]
+    },
+    {
+        "name": "Mighty Wall",
+        "mp": 96,
+        "description": "Reduces physical and magic damage received and raises ATK of all allies.",
+        "requirements": [
+            "War Cry",
+            "Mighty Guard"
+        ]
+    },
+    {
+        "name": "Misty Charge",
+        "mp": 10,
+        "description": "Attacks a single enemy with an unfailing blow and switches character’s row.",
+        "requirements": [
+            "Enrage",
+            "Backup"
+        ]
+    },
+    {
+        "name": "Moogle Dance",
+        "mp": 40,
+        "description": "Decreases DEF and RES of all enemies.",
+        "requirements": [
+            "Call",
+            "Frailty Polka"
+        ]
     },
     {
         "name": "Nab Gil",
         "mp": 6,
+        "description": "Attacks an enemy and steals gil.",
         "requirements": [
             "Bash",
             "Pickpocket"
-        ],
-        "description": "Attacks an enemy and steals gil"
+        ]
+    },
+    {
+        "name": "Phantom Rush",
+        "mp": 34,
+        "description": "Attack a single enemy six times.",
+        "requirements": [
+            "Dropkick",
+            "Trance"
+        ]
+    },
+    {
+        "name": "Piercing Blast",
+        "mp": 18,
+        "description": "Deals magic damage to a single target. Passes through reflect.",
+        "requirements": [
+            "Aurablast",
+            "Attune Blade"
+        ]
+    },
+    {
+        "name": "Sange",
+        "mp": 6,
+        "description": "Attacks an enemy for a number of times equal to the number of own images.",
+        "requirements": [
+            "Raging Fist",
+            "Image"
+        ]
+    },
+    {
+        "name": "Self Destruct",
+        "mp": 88,
+        "description": "Deals damage to a single target equal to own HP and causes self to be knocked out.",
+        "requirements": [
+            "Focus",
+            "Firaga"
+        ]
+    },
+    {
+        "name": "Shock",
+        "mp": 99,
+        "description": "Deals magic damage to all enemies.",
+        "requirements": [
+            "Dire Dirge",
+            "Wide Slash"
+        ]
+    },
+    {
+        "name": "Smash",
+        "mp": 10,
+        "description": "Deals heavy damage to a single enemy and causes their wait time to increase.",
+        "requirements": [
+            "Lotus Strike",
+            "Precise Shot"
+        ]
+    },
+    {
+        "name": "Steal Hearts",
+        "mp": 23,
+        "description": "Inflicts Confuse on all enemies. Sometimes fails and inflicts Berserk on self.",
+        "requirements": [
+            "Steal",
+            "Aim: Heart"
+        ]
+    },
+    {
+        "name": "Sunder Earth",
+        "mp": 34,
+        "description": "Deals heavy earth damage to a single target. Likely to miss.",
+        "requirements": [
+            "Titan",
+            "Tremor"
+        ]
+    },
+    {
+        "name": "Taunt",
+        "mp": 16,
+        "description": "Causes Berserk to all enemies and causes enemy attacks to target self.",
+        "requirements": [
+            "Bash",
+            "Draw Attacks"
+        ]
+    },
+    {
+        "name": "Tempest",
+        "mp": 42,
+        "description": "Deals wind damage to a single target.",
+        "requirements": [
+            "Vacuum Wave",
+            "Gale"
+        ]
+    },
+    {
+        "name": "Thunder Slash",
+        "mp": 9,
+        "description": "Deals lightning damage to a single enemy.",
+        "requirements": [
+            "Strike",
+            "Thunder"
+        ]
+    },
+    {
+        "name": "Valiant Blow",
+        "mp": 55,
+        "description": "Deals damage to a single enemy. Damage increases as HP decreases.",
+        "requirements": [
+            "Assault",
+            "Charge"
+        ]
+    },
+    {
+        "name": "White Draw",
+        "mp": 12,
+        "description": "Consumes MP to restore MP to all allies.",
+        "requirements": [
+            "Blink",
+            "Lancet"
+        ]
+    },
+    {
+        "name": "White Wind",
+        "mp": 45,
+        "description": "Restores all allies’ HP based on own HP.",
+        "requirements": [
+            "Chakra",
+            "Healing Breath"
+        ]
     }
 ]
