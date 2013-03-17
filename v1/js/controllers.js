@@ -152,18 +152,15 @@ function CharacterController($scope, $http, $location) {
 
   $scope.abilitiesForJobLevel = function(level) {
     //abilities|filter:{id:level.ability}
+    console.log(level)
     var result = [];
-    try{
     angular.forEach(level.abilities, function(abilityId) {
-      angular.foreach($scope.abilities, function(ability) {
+      angular.forEach($scope.abilities, function(ability) {
         if (ability.id == abilityId) {
           result.push(ability);
         }
       });
     });
-    } catch (e) {
-      //
-    }
     return result;
   }
 

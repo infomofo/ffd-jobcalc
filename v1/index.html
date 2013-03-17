@@ -128,7 +128,7 @@
                 <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
                 <td ng-repeat="level in job.levels" ng-class="getLevelClass(job.name,level.level)" ng-click="levelTowards(job.name, level.level)">
                   <span style="float:left" 
-                    ng-repeat="ability in abilitiesForJobLevel(level)" 
+                    ng-repeat="ability in abilities|filter:{id:level.ability}" 
                     class="label ability-{{ability.type}}" 
                     popover="{{ability.id}}" 
                     popover-title="{{ability.type}} ability"
