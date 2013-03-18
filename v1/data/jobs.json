@@ -756,7 +756,10 @@
                 "level": 1,
                 "ap": 30,
                 "ability": "Summon Lv. 1",
-                "spells": ["Sylph","Chocobo"]
+                "spells": [
+                    "Sylph",
+                    "Chocobo"
+                ]
             },
             {
                 "level": 2,
@@ -783,7 +786,10 @@
                 "level": 7,
                 "ap": 160,
                 "ability": "Summon Lv. 2",
-                "spells": ["Sylph","Chocobo"]
+                "spells": [
+                    "Ramuh",
+                    "Titan"
+                ]
             },
             {
                 "level": 8,
@@ -793,7 +799,10 @@
                 "level": 9,
                 "ap": 200,
                 "ability": "Summon Lv. 3",
-                "spells": ["Shiva","Ifrit"]
+                "spells": [
+                    "Shiva",
+                    "Ifrit"
+                ]
             },
             {
                 "level": 10,
@@ -807,7 +816,10 @@
                 "level": 12,
                 "ap": 270,
                 "ability": "Summon Lv. 4",
-                "spells": ["Phoenix","Odin"]
+                "spells": [
+                    "Phoenix",
+                    "Odin"
+                ]
             },
             {
                 "level": 13,
@@ -821,7 +833,10 @@
                 "level": 15,
                 "ap": 350,
                 "ability": "Summon Lv. 5",
-                "spells": ["Unicorn","Leviathan"]
+                "spells": [
+                    "Unicorn",
+                    "Leviathan"
+                ]
             },
             {
                 "level": 16,
@@ -831,7 +846,10 @@
                 "level": 17,
                 "ap": 410,
                 "ability": "Summon Lv. 6",
-                "spells": ["Alexander","Diabolos"]
+                "spells": [
+                    "Alexander",
+                    "Diabolos"
+                ]
             },
             {
                 "level": 18,
@@ -846,7 +864,10 @@
                 "level": 20,
                 "ap": 500,
                 "ability": "Summon Lv. 7",
-                "spells": ["Argy","Bahamut"]
+                "spells": [
+                    "Argy",
+                    "Bahamut"
+                ]
             }
         ]
     },
@@ -1404,7 +1425,30 @@
             {
                 "level": 18,
                 "ap": 640,
-                "ability": "White Magic Lv. 8"
+                "ability": "White Magic Lv. 8",
+                "spells": [
+                    "Slow",
+                    "Silence",
+                    "Mini",
+                    "Cure",
+                    "Libra",
+                    "Poisona",
+                    "Cura",
+                    "Protect",
+                    "Raise",
+                    "Basuna",
+                    "Confuse",
+                    "Teleport",
+                    "Curaja",
+                    "Blink",
+                    "Shell",
+                    "Berserk",
+                    "Regen",
+                    "Haste",
+                    "Curaga",
+                    "Esuna",
+                    "Reflect"
+                ]
             },
             {
                 "level": 19,
@@ -1905,7 +1949,9 @@
             {
                 "level": 1,
                 "ap": 20,
-                "spells": ["Flare"]
+                "spells": [
+                    "Flare"
+                ]
             },
             {
                 "level": 2,
@@ -1915,17 +1961,23 @@
             {
                 "level": 3,
                 "ap": 60,
-                "spells": ["Enfire"]
+                "spells": [
+                    "Enfire"
+                ]
             },
             {
                 "level": 4,
                 "ap": 80,
-                "spells": [ "Enblizzard"]
+                "spells": [
+                    "Enblizzard"
+                ]
             },
             {
                 "level": 5,
                 "ap": 100,
-                "spells": [ "Enthunder"]
+                "spells": [
+                    "Enthunder"
+                ]
             },
             {
                 "level": 6,
@@ -1934,7 +1986,9 @@
             {
                 "level": 7,
                 "ap": 140,
-                "spells": ["Enaero"]
+                "spells": [
+                    "Enaero"
+                ]
             },
             {
                 "level": 8,
@@ -1956,7 +2010,9 @@
             {
                 "level": 12,
                 "ap": 250,
-                "spells": [ "Enstone"]
+                "spells": [
+                    "Enstone"
+                ]
             },
             {
                 "level": 13,
@@ -1965,7 +2021,9 @@
             {
                 "level": 14,
                 "ap": 340,
-                "spells": ["Enwater"]
+                "spells": [
+                    "Enwater"
+                ]
             },
             {
                 "level": 15,
@@ -1974,7 +2032,9 @@
             {
                 "level": 16,
                 "ap": 470,
-                "spells": ["Enlight"]
+                "spells": [
+                    "Enlight"
+                ]
             },
             {
                 "level": 17,
@@ -1983,7 +2043,30 @@
             {
                 "level": 18,
                 "ap": 640,
-                "ability": "Black Magic Lv. 8"
+                "ability": "Black Magic Lv. 8",
+                "spells": [
+                    "Fire",
+                    "Blizzard",
+                    "Thunder",
+                    "Poison",
+                    "Sleep",
+                    "Toad",
+                    "Fira",
+                    "Blizzara",
+                    "Thundara",
+                    "Drain",
+                    "Break",
+                    "Bio",
+                    "Osmose",
+                    "Stop",
+                    "Tornado",
+                    "Firaga",
+                    "Blizzaga",
+                    "Thundaga",
+                    "Quake",
+                    "Death",
+                    "Comet"
+                ]
             },
             {
                 "level": 19,
@@ -1992,7 +2075,9 @@
             {
                 "level": 20,
                 "ap": 800,
-                "spells": [ "Ultima"]
+                "spells": [
+                    "Ultima"
+                ]
             }
         ]
     }
