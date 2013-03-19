@@ -25,9 +25,9 @@
         "slots": 1
     },
     {
-        "id": "SPD +20%",
+        "id": "SPD +10%",
         "type": "Passive",
-        "description": "Increases SPD by 20%",
+        "description": "Increases SPD by 10%",
         "slots": 1
     },
     {
