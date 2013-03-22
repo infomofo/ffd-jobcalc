@@ -34,13 +34,17 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand">Final Fantasy Dimensions JobCalc</a>
+          <a popover-title="Reset" popover-placement="left" popover="Click to reset character selection and all spent JP" class="brand">Final Fantasy Dimensions JobCalc</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="http://infomofo.github.com/ffd-jobcalc">About</a></li>
               <li><a href="https://github.com/infomofo/ffd-jobcalc/issues">Report an Issue</a></li>
             </ul>
+          </div><!--/.nav-collapse -->
+          <div class="badges">
+            <span class="badge badge-jp" popover-title="Job Points" popover-placement="bottom" popover="Any job level over 3 requires the use of Job Points.  There are a total of 69 JP earned during the storyline of Final Fantasy Dimensions.  After defeating the final boss you have the option of completing additional dungeons for additional JP.  Additionally, there are Moogle Coins available in chests that can be redeemed for 3 JP each, but they are extremely rare." >{{spent_jp()}} JP</span>
+            <span class="badge badge-ap" popover-title="Ability Points" popover-placement="bottom" popover="Ability Points are earned by defeating enemies in battle." >{{spent_ap()}} AP</span>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -74,10 +78,6 @@
             </ul>
           </div>
           <div class="">
-            <div class="well span1">
-              <p><span class="badge badge-jp" popover-title="Job Points" popover-placement="bottom" popover="Any job level over 3 requires the use of Job Points.  There are a total of 69 JP earned during the storyline of Final Fantasy Dimensions.  After defeating the final boss you have the option of completing additional dungeons for additional JP.  Additionally, there are Moogle Coins available in chests that can be redeemed for 3 JP each, but they are extremely rare." >{{spent_jp()}} JP</span></p>
-              <p><span class="badge badge-ap" popover-title="Ability Points" popover-placement="bottom" popover="Ability Points are earned by defeating enemies in battle." >{{spent_ap()}} AP</span></p>
-            </div>
             <div class="well span2">
             <p>Unlocked Fusions</p>
             <ul>

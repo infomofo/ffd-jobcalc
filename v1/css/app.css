@@ -41,11 +41,15 @@ body {
 }
 
 .badge-jp {
-  background-color:#34495E;
+  background-color:#3498DB;
 }
 
 .badge-ap {
   background-color:#F39C12;
+}
+
+.badges {
+  padding: 14px 15px 17px;
 }
 
 th {
