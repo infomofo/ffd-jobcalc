@@ -1209,6 +1209,7 @@
         "side": [
             "light"
         ],
+        "free_abilities": [],
         "image": "img/memorist_sprite.png",
         "levels": [
             {

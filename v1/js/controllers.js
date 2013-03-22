@@ -207,9 +207,16 @@ function CharacterController($scope, $http, $location) {
     var result = [];
     angular.forEach($scope.fusions, function(fusion) {
       var unlocked = true;
+      var useFree = true;
 
       angular.forEach(fusion.requirements, function(requirement) {
         var hasRequirement = $scope.canCast(requirement);
+
+        if (useFree && !hasRequirement) {
+          hasRequirement = $scope.canCastFree(requirement);
+          if (hasRequirement)
+            useFree = false;
+        }
 
         if (!hasRequirement) {
           // console.log("does not have " + requirement);
@@ -223,7 +230,24 @@ function CharacterController($scope, $http, $location) {
     return result;
   }
 
+  $scope.canCastFree = function(requirement) {
+    var hasRequirement = false;
+    //console.log("attempting to use free abilities to see if character can cast " + requirement);
+    angular.forEach($scope.jobs, function (job) {
+      //console.log("seeing if " + requirement + " is a free ability of " + JSON.stringify(job));
+      angular.forEach(job.free_abilities, function(free_ability) {
+        //console.log("looking at ability " + free_ability);
+        if (requirement == free_ability) {
+          hasRequirement = true;
+          //console.log(requirement + " is a free ability");
+        }
+      });
+    });
+    return hasRequirement;
+  }
+
   $scope.canCast = function(requirement) {
+    //console.log("attempting to see if character can cast " + requirement);
     var hasRequirement = false;
 
     //check if requirement is an ability innate to the selected character
@@ -236,15 +260,11 @@ function CharacterController($scope, $http, $location) {
 
         //check if requirement is a spell innate to the selected character
         if (!hasRequirement)
-        angular.forEach($scope.selected_character.innate_spells, function (innate_spell_id) {
-          if (requirement == innate_spell_id) {
-            hasRequirement = true;
-          }
-        });
-
-        //check if requirement is an ability that can be used by a level 0 job
-
-        //check if requirement is a spell that can be used by a level 0 job
+          angular.forEach($scope.selected_character.innate_spells, function (innate_spell_id) {
+            if (requirement == innate_spell_id) {
+              hasRequirement = true;
+            }
+          });
 
         //check if requirement is an ability or spell in the current build
         if (!hasRequirement)
