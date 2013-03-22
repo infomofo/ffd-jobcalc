@@ -10,7 +10,7 @@
         "int": 0,
         "mnd": 0,
         "innate_abilities": [
-            "Counter"
+            "Counter","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "side": "light",
         "image": "img/sol_sprite.png"
@@ -25,7 +25,7 @@
         "vit": 0,
         "int": 3,
         "mnd": 3,
-        "innate_abilities": [],
+        "innate_abilities": ["Cure","Fire","Cura","Fira","Poison","Poisona"],
         "side": "light",
         "image": "img/sarah_sprite.png"
     },
@@ -41,7 +41,7 @@
         "mnd": 3,
         "innate_abilities": [
             "Red Magic Lv. 1",
-            "Cover"
+            "Cover ","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "innate_spells": [
             "Cure",
@@ -65,7 +65,7 @@
         "int": 3,
         "mnd": 3,
         "innate_abilities": [
-            "White Magic Lv. 2"
+            "White Magic Lv. 2","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "ininate_spells": [
             "Cure",
@@ -89,7 +89,7 @@
         "int": 3,
         "mnd": 3,
         "innate_abilities": [
-            "Flee"
+            "Flee","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "side": "dark",
         "image": "img/nacht_sprite.png"
@@ -105,7 +105,7 @@
         "int": 3,
         "mnd": 3,
         "innate_abilities": [
-            "White Magic Lv. 1"
+            "White Magic Lv. 1","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "ininate_spells": [
             "Cure",
@@ -126,7 +126,7 @@
         "int": 3,
         "mnd": 3,
         "innate_abilities": [
-            "Black Magic Lv. 2"
+            "Black Magic Lv. 2","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "innate_spells": [
             "Fire",
@@ -150,7 +150,7 @@
         "int": 3,
         "mnd": 3,
         "innate_abilities": [
-            "Focus"
+            "Focus","Cure","Fire","Cura","Fira","Poison","Poisona"
         ],
         "side": "dark",
         "image": "img/glaive_sprite.png"
