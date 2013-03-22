@@ -7,6 +7,10 @@
             "light",
             "dark"
         ],
+        "free_abilities": [
+            "Strike",
+            "Battle Arts"
+        ],
         "image": "img/warrior_sprite.png",
         "levels": [
             {
@@ -119,6 +123,10 @@
         "side": [
             "light",
             "dark"
+        ],
+        "free_abilities": [
+            "Martial Arts",
+            "Kick"
         ],
         "image": "img/monk_sprite.png",
         "levels": [
@@ -240,6 +248,9 @@
             "light",
             "dark"
         ],
+        "free_abilities": [
+            "Steal"
+        ],
         "image": "img/thief_sprite.png",
         "levels": [
             {
@@ -342,6 +353,33 @@
             "light",
             "dark"
         ],
+        "free_abilities": [
+            "Red Magic Lv. 1",
+            "Cure",
+            "Libra",
+            "Poisona",
+            "Fire",
+            "Blizzard",
+            "Thunder",
+            "Slow",
+            "Silence",
+            "Mini",
+            "Poison",
+            "Sleep",
+            "Toad",
+            "Cura",
+            "Protect",
+            "Raise",
+            "Cura",
+            "Protect",
+            "Raise",
+            "Basuna",
+            "Confuse",
+            "Teleport",
+            "Drain",
+            "Break",
+            "Bio"
+        ],
         "image": "img/redmage_sprite.png",
         "levels": [
             {
@@ -413,9 +451,9 @@
                     "Cura",
                     "Protect",
                     "Raise",
-                    "Cura",
-                    "Protect",
-                    "Raise"
+                    "Fira",
+                    "Blizzara",
+                    "Thundara"
                 ]
             },
             {
@@ -475,6 +513,29 @@
         "side": [
             "light",
             "dark"
+        ],
+        "free_abilities": [
+            "Cure",
+            "Libra",
+            "Poisona",
+            "Slow",
+            "Silence",
+            "Mini",
+            "Cura",
+            "Protect",
+            "Raise",
+            "Basuna",
+            "Confuse",
+            "Teleport",
+            "Curaja",
+            "Blink",
+            "Shell",
+            "Berserk",
+            "Regen",
+            "Haste",
+            "Curaga",
+            "Esuna",
+            "Reflect"
         ],
         "image": "img/whitemage_sprite.png",
         "levels": [
@@ -614,6 +675,29 @@
             "light",
             "dark"
         ],
+        "free_abilities": [
+            "Fire",
+            "Blizzard",
+            "Thunder",
+            "Poison",
+            "Sleep",
+            "Toad",
+            "Fira",
+            "Blizzara",
+            "Thundara",
+            "Drain",
+            "Break",
+            "Bio",
+            "Osmose",
+            "Stop",
+            "Tornado",
+            "Firaga",
+            "Blizzaga",
+            "Thundaga",
+            "Quake",
+            "Death",
+            "Comet"
+        ],
         "image": "img/blackmage_sprite.png",
         "levels": [
             {
@@ -750,6 +834,9 @@
             "light",
             "dark"
         ],
+        "free_abilities": [
+            "Sylph"
+        ],
         "image": "img/summoner_sprite.png",
         "levels": [
             {
@@ -878,6 +965,9 @@
         "side": [
             "light"
         ],
+        "free_abilities": [
+            "Jump"
+        ],
         "image": "img/dragoon_sprite.png",
         "levels": [
             {
@@ -995,6 +1085,9 @@
         "description": "",
         "side": [
             "light"
+        ],
+        "free_abilities": [
+            "Aiding Anthem"
         ],
         "image": "img/bard_sprite.png",
         "levels": [
@@ -1209,6 +1302,9 @@
         "side": [
             "light"
         ],
+        "free_abilities": [
+            "Charge"
+        ],
         "image": "img/paladin_sprite.png",
         "levels": [
             {
@@ -1321,6 +1417,10 @@
         "description": "",
         "side": [
             "light"
+        ],
+        "free_abilities": [
+            "Holy",
+            "Dispel"
         ],
         "image": "img/seer_sprite.png",
         "levels": [
@@ -1470,6 +1570,9 @@
         "side": [
             "dark"
         ],
+        "free_abilities": [
+            "Precise Shot"
+        ],
         "image": "img/ranger_sprite.png",
         "levels": [
             {
@@ -1588,6 +1691,9 @@
         "side": [
             "dark"
         ],
+        "free_abilities": [
+            "Draw Attacks"
+        ],
         "image": "img/darkknight_sprite.png",
         "levels": [
             {
@@ -1700,6 +1806,9 @@
         "description": "",
         "side": [
             "dark"
+        ],
+        "free_abilities": [
+            "Cure Waltz"
         ],
         "image": "img/dancer_sprite.png",
         "levels": [
@@ -1814,6 +1923,11 @@
         "description": "",
         "side": [
             "dark"
+        ],
+        "free_abilities": [
+            "Flame",
+            "Flood",
+            "Blitz"
         ],
         "image": "img/ninja_sprite.png",
         "levels": [
@@ -1943,6 +2057,10 @@
         "description": "",
         "side": [
             "dark"
+        ],
+        "free_abilities": [
+            "Flare",
+            "Meteor"
         ],
         "image": "img/magus_sprite.png",
         "levels": [
