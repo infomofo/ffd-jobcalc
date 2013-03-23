@@ -354,21 +354,20 @@ function CharacterController($scope, $http, $location) {
     //   if (abilityspells.length > 0) {
     //     tooltip = tooltip + " (" + abilityspells +")";
     //   }
-    // }
-    var spellFusionsBuild = [];
-
-    angular.forEach($scope.fusions, function(fusion) {
-      if (fusion.requirements.indexOf(ability.id) >= 0) {
-        var otherRequirement = $scope.otherRequirement(fusion.requirements,ability.id);
-        // Also need to check if other spell is achievable with build
-        if ($scope.isAvailableToSide(otherRequirement)) {
-          spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
+    // }      angular.forEach($scope.fusions, function(fusion) {
+      var spellFusionsBuild = [];
+      angular.forEach($scope.fusions, function(fusion) {
+        if (fusion.requirements.indexOf(ability.id) >= 0) {
+          var otherRequirement = $scope.otherRequirement(fusion.requirements,ability.id);
+          // Also need to check if other spell is achievable with build
+          if ($scope.isAvailableToSide(otherRequirement)) {
+            spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
+          }
         }
-      }
-    });
+      });
 
-    if (spellFusionsBuild.length > 0)
-      tooltip += " [fusion " + spellFusionsBuild.join(", ") + "]";
+      if (spellFusionsBuild.length > 0)
+        tooltip += " [fusion " + spellFusionsBuild.join(", ") + "]";
 
     return tooltip;
   }
