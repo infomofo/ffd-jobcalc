@@ -233,7 +233,7 @@ function CharacterController($scope, $http, $location) {
   $scope.canCastFree = function(requirement) {
     var hasRequirement = false;
     //console.log("attempting to use free abilities to see if character can cast " + requirement);
-    angular.forEach($scope.jobs, function (job) {
+    angular.forEach($scope.availableJobs(), function (job) {
       //console.log("seeing if " + requirement + " is a free ability of " + JSON.stringify(job));
       angular.forEach(job.free_abilities, function(free_ability) {
         //console.log("looking at ability " + free_ability);
@@ -268,7 +268,7 @@ function CharacterController($scope, $http, $location) {
 
         //check if requirement is an ability or spell in the current build
         if (!hasRequirement)
-        angular.forEach($scope.jobs, function(job) {
+        angular.forEach($scope.availableJobs(), function(job) {
           for (var i = 0; i < $scope.current_build.jp[job.name]; i++) {
             // console.log("checking if " + requirement + " is in " + JSON.stringify(job.levels[i]));
             if (requirement == job.levels[i].ability) {
@@ -291,34 +291,52 @@ function CharacterController($scope, $http, $location) {
     return hasRequirement;
   }
 
+  $scope.availableJobs = function() {
+    //jobs|filter:{side:selected_character.side}
+
+    if ((!angular.isDefined($scope.jobs)) || (!angular.isDefined($scope.selected_character))) {
+      return [];
+    } else {
+      //console.log("checking available jobs for selected_character");
+      return $scope.jobs.filter( function (job) {
+        return (job.side.indexOf($scope.selected_character.side) >= 0);
+      });
+    }
+  }
+
   $scope.isAvailableToSide = function(requirement) {
     var isAvailable = false;
 
     //check if requirement is an ability innate to the selected character
     //console.log("checking if " + requirement + " is available to side: " + $scope.selected_character.side);
-    angular.forEach($scope.jobs, function(job) {
-      if ((!isAvailable) && (job.side.indexOf($scope.selected_character.side) >= 0)) {
+    angular.forEach($scope.availableJobs(), function(job) {
         //console.log("checking if " + requirement + " is in " + JSON.stringify(job.name));
-        angular.forEach(job.levels, function(level) {
-          if (requirement == level.ability) {
-            //console.log("found " + requirement + " in " + job.name + " level " + level.level);
-            isAvailable = true;
-          }
-          if ((!isAvailable) && (typeof(level.spells) != 'undefined')) {
-            //console.log(JSON.stringify(level) + " has spells " + level.spells + " of which " + requirement + " is  " + level.spells.indexOf(requirement));
-              
-            if ((level.spells == requirement) && (level.spells.indexOf(requirement) >= 0)) {
 
-              //console.log("found " + requirement + " in " + job.name + " level " + level.level);
-               // console.log(JSON.stringify(job.levels[i]) + " has  " + requirement + " as a spell");
-              // console.log(job.levels[i].spells.indexOf(requirement));
-              isAvailable = true;
-            }
+        angular.forEach(job.free_abilities, function(free_ability) {
+          //console.log("looking at ability " + free_ability);
+          if (requirement == free_ability) {
+            isAvailable = true;
+            //console.log(requirement + " is a free ability");
           }
         });
+        if (!isAvailable) {
+          angular.forEach(job.levels, function(level) {
+              // console.log("checking if " + requirement + " is in " + JSON.stringify(job.levels[i]));
+              if (requirement == level.ability) {
+                isAvailable = true;
+              }
+              if (!isAvailable && angular.isDefined(level.spells)) {
+                angular.forEach(level.spells, function(spell) {
+                  if (requirement == spell) {
+                    isAvailable = true;
+                    //console.log(requirement + " is a free ability");
+                  }
+                });
+              }
+          });
       }
     });
-     //console.log("checking if " + requirement + " is available to side: " + $scope.selected_character.side +": " + isAvailable);
+//    console.log("checking if " + requirement + " is available to side: " + $scope.selected_character.side +": " + isAvailable);
 
     return isAvailable;
   }
@@ -343,9 +361,9 @@ function CharacterController($scope, $http, $location) {
       if (fusion.requirements.indexOf(ability.id) >= 0) {
         var otherRequirement = $scope.otherRequirement(fusion.requirements,ability.id);
         // Also need to check if other spell is achievable with build
-        //if ($scope.isAvailableToSide(otherRequirement)) {
+        if ($scope.isAvailableToSide(otherRequirement)) {
           spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
-        //}
+        }
       }
     });
 
@@ -372,9 +390,9 @@ function CharacterController($scope, $http, $location) {
         if (fusion.requirements.indexOf(spell) >= 0) {
           var otherRequirement = $scope.otherRequirement(fusion.requirements,spell);
           // Also need to check if other spell is achievable with build
-          //if ($scope.isAvailableToSide(otherRequirement)) {
+          if ($scope.isAvailableToSide(otherRequirement)) {
             spellFusionsBuild.push(fusion.name + " (with " + otherRequirement +")");
-          //}
+          }
         }
       });
 

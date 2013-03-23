@@ -124,7 +124,7 @@
               </tr>
 	  </thead>
 	  </tbody>
-              <tr ng-repeat="job in jobs|filter:{side:selected_character.side}">
+              <tr ng-repeat="job in availableJobs()">
                 <td ng-click="levelTowards(job.name,0)"><img ng-src="{{job.image}}" class="img-rounded visible-desktop" popover-placement="right" popover-title="{{job.name}}" popover="{{job.description}}"/><p class="hidden-phone">{{job.name}}</p><abbr class="visible-phone" title="{{job.name}}">{{job.abbr}}</abbr>
                 </td>
                 <td class="baseline" ng-click="levelTowards(job.name,0)"></td>
