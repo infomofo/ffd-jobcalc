@@ -8,7 +8,7 @@ I am using Bootstrap and plan to make the site responsive to mobile devices.
 
 I am using Angular.JS and storing the build on the url, so the links can be copied and pasted to share.
 
-The tool is hosted at [Github](http://infomofo.github.com/ffd-jobcalc/v1/index.html)
+The tool is hosted at [Github](http://infomofo.github.io/ffd-jobcalc/v1/index.html).  You can access it at: http://infomofo.github.io/ffd-jobcalc/v1/index.html
 
 _Note: Most information is sourced from [GameFAQs](http://www.gamefaqs.com/iphone/672352-final-fantasy-dimensions/faqs)._
 

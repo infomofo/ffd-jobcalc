@@ -1421,7 +1421,8 @@
         ],
         "free_abilities": [
             "Holy",
-            "Dispel"
+            "Dispel",
+            "Benediction"
         ],
         "image": "img/seer_sprite.png",
         "levels": [
